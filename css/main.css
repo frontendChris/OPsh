@@ -1,0 +1,201 @@
+
+
+    .layout_center {} /* include this class on the body tag to implement this layout */
+
+   		.layout_center .page_container_outer {
+   			width: 100%;
+   		}
+
+	   		.layout_center .page_container_inner {
+	   			width: 940px; /* change size as required by project */
+	   			margin: auto;
+          position: relative;
+	   		}
+
+
+
+	.main {
+	   	background-color: #fff;
+	}
+
+		.main .page_container_inner {
+			padding: 20px 0;
+		}
+
+	.footer {
+    background-color: #000;
+
+	}
+
+		.footer .page_container_inner {
+			padding: 20px 0;
+			border-top: 1px solid #333;
+		}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+    .clear {
+      clear: both;
+    }
+
+    .left {
+   		float: left;
+    }
+
+    .right {
+   		float: right
+    }
+
+    .clearfix {
+   		clear: both;
+    }
+
+    .clearfix:after {
+	   content: " "; /* Older browser do not support empty content */
+	   visibility: hidden;
+	   display: block;
+	   height: 0;
+	   clear: both;
+	}
+
+/* ==========================================================================
+   Basic Html Elements
+   ========================================================================== */
+
+    /* ======== Forms ======== */
+
+    /* ======== Buttons ======== */
+
+    /* ======== Fonts ======== */
+
+    /* ======== Lists ======== */
+
+    ul {
+    	margin-left: 10px;
+    }
+
+    	ul li {
+    		list-style: none;
+    		margin: 10px 0;
+    	}
+
+    		ul li a {
+    			color: #333;
+    		}
+
+    		ul li a:hover {
+    			text-decoration: underline;
+    		}
+
+    ol {
+    	margin-left: 20px;
+    }
+
+    	ol li {
+    		margin: 10px 0;
+    	}
+
+    		ol li a {
+    			color: #333;
+    			height: 45px;
+    		}
+
+    		ol li a:hover {
+    			text-decoration: underline;
+    		}
+
+
+    /* ======== Tables ======== */
+
+    /* ======== Images ======== */
+
+/* ==========================================================================
+   Html Components
+   ========================================================================== */
+
+    /* ======== Navigation ======== */
+
+    .nav {
+      background-color: #fff;
+    }
+
+    .brand a {
+   		display: block;
+   		height: 50px;
+
+    }
+
+    .brand a img {
+   		height: 100%;
+
+    }
+
+
+    .nav_list ul {
+    }
+
+	   	.nav_list ul li {
+	   		list-style: none;
+	   		float: left; 
+	   		margin: 0;
+	   	}
+
+	   		.nav_list ul li a {
+	   			text-decoration: none;
+	   			padding: 0 10px;
+	   			display: block;
+	   			height: 50px;
+	   			line-height: 50px;
+          -o-transition:.2s;
+          -ms-transition:.2s;
+          -moz-transition:.2s;
+          -webkit-transition:.2s;
+          transition:.2s;
+	   		}
+
+	   			.nav_list ul li a:hover,
+          .nav_list ul li a.dd_link:hover {
+	   				background-color: #efefef;
+	   			}
+
+        .nav_list ul li a.drop_active {
+          height: 51px;
+          position: relative;
+          bottom: 0px;
+          z-index: 50;
+          background-color: white !important;
+        }
+
+        .nav_list ul li #user.drop_active {
+          border-left: 1px solid #ccc;
+        }
+
+	/* ======== Hero ======== */
+
+	.hero {
+		color: #fff;
+    background-color: #79c3ce;
+	}
+
+
+
+/* ==========================================================================
+   Js Components
+   ========================================================================== */
+
+   /* ======== Tabs ======== */
+
+   /* ======== Modals ======== */
+
+   /* ======== Dropdowns ======== */
+
+   /* ======== Mega Dropdowns ======== */
+
+   /* ======== Pop Over ======== */
+
+   /* ======== Tooltip ======== */
+
+   /* ======== Side Nav ======== */
+
+   /* ======== Errors ======== */

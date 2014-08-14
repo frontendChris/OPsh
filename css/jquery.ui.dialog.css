@@ -1,0 +1,174 @@
+.ui-widget{
+	font-family:sans-serif, Arial, Helvetica;
+	font-size:1.0em;
+	border-radius:0px !important;
+	border:0px solid;
+}
+
+.ui-widget input, 
+.ui-widget select, 
+.ui-widget textarea, 
+.ui-widget button {
+	font-family:sans-serif, Arial, Helvetica;
+    font-size: 1.0 em;
+}
+
+.ui-widget-overlay {
+	background: #000000 none;
+	opacity: .8;
+	filter: Alpha(Opacity=80);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 30;
+}
+
+.ui-dialog a {
+	color:#6D3B6A;
+	text-decoration:underline;
+}
+
+.ui-dialog a:hover {
+	text-decoration:none;
+}
+
+.ui-dialog {
+	overflow: hidden;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	bottom: 0;
+	padding: 0;
+	outline: 0;
+	width: 100%;
+	background-color: #000;
+	z-index: 35;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	padding: 0px;
+	position: relative;
+	display:none;
+}
+
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: 0;
+	background: none;
+	overflow: auto;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+
+
+
+
+
+
+.dialog_header {}
+
+	.dialog_header h1 {
+		line-height:20px;
+		padding:20px 0px 0px;
+		margin:0px 20px;
+		color:#6D3B6A;
+		font-size:1.6em;
+		text-align:center;
+	}
+	
+	.dialog_close a.close_modal {
+		position:absolute;
+		right:15px;
+		top:20px;
+		height:20px;
+		width:20px;
+		background: url(../images/icon_close_purple.png) center center / 14px 14px no-repeat;
+		text-indent:-999em;
+		text-decoration:none;
+	}
+	
+	
+	.dialog_content {
+		padding:20px;
+		text-align:center;
+	}
+	
+	.modal_content_padding {
+		padding:20px 20px 10px;
+		overflow:auto;
+		max-height:400px;
+	}
+	
+.ui-dialog .form_container {
+	padding:10px 0px;
+}
+
+.form_actions {
+}
+
+	.form_action_left {
+		float:left;
+		width:50%;
+	}
+	
+		.form_action_left_inner {
+			margin-right:10px;
+		}
+	
+	.form_action_right {
+		float:right;
+		width:50%;
+	}
+	
+		.form_action_right_inner {
+			margin-left:10px;
+		}

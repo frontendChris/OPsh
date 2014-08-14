@@ -1,0 +1,147 @@
+@import url("modals.css") all;
+@import url("buttons.css") all;
+@import url("forms.css") all;
+@import url("responsive.css") all;
+
+
+/* ==========================================================================
+   Stlyes specific to the frontend library
+   ========================================================================== */
+    html {
+   		background-color: #fafafa;
+    }
+	
+	body {
+		font-size:0.8em;
+		font-family:sans-serif, Arial, Helvetica;
+		margin:0px;
+		padding:0px;
+		color:#454545;
+	}
+
+
+  	.nav {
+
+    }
+
+    .brand {
+   		width: 210px;
+    }
+
+
+    code {
+	  	background-color: #F8C6D1;
+	  	border-left: 3px solid #db5c77;
+	  	display: block;
+	  	padding: 10px;
+	  	color: #000;
+	  	margin-bottom: 10px;
+	  	line-height: 1.4em;
+		  font-size:1.1em;
+    }
+
+	
+	.code_link {
+		line-height:20px;
+		display:block;
+	}
+
+
+/* ==========================================================================
+   Page strucutre specific styling
+   ========================================================================== */
+
+   	/* ======== Left & Right Sidebar Layouts ======== */
+   	
+   	.layout_side_left .nav,
+   	.layout_side_right .nav {
+   		border-bottom: 1px solid #ccc;
+   	}
+
+   	.layout_side_left .sidebar_left {
+
+   	}	
+
+   		.layout_side_left .sidebar_left ul,
+   		.layout_side_right .sidebar_right ul  {
+   			margin: 0;
+   		}
+
+   			.layout_side_left .sidebar_left ul li,
+   			.layout_side_right .sidebar_right ul li {
+   				border-bottom: 1px solid #ddd;
+   				margin: 0 20px;
+   			}
+
+   				.layout_side_left .sidebar_left ul li a,
+   				.layout_side_right .sidebar_right ul li a {
+   					text-decoration: none;
+   					display: block;
+   					height: auto;
+   					padding: 10px 5px;
+   				}
+
+   					.layout_side_left .sidebar_left ul li a:hover,
+   					.layout_side_right .sidebar_right ul li a:hover {
+   						background-color: #ddd;
+   					}
+
+
+   	.layout_side_left .main .push_left,
+   	.layout_side_right .main .push_right {
+   		background: #db3391; /* Old browsers */
+    	background: -moz-linear-gradient(left,  #db3391 0%, #db5c77 100%); /* FF3.6+ */
+    	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#db3391), color-stop(100%,#db5c77)); /* Chrome,Safari4+ */
+    	background: -webkit-linear-gradient(left,  #db3391 0%,#db5c77 100%); /* Chrome10+,Safari5.1+ */
+    	background: -o-linear-gradient(left,  #db3391 0%,#db5c77 100%); /* Opera 11.10+ */
+    	background: -ms-linear-gradient(left,  #db3391 0%,#db5c77 100%); /* IE10+ */
+    	background: linear-gradient(to right,  #db3391 0%,#db5c77 100%); /* W3C */
+    	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3391', endColorstr='#db5c77',GradientType=1 ); /* IE6-9 */
+   	}
+
+    .main .content_blocks {
+    	margin: 0;
+    }
+
+    	.main .content_blocks .content_block {
+   			width: 25%;
+   			float: left;
+   			min-height: 220px;
+   			margin: 0;
+    	}
+
+    		.main .content_blocks .content_block a {
+    			margin: 10px;
+    			background-color: #fff;
+    			display: block;
+    			min-height: 200px;
+    			position: relative;
+    			text-align: center;
+    			text-decoration: none;
+    		}
+
+    			.main .content_blocks .content_block a span {
+    				padding-top: 70px;
+    				font-size: 40px;
+    				color: #b6b6b6;
+    				display: block;
+    			}
+
+    /* ======== Left & Right Sidebar Layouts ======== */
+    
+    .layout_full .main {
+    	background: -moz-linear-gradient(left,  #db3391 0%, #db5c77 100%); /* FF3.6+ */
+    	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#db3391), color-stop(100%,#db5c77)); /* Chrome,Safari4+ */
+    	background: -webkit-linear-gradient(left,  #db3391 0%,#db5c77 100%); /* Chrome10+,Safari5.1+ */
+    	background: -o-linear-gradient(left,  #db3391 0%,#db5c77 100%); /* Opera 11.10+ */
+    	background: -ms-linear-gradient(left,  #db3391 0%,#db5c77 100%); /* IE10+ */
+    	background: linear-gradient(to right,  #db3391 0%,#db5c77 100%); /* W3C */
+    	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3391', endColorstr='#db5c77',GradientType=1 ); /* IE6-9 */
+    }
+
+
+
+
+
+
+

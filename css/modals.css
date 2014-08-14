@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*	Style to be applied to the body tag to prevent scrolling 
+	when modal visible. Borrowed from bootstrap */
+
+.modal_visible {
+	overflow: hidden !important;
+}
+
+
+/* Standard Modal Styles */
+
+	.dialog {
+		display: none;
+		background-color: #fff;
+	}
+
+		.dialog .dialog_header {
+			
+		}
+
+		.dialog .dialog_desc {
+			
+		}
+
+		.dialog .dialog_content {
+			
+		}
+
+		.dialog .dialog_close {
+			
+		}
+
+
+/* Full screen modal overlay */
+
+
+
+
+
+

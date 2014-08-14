@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OPSH</title>
+	<meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/adapt.css">
+	<link rel="stylesheet" type="text/css" href="css/superfish.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/opsh.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body class="layout_center">
+	<!-- navigation -->
+	<div class="page_container_outer nav">
+		
+		<div class="page_container_inner clearfix">
+			
+			<div class="brand left">
+				<h1>
+					<a href="index.html">
+						<img src="imgs/brand_x2.png" alt="OPSH. One Account. All your shops." />
+					</a>
+				</h1>
+			</div>
+
+			<div class="nav_list left">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" class="categories">Go Shopping</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="nav_search">
+				<input type="search" placeholder="Search" />
+				<button class="btn_normal">
+					<span class="sh">SH</span><span class="op">OP</span>
+				</button>
+			</div>
+			
+			<div class="nav_list right">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" id="user" class="user dd_link">Kim Jung's OPSH</a>
+						<div id="user_options" class="dd_panel">
+							<div class="dd_panel_title">
+								<span class="title">Kim Jung</span>
+							</div>
+							<div class="dd_panel_body">
+								<ul>
+									<li><a href="#">My Order History</a></li>
+									<li><a href="#">My OPSH Profile</a></li>
+									<li><a href="#">FAQs</a></li>
+								</ul>
+								<div class="user_img">
+									<img src="imgs/user_img.jpg" alt=""/>
+								</div>
+							</div>
+							<div class="dd_panel_foot">
+								<button class="btn_normal">Logout</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" id="cart" class="cart dd_link">Shopping Cart</a>
+						<div id="cart_options" class="basket dd_panel">
+							<div class="dd_panel_title clearfix">
+								<span class="left title">My Shopping Bag</span>
+								<span class="right">
+									<span>2 items / </span>
+									<span class="cost">Total: €70</span>
+								</span>
+							</div>
+							<div class="dd_panel_body">
+								<ul>
+									<li>
+										<div class="product clearfix">
+											<div class="prod_img">
+												<img src="imgs/home_imgs/product4.jpg" alt=""/>
+											</div>
+											<div class="prod_details">
+												<ul>
+													<li class="title">
+														PETITE Midi Skater Skirt
+													</li>
+													<li class="price">
+														€ 40
+													</li>
+													<li class="quantity">
+														Qty 1
+													</li>
+												</ul>
+												<div class="prod_delete">
+													<a href="javascript:void(0)">delete</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="product clearfix">
+											<div class="prod_img">
+												<img src="imgs/home_imgs/product6.jpg" alt=""/>
+											</div>
+											<div class="prod_details">
+												<ul>
+													<li class="title">
+														PETITE Midi Skater Skirt
+													</li>
+													<li class="price">
+														€ 40
+													</li>
+													<li class="quantity">
+														Qty 1
+													</li>
+												</ul>
+												<div class="prod_delete">
+													<a href="javascript:void(0)">delete</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="dd_panel_foot">
+								<button class="btn_normal">Checkout</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)" id="wishlist" class="wishlist dd_link">My Wishlist</a>
+						<div id="wishlist_options" class="basket dd_panel">
+							<div class="dd_panel_title clearfix">
+								<span class="left title">My Wishlist</span>
+								<span class="right">
+									<span>23 items / </span>
+									<span class="cost">Total: €1270</span>
+								</span>
+							</div>
+							<div class="dd_panel_body">
+								<ul>
+									<li>
+										<div class="product clearfix">
+											<div class="prod_img">
+												<img src="imgs/home_imgs/product3.jpg" alt=""/>
+											</div>
+											<div class="prod_details">
+												<ul>
+													<li class="title">
+														PETITE Midi Skater Skirt
+													</li>
+													<li class="price">
+														€ 40
+													</li>
+													<li class="quantity">
+														Qty 1
+													</li>
+												</ul>
+												<div class="prod_delete">
+													<a href="javascript:void(0)">delete</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="product clearfix">
+											<div class="prod_img">
+												<img src="imgs/home_imgs/product2.jpg" alt=""/>
+											</div>
+											<div class="prod_details">
+												<ul>
+													<li class="title">
+														PETITE Midi Skater Skirt
+													</li>
+													<li class="price">
+														€ 40
+													</li>
+													<li class="quantity">
+														Qty 1
+													</li>
+												</ul>
+												<div class="prod_delete">
+													<a href="javascript:void(0)">delete</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="dd_panel_foot">
+								<button class="btn_transparent">View All</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+
+	
+
+
+	<!-- body content -->
+	<div class="top_bar page_container_outer">
+		<div class="page_container_inner clearfix">
+				<div class="sidebar">
+					<div class="filter" id="shop_filter">
+						<!-- shops filer -->
+						<div class="filter_title">
+							<a href="javascript:void(0)">
+								<span>Shops</span>
+								<span class="toggle"></span>
+							</a>
+						</div>
+						<div class="filter_body">
+							<ul>
+								<li>
+									<label for="all_shops">
+										<input type="radio" name="shop_selector" id="all_shops"/>
+										All Shops
+									</label>
+								</li>
+								<li>
+									<label for="opsh_shops">
+										<input type="radio" name="shop_selector" id="opsh_shops"/>
+										My OPSH Shops
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="main_content">
+					<div class="shop_list filter_list">
+						<ul>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/debenhams.png" alt="debenhams">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/evans.png" alt="Evans">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/forever21.png" alt="Forever 21">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/housefraser.png" alt="House of Fraser">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/next.png" alt="Next">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="shop_list">
+						<ul>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/debenhams.png" alt="debenhams">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/evans.png" alt="Evans">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/forever21.png" alt="Forever 21">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/housefraser.png" alt="House of Fraser">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<img src="imgs/logos/next.png" alt="Next">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div> 
+
+	<div class="main page_container_outer">
+		<div class="page_container_inner clearfix">
+			
+			<div class="sidebar">
+				<!-- category filter -->
+ 				<div class="filter" id="category_filter">
+					<div class="filter_title">
+						<a href="javascript:void(0)">
+							<span>Category</span>
+							<span class="toggle"></span>
+						</a>
+					</div>
+					<div class="filter_body">
+						<ul>
+							<li>
+								<label for="dresses">
+									<input type="checkbox" id="dresses"/>
+									Dresses
+								</label>
+							</li>
+							<li>
+								<label for="tops">
+									<input type="checkbox" id="tops"/>
+									Tops
+								</label>
+							</li>
+							<li>
+								<label for="bottoms">
+									<input type="checkbox" id="bottoms"/>
+									Bottoms
+								</label>
+							</li>
+							<li>
+								<label for="out_wear">
+									<input type="checkbox" id="out_wear"/>
+									Out Wear
+								</label>
+							</li>
+							<li>
+								<label for="shoes">
+									<input type="checkbox" id="shoes"/>
+									Shoes
+								</label>
+							</li>
+							<li>
+								<label for="underwear">
+									<input type="checkbox" id="underwear"/>
+									Underwear
+								</label>
+							</li>
+							<li>
+								<label for="accessories">
+									<input type="checkbox" id="accessories"/>
+									Accessories
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- color filter -->
+ 				<div class="filter" id="color_filter">
+					<div class="filter_title">
+						<a href="javascript:void(0)">
+							<span>Color</span>
+							<span class="toggle"></span>
+						</a>
+					</div>
+					<div class="filter_body">
+						<ul>
+							<li>
+								<label for="blue">
+									<input type="checkbox" id="blue"/>
+									Blue
+								</label>
+							</li>
+							<li>
+								<label for="green">
+									<input type="checkbox" id="green"/>
+									Green
+								</label>
+							</li>
+							<li>
+								<label for="red">
+									<input type="checkbox" id="red"/>
+									Red
+								</label>
+							</li>
+							<li>
+								<label for="orange">
+									<input type="checkbox" id="orange"/>
+									Orange
+								</label>
+							</li>
+							<li>
+								<label for="magenta">
+									<input type="checkbox" id="magenta"/>
+									Magenta
+								</label>
+							</li>
+							<li>
+								<label for="yellow">
+									<input type="checkbox" id="yellow"/>
+									Yellow
+								</label>
+							</li>
+							<li>
+								<label for="cyan">
+									<input type="checkbox" id="cyan"/>
+									Cyan
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- price filter -->
+ 				<div class="filter" id="price_filter">
+					<div class="filter_slider">
+						<div class="slider_container">
+							<div class="range_slider"></div>
+						</div>
+						<div class="range_amount range_amount_min">
+							<input type="text" readonly style="border:0;" />
+						</div>
+						<div class="range_amount range_amount_max">
+							<input type="text" readonly style="border:0;" />
+						</div>
+					</div>
+				</div>
+
+				<!-- size filter -->
+ 				<div class="filter" id="size_filter">
+					<div class="filter_title">
+						<a href="javascript:void(0)">
+							<span>Sizes</span>
+							<span class="toggle"></span>
+						</a>
+					</div>
+					<div class="filter_body">
+						<ul>
+							<li>
+								<label for="size1">
+									<input type="checkbox" id="size1"/>
+									Size 1
+								</label>
+							</li>
+							<li>
+								<label for="size2">
+									<input type="checkbox" id="size2"/>
+									Size 2
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- opsh styles filter -->
+ 				<div class="filter" id="opsh_styles">
+					<div class="filter_title">
+						<a href="javascript:void(0)">
+							<span>OPSH Styles</span>
+							<span class="toggle"></span>
+						</a>
+					</div>
+					<div class="filter_body">
+						<ul class="filter_list">
+							<li>
+								<label for="style1" class="filter_item">
+									<input type="checkbox" id="style1"/>
+									Style 1
+								</label>
+							</li>
+							<li>
+								<label for="style2" class="filter_item">
+									<input type="checkbox" id="style2"/>
+									Style 2
+								</label>
+							</li>
+							<li>
+								<label for="style3" class="filter_item">
+									<input type="checkbox" id="style3"/>
+									Style 3
+								</label>
+							</li>
+							<li>
+								<label for="style4" class="filter_item">
+									<input type="checkbox" id="style4"/>
+									Style 4
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="main_content" id="search_results">
+				<!-- filter list -->
+				<div>
+					<ul class="filter_list">
+						<li>
+							<a href="javascript:void(0)">Style 1</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Style 2</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Style 3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Style 4</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- results amount & pagination -->
+				<div class="controls clearfix">
+					<div class="left results_amount">
+						<span>results(400)</span>
+					</div>
+					<div class="right pagination">
+						<span>Page:</span>
+						<ul>
+							<li class="selected"><a href="javascript:void(0)">1</a></li>
+							<li><a href="javascript:void(0)">2</a></li>
+							<li><a href="javascript:void(0)">3</a></li>
+							<li><a href="javascript:void(0)">...</a></li>
+							<li><a href="javascript:void(0)">20</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- results grid -->
+				<div class="results_grid">
+					<ul>
+						<li class="product_comp">
+							<div class="product_comp_inner">
+								<div class="product_comp_img">
+									<img src=".." alt="" />
+									<div class="product_shop">
+										<img src=".." alt="" />
+									</div>
+								</div>
+								<div class="product_comp_details">
+									<div class="product_name">...</div>
+									<div class="product_amount">
+										€ <span>...</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="product_comp">
+							<div class="product_comp_inner">
+								<div class="product_comp_img">
+									<img src=".." alt="" />
+									<div class="product_shop">
+										<img src=".." alt="" />
+									</div>
+								</div>
+								<div class="product_comp_details">
+									<div class="product_name">...</div>
+									<div class="product_amount">
+										€ <span>...</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="product_comp">
+							<div class="product_comp_inner">
+								<div class="product_comp_img">
+									<img src=".." alt="" />
+									<div class="product_shop">
+										<img src=".." alt="" />
+									</div>
+								</div>
+								<div class="product_comp_details">
+									<div class="product_name">...</div>
+									<div class="product_amount">
+										€ <span>...</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="product_comp">
+							<div class="product_comp_inner">
+								<div class="product_comp_img">
+									<img src=".." alt="" />
+									<div class="product_shop">
+										<img src=".." alt="" />
+									</div>
+								</div>
+								<div class="product_comp_details">
+									<div class="product_name">...</div>
+									<div class="product_amount">
+										€ <span>...</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="product_comp">
+							<div class="product_comp_inner">
+								<div class="product_comp_img">
+									<img src=".." alt="" />
+									<div class="product_shop">
+										<img src=".." alt="" />
+									</div>
+								</div>
+								<div class="product_comp_details">
+									<div class="product_name">...</div>
+									<div class="product_amount">
+										€ <span>...</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="product_comp">
+							<div class="product_comp_inner">
+								<div class="product_comp_img">
+									<img src=".." alt="" />
+									<div class="product_shop">
+										<img src=".." alt="" />
+									</div>
+								</div>
+								<div class="product_comp_details">
+									<div class="product_name">...</div>
+									<div class="product_amount">
+										€ <span>...</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div class="footer_upper page_container_outer">
+		
+		<div class="page_container_inner clearfix">
+			<div class="left">
+				<ul class="social_links">
+					<li class="social_icon facebook">
+						<a href="#">Facebook</a>
+					</li>
+					<li class="social_icon twitter">
+						<a href="#">Twitter</a>
+					</li>
+					<li class="social_icon instagram">
+						<a href="#">Instagram</a>
+					</li>
+					<li class="social_icon pinterest">
+						<a href="#">Pinterest</a>
+					</li>
+					<li class="social_icon blog">
+						<a href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="right">
+				<ul class="footer_list">
+					<li>
+						<a href="#">About Us</a>
+					</li>
+					<li>
+						<a href="#">FAQ's</a>
+					</li>
+					<li>
+						<a href="#">Carriers at OPSH</a>
+					</li>
+					<li>
+						<a href="#">Become a Retailer</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li>
+						<a href="#">Press</a>
+					</li>
+					<li class="currency">
+						<span>Currency:
+							<select>
+								<option selected="selected">€ eur</option>
+								<option>£ gbp</option>
+							</select>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+
+	<div class="footer_lower page_container_outer">
+		
+		<div class="page_container_inner clearfix">
+			<ul class="footer_list clearfix">
+				<li><a href="#">Store Directory</a></li>
+				<li><a href="#">Brands</a></li>
+				<li><a href="#">Deliveries &amp; Returns</a></li>
+				<li><a href="#">Track Your Order</a></li>
+				<li><a href="#">Gift Cards</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">Accessibility</a></li>
+				<li class="last"><a href="#">Security</a></li>
+			</ul>
+			<div class="left">
+				<img src="imgs/creditcards.png" alt="All major credit cards accepted" />
+			</div>
+			<div class="right">
+				<p>&copy; 2014 McGinn Sisters Ltd. All Rights Reserved. 
+				Site desinged by <a href="http://www.frontend.com">Frontend</a> &amp; built by <a href="#">Eirtight.</a></p>
+			</div>
+		</div>
+	
+	</div>
+
+	<!-- load jquery or fallback -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+	<!-- load other scripts -->
+	<script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.loadTemplate-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.customSelect.min.js"></script>
+	<script type="text/javascript" src="js/vendor/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/vendor/superfish.js"></script>
+	<script type="text/javascript" src="js/vendor/respond.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script type="text/javascript">
+		var initialDivHeight = $('.mega_drop').height();
+		
+		$(document).ready(function(){
+
+			// animation on main search box button
+			$('#btn_search').hover(
+				function () {
+					$('.op').addClass('active');
+					$('.sh').addClass('active');
+				},
+				function () {
+					$('.op').removeClass('active');
+					$('.sh').removeClass('active');
+				}
+			);
+
+			// show/hide shop list
+			$('.shop_list_toggle a').click(function(e){
+				if ($('.all_shops').is(':visible')) {
+					$('.all_shops').slideUp();
+					$(this).removeClass('open');
+				} else {
+					$('.all_shops').slideDown();
+					$(this).addClass('open');
+				};
+				e.stopPropagation();
+			});
+
+			$('.shop_list').click(function(e){
+				e.stopPropagation();
+			})
+
+			$(document).click(function(){
+				if ($('.all_shops').is(':visible')) {
+					$('.all_shops').slideUp();
+					$('.shop_list_toggle a').removeClass('open');
+				}
+			});
+
+			// mega drop menu 
+
+			//var megaDropOverlay = $('.mega_drop_overlay');
+			//var megaDropInner = $('.mega_drop');
+			//var initialDivHeight = $('.mega_drop').height();
+			console.log(initialDivHeight);
+	
+			get_height_diff();
+			
+			$('.mega_drop_overlay').hide();
+			$('.mega_drop').hide();
+			
+			$('.categories').click(function(){
+				if ($('.mega_drop_overlay').is(':visible')) {
+					$('.mega_drop_overlay').fadeOut();
+					$('.mega_drop').hide("slide", { direction: "up" }, 500);
+					$('body').removeClass('modal_visible');
+					$(this).removeClass('active');
+				} else {
+					$('.mega_drop_overlay').fadeIn(300);
+					$('.mega_drop').show("slide", { direction: "up" }, 500);
+					$('body').addClass('modal_visible');
+					$(this).addClass('active');
+				}
+			});
+
+			$('.close_modal').click(function(){
+				$('.mega_drop_overlay').fadeOut();
+				$('.mega_drop').hide("slide", { direction: "up" }, 500);
+				$('body').removeClass('modal_visible');
+				$('.categories').removeClass('active');
+			})
+			
+			
+
+			
+
+    		// esc
+			$(document).keyup(function(e) {
+				if (e.keyCode == 27) {
+					//hide any visible drop_panels
+					$(".dd_panel").hide("slide", { direction: "up" }, 400);
+					$('.dd_link').removeClass('drop_active');
+					//hide the mega drop menu 
+					$(megaDropOverlay).fadeOut();
+					$(megaDropInner).hide("slide", { direction: "up" }, 500);
+					$('body').removeClass('modal_visible');
+					$('.categories').removeClass('active');	
+				}  
+			});
+
+    		// show/hide pop over panels from nav
+    		var navListBtn = $('.dd_link');
+    		var navListPanel = $('.dd_panel');
+
+    		
+
+    		function dropdownContainers() {
+	
+				// If you click anywhere on the screen it closes any open options panels
+				$(document).on('click touchstart', function () {
+					$(".dd_panel").hide("slide", { direction: "up" }, 400);
+					$('.dd_link').removeClass('drop_active');
+				});
+				
+				// Stop the event for closing option panels when you click on the panel or a hyperlink to open a panel
+				$(".dd_panel, .dd_link").on('click touchstart', function (e) {
+					e.stopPropagation();
+				});
+				
+				
+				
+				// Show and Hide the Options Panels
+				$('.dd_link').click(function() {
+					var selected_panel = ('#') + $(this).attr('id') + ('_options');
+					
+					if($(selected_panel).css('display') == 'none'){
+						// Remove Existing Active Styling and Apply to current Item
+						$('.dd_link').removeClass('drop_active');
+						$(this).addClass('drop_active');
+						// Hide exisiting open dropdowns and show selected one
+						$('.dd_panel').hide("slide", { direction: "up" }, 400);
+						$(selected_panel).show("slide", { direction: "up" }, 400);
+						// Set Focus to the close button within the options panel
+						$(selected_panel).children('.dd_close_panel').children('a').focus();
+					} else {
+						$(selected_panel).hide("slide", { direction: "up" }, 400);
+						$('.dd_link').removeClass('drop_active');
+					}
+				});
+				
+				// Close the options panel when you click the link
+				$(".dd_close_panel a").click(function() {
+					// Apply focus to the link associated with the panel
+					$(this).parent().parent().parent().children('a').focus();
+					$(this).parent().parent().parent().children('a').removeClass('drop_active');
+					// Hide the panel when you click close
+					$(".dd_panel").hide();
+				});
+			};
+
+			dropdownContainers();
+
+			/////// sidebar 
+
+			// show/hide the filter drawers
+			var filterDrawer = $('.main .filter_body');
+			var filter = $('.main .filter_title a');
+
+			$(filterDrawer).hide();
+
+			$(filter).click(function(){
+				var adjacentDrawer = $(this).parent().siblings('.filter_body');
+				$(adjacentDrawer).slideToggle();
+
+				var toggleArrow = $(this).children('.toggle');
+				$(toggleArrow).toggleClass("rotate");
+				
+			});
+
+			$('.range_slider').slider({
+				range: true,
+      			min: 0,
+     			max: 500,
+      			values: [ 0, 500 ],
+      			slide: function( event, ui ) {
+        			$( ".range_amount_min input" ).val( "€" + ui.values[ 0 ]);
+        			$( '.range_amount_max input' ).val( "€" + ui.values[ 1 ] )
+      			}
+      		});
+      		$( '.range_amount_min input' ).val( '€' + $( '.range_slider' ).slider( 'values', 0 ));
+      		$( '.range_amount_max input' ).val('€' + $( '.range_slider' ).slider( 'values', 1 ));
+
+		});
+
+		function get_height_diff() {
+				var viewportHeight = $(window).height();
+				var divHeight = $('.mega_drop').height();
+				var height_diff = viewportHeight - divHeight;
+				
+				// Check to see if category container height is bigger than viewport
+				if (divHeight >= viewportHeight) {
+					
+					// If it's bigger than the viewport set the height to 100%, else reset it to initial height
+					if(viewportHeight < initialDivHeight) {
+						divHeight = '100%';
+					} else {
+						divHeight = initialDivHeight;
+					}
+				} else {
+					divHeight = parseInt(divHeight) + 'px';
+				}
+				// Apply the Height to the container
+				$('.mega_drop').css('height',divHeight);
+				
+				// Get the Difference in height between viewport and category div container and add it as the bottom difference
+				if (height_diff >= 0) {
+					height_diff = parseInt(height_diff) + 'px';
+				} else {
+					height_diff = '0px';
+				}
+				$('.mega_drop').css('bottom',height_diff);
+			};
+			
+			// Run the script on resize
+			$(window).resize(function() {
+				get_height_diff();
+			});
+	</script>
+
+	<div class="mega_drop_overlay"> 
+		<div class="mega_drop">
+			<div class="page_container_inner">
+				<button class="close_modal">close</button>
+				<div class="list_contain clearfix">
+					<div class="title"><h2>Categories</h2></div>
+					<ul class="cat_list dresses">
+						<li class="cat_title">Dresses</li>
+						<li>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Maxi</a></li>
+								<li><a href="#">Mini</a></li>
+								<li><a href="#">Party</a></li>
+								<li><a href="#">Day</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cat_list tops">
+						<li class="cat_title">Tops</li>
+						<li>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Shirts</a></li>
+								<li><a href="#">T-Shirts</a></li>
+								<li><a href="#">Sweats</a></li>
+								<li><a href="#">Jumpers</a></li>
+								<li><a href="#">Knitwear</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cat_list bottoms">
+						<li class="cat_title">Bottoms</li>
+						<li>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Trousers</a></li>
+								<li><a href="#">Jeans</a></li>
+								<li><a href="#">Shorts</a></li>
+								<li><a href="#">Shirts</a></li>
+								<li><a href="#">1 Piece</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cat_list outerwear">
+						<li class="cat_title">Outerwear</li>
+						<li>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Coats</a></li>
+								<li><a href="#">Jackets</a></li>
+								<li><a href="#">Blazer</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cat_list shoes">
+						<li class="cat_title">Shoes</li>
+						<li>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Sandals</a></li>
+								<li><a href="#">Heels</a></li>
+								<li><a href="#">Flats</a></li>
+								<li><a href="#">Boots</a></li>
+								<li><a href="#">Sports</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cat_list underwear">
+						<li class="cat_title">Underwear</li>
+						<li>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Lingerie</a></li>
+								<li><a href="#">Pajamas</a></li>
+								<li><a href="#">Socks</a></li>
+								<li><a href="#">Tights</a></li>
+								<li><a href="#">Swimwear</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="cat_list accessories">
+						<li class="cat_title">Accessories</li>
+						<li>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Bags</a></li>
+								<li><a href="#">Scarves</a></li>
+								<li><a href="#">Headwear</a></li>
+								<li><a href="#">Jewellery</a></li>
+								<li><a href="#">Glasses</a></li>
+								<li><a href="#">Belts</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="list_contain clearfix">
+					<div class="title"><h2>Shops</h2></div>
+					<ul class="shop_list">
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/debenhams.png" alt="debenhams">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/evans.png" alt="Evans">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/forever21.png" alt="Forever 21">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/housefraser.png" alt="House of Fraser">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/next.png" alt="Next">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/debenhams.png" alt="debenhams">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/evans.png" alt="Evans">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/forever21.png" alt="Forever 21">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/housefraser.png" alt="House of Fraser">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/next.png" alt="Next">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/debenhams.png" alt="debenhams">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/evans.png" alt="Evans">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/forever21.png" alt="Forever 21">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/housefraser.png" alt="House of Fraser">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/next.png" alt="Next">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/debenhams.png" alt="debenhams">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/evans.png" alt="Evans">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/forever21.png" alt="Forever 21">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/housefraser.png" alt="House of Fraser">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<img src="imgs/logos/next.png" alt="Next">
+						</a>
+					</li>
+
+				
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
