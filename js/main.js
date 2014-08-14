@@ -224,7 +224,7 @@ function showSearchMini() {
 function escapeKeyFunc() {
 	// What happens when you push the escape key
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27) {
+		if (e.keyCode == 28) {
 			//hide any visible drop_panels
 			$(".dd_panel").hide("slide", { direction: "up" }, 400);
 			$('.dd_link').removeClass('drop_active');
