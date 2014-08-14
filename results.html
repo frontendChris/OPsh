@@ -208,36 +208,47 @@
 	
 	</div>
 
-	
 
 
 	<!-- body content -->
 	<div class="top_bar page_container_outer">
 		<div class="page_container_inner clearfix">
 				<div class="sidebar">
-					<div class="filter" id="shop_filter">
-						<!-- shops filer -->
+					
+					<div class="filter form_container" id="shop_filter">
+						
+						<!-- shops filter -->
 						<div class="filter_title">
-							<a href="javascript:void(0)">
-								<span>Shops</span>
-								<span class="toggle"></span>
-							</a>
+							<span>Shops</span>
 						</div>
-						<div class="filter_body">
-							<ul>
-								<li>
-									<label for="all_shops">
-										<input type="radio" name="shop_selector" id="all_shops"/>
-										All Shops
-									</label>
-								</li>
-								<li>
-									<label for="opsh_shops">
-										<input type="radio" name="shop_selector" id="opsh_shops"/>
-										My OPSH Shops
-									</label>
-								</li>
-							</ul>
+						<div class="filter_body form_row">
+							<div class="form_fieldset"> 
+ 								<fieldset>
+									<ul>
+										<li>
+											<div class="radio_item">
+									            <div class="radio_label">
+									            	<label for="all_shops">
+									                	<span class="radio_input"><input type="radio" name="shop_options" id="all_shops" aria-invalid="false" checked="checked" /></span>
+									                    All Shops
+									                </label>
+									            </div>
+									        </div>
+										</li>
+										
+										<li>
+											<div class="radio_item">
+									            <div class="radio_label">
+									            	<label for="my_opsh_shops">
+									                	<span class="radio_input"><input type="radio" name="shop_options" id="my_opsh_shops" aria-invalid="false" checked="checked" /></span>
+									                    My OPSH Shops
+									                </label>
+									            </div>
+									        </div>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -331,121 +342,185 @@
 			<div class="sidebar">
 				<!-- category filter -->
  				<div class="filter form_container" id="category_filter">
- 					<fieldset>
-	                    <legend>Check Boxes</legend>
-						<div class="filter_title">
-							<a href="javascript:void(0)">
-								<span>Category</span>
-								<span class="toggle"></span>
-							</a>
-						</div>
-						<div class="filter_body form_row">
-							<ul>
-								<li>
-									<label for="dresses">
-										<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dresses" aria-invalid="false" required="required" checked="checked" /></span>
-										Dresses
-									</label>
-								</li>
-								<li>
-									<label for="tops">
-										<input type="checkbox" id="tops"/>
-										Tops
-									</label>
-								</li>
-								<li>
-									<label for="bottoms">
-										<input type="checkbox" id="bottoms"/>
-										Bottoms
-									</label>
-								</li>
-								<li>
-									<label for="out_wear">
-										<input type="checkbox" id="out_wear"/>
-										Out Wear
-									</label>
-								</li>
-								<li>
-									<label for="shoes">
-										<input type="checkbox" id="shoes"/>
-										Shoes
-									</label>
-								</li>
-								<li>
-									<label for="underwear">
-										<input type="checkbox" id="underwear"/>
-										Underwear
-									</label>
-								</li>
-								<li>
-									<label for="accessories">
-										<input type="checkbox" id="accessories"/>
-										Accessories
-									</label>
-								</li>
-							</ul>
-						</div>
-					</fieldset>
+ 					
+							<div class="filter_title">
+								<a href="javascript:void(0)">
+									<span>Category</span>
+									<span class="toggle"></span>
+								</a>
+							</div>
+							<div class="filter_body form_row">
+								<div class="form_fieldset"> 
+	 								<fieldset>
+		                    			<legend class="hidden_label">Categories</legend>
+											<ul>
+												<li class="chbox_item">
+													<div class="chbox_label">
+														<label for="dresses">
+															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dresses" aria-invalid="false" required="required" /></span>
+															Dresses
+														</label>
+													</div>
+													
+													<ul class="nested_list">
+														<li>
+															<div class="chbox_label">
+																<label for="day">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="day" aria-invalid="false" required="required" /></span>
+																	Day
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="maxi">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="maxi" aria-invalid="false" required="required" /></span>
+																	Maxi
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="mini">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="mini" aria-invalid="false" required="required" /></span>
+																	Mini
+																</label>
+															</div>
+														</li>
+													</ul>
+
+												</li>
+												<li class="chbox_item">
+													<div class="chbox_label">
+														<label for="tops">
+															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tops" aria-invalid="false" required="required" /></span>
+															Tops
+														</label>
+													</div>
+												</li>
+												<li class="chbox_item">
+													<div class="chbox_label">
+														<label for="bottoms">
+															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bottoms" aria-invalid="false" required="required" /></span>
+															Bottoms
+														</label>
+													</div>
+												</li>
+												<li class="chbox_item">
+													<div class="chbox_label">
+														<label for="out_wear">
+															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="out_wear" aria-invalid="false" required="required" /></span>
+															Out Wear
+														</label>
+													</div>
+												</li>
+												<li class="chbox_item">
+													<div class="chbox_label">
+														<label for="shoes">
+															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoes" aria-invalid="false" required="required" /></span>
+															Shoes
+														</label>
+													</div>
+												</li>
+												<li class="chbox_item">
+													<div class="chbox_label">
+														<label for="underwear">
+															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="underwear" aria-invalid="false" required="required" /></span>
+															Underwear
+														</label>
+													</div>
+												</li>
+												<li class="chbox_item">
+													<div class="chbox_label">
+														<label for="accessories">
+															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="accessories" aria-invalid="false" required="required" /></span>
+															Accessories
+														</label>
+													</div>
+												</li>
+											</ul>
+								</fieldset>
+							</div>
+					</div>
 				</div>
 
 				<!-- color filter -->
- 				<div class="filter" id="color_filter">
+ 				<div class="filter form_container" id="color_filter">
 					<div class="filter_title">
 						<a href="javascript:void(0)">
 							<span>Color</span>
 							<span class="toggle"></span>
 						</a>
 					</div>
-					<div class="filter_body">
-						<ul>
-							<li>
-								<label for="blue">
-									<input type="checkbox" id="blue"/>
-									Blue
-								</label>
-							</li>
-							<li>
-								<label for="green">
-									<input type="checkbox" id="green"/>
-									Green
-								</label>
-							</li>
-							<li>
-								<label for="red">
-									<input type="checkbox" id="red"/>
-									Red
-								</label>
-							</li>
-							<li>
-								<label for="orange">
-									<input type="checkbox" id="orange"/>
-									Orange
-								</label>
-							</li>
-							<li>
-								<label for="magenta">
-									<input type="checkbox" id="magenta"/>
-									Magenta
-								</label>
-							</li>
-							<li>
-								<label for="yellow">
-									<input type="checkbox" id="yellow"/>
-									Yellow
-								</label>
-							</li>
-							<li>
-								<label for="cyan">
-									<input type="checkbox" id="cyan"/>
-									Cyan
-								</label>
-							</li>
-						</ul>
+					<div class="filter_body form_row">
+						<div class="form_fieldset"> 
+							<fieldset>
+                			<legend class="hidden_label">Colors</legend>
+								<ul>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="red">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="red" aria-invalid="false" required="required" /></span>
+												Red
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="blue">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="blue" aria-invalid="false" required="required" /></span>
+												Blue
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="green">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="green" aria-invalid="false" required="required" /></span>
+												Green
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="cyan">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="cyan" aria-invalid="false" required="required" /></span>
+												Cyan
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="magenta">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="magenta" aria-invalid="false" required="required" /></span>
+												Magenta
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="orange">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="orange" aria-invalid="false" required="required" /></span>
+												Orange
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="pink">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="pink" aria-invalid="false" required="required" /></span>
+												Pink
+											</label>
+										</div>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
 					</div>
 				</div>
 
 				<!-- price filter -->
- 				<div class="filter" id="price_filter">
+ 				<div class="filter form_container" id="price_filter">
 					<div class="filter_slider">
 						<div class="slider_container">
 							<div class="range_slider"></div>
@@ -460,66 +535,183 @@
 				</div>
 
 				<!-- size filter -->
- 				<div class="filter" id="size_filter">
+ 				<div class="filter form_container" id="size_filter">
 					<div class="filter_title">
 						<a href="javascript:void(0)">
 							<span>Sizes</span>
 							<span class="toggle"></span>
 						</a>
 					</div>
-					<div class="filter_body">
-						<ul>
-							<li>
-								<label for="size1">
-									<input type="checkbox" id="size1"/>
-									Size 1
-								</label>
-							</li>
-							<li>
-								<label for="size2">
-									<input type="checkbox" id="size2"/>
-									Size 2
-								</label>
-							</li>
-						</ul>
+					<div class="filter_body form_row">
+						<div class="form_fieldset"> 
+							<fieldset>
+                			<legend class="hidden_label">Sizes</legend>
+								<ul>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="my_opsh_sizes">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="my_opsh_sizes" aria-invalid="false" required="required" /></span>
+												My OPSH Sizes
+											</label>
+										</div>
+									</li>
+									<li class="unit_size_selector">
+										<div class="radio_item">
+	                                        <div class="radio_label">
+	                                        	<label for="uk_sizes">
+	                                            	<span class="radio_input"><input type="radio" name="radio_options" id="uk_sizes" aria-invalid="false" checked="checked" /></span>
+	                                                UK Sizes
+	                                            </label>
+	                                        </div>
+	                                    </div>
+	                                    <div class="radio_item">
+	                                        <div class="radio_label">
+	                                        	<label for="eu_sizes">
+	                                            	<span class="radio_input"><input type="radio" name="radio_options" id="eu_sizes" aria-invalid="false" /></span>
+	                                                EU Sizes
+	                                            </label>
+	                                        </div>
+	                                    </div>
+									</li>
+									
+									<li class="size_selector">
+										<div class="form_row inline clearfix">
+				                            <div class="form_label">
+				                                <label for="dress_sizes">Dress Sizes</label>
+				                            </div>
+				                            <div class="form_input">
+				                                <select class="custom" id="form_select_inline" name="dress_sizes">
+				                                    <option value="">--</option>
+				                                    <option value="0">Size 0</option>
+				                                    <option value="1">Size 1</option>
+				                                    <option value="2">Size 2</option>
+				                                    <option value="3">Size 3</option>
+				                                </select>
+				                            </div>
+				                        </div>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+
+				<!-- deals filter -->
+ 				<div class="filter form_container" id="size_filter">
+					<div class="filter_title">
+						<a href="javascript:void(0)">
+							<span>OPSH Deals</span>
+							<span class="toggle"></span>
+						</a>
+					</div>
+					<div class="filter_body form_row">
+						<div class="form_fieldset"> 
+							<fieldset>
+                			<legend class="hidden_label">OPSH Deals</legend>
+								<ul>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="deal1">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="deal1" aria-invalid="false" required="required" /></span>
+												Deal1
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="deal2">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="deal2" aria-invalid="false" required="required" /></span>
+												Deal2
+											</label>
+										</div>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
 					</div>
 				</div>
 
 				<!-- opsh styles filter -->
- 				<div class="filter" id="opsh_styles">
+ 				<div class="filter form_container" id="opsh_styles">
 					<div class="filter_title">
-						<a href="javascript:void(0)">
-							<span>OPSH Styles</span>
-							<span class="toggle"></span>
-						</a>
+						<span>OPSH Styles</span>
 					</div>
-					<div class="filter_body">
-						<ul class="filter_list">
-							<li>
-								<label for="style1" class="filter_item">
-									<input type="checkbox" id="style1"/>
-									Style 1
-								</label>
-							</li>
-							<li>
-								<label for="style2" class="filter_item">
-									<input type="checkbox" id="style2"/>
-									Style 2
-								</label>
-							</li>
-							<li>
-								<label for="style3" class="filter_item">
-									<input type="checkbox" id="style3"/>
-									Style 3
-								</label>
-							</li>
-							<li>
-								<label for="style4" class="filter_item">
-									<input type="checkbox" id="style4"/>
-									Style 4
-								</label>
-							</li>
-						</ul>
+					<div class="form_row inline clearfix">
+						<div class="form_fieldset"> 
+							<fieldset class="inline_elements">
+                			<legend class="hidden_label">OPSH Styles</legend>
+								<ul>
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style1">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style1" aria-invalid="false" required="required" /></span>
+												Style1
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style2">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style2" aria-invalid="false" required="required" /></span>
+												Style2
+											</label>
+										</div>
+									</li>
+
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style3">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style3" aria-invalid="false" required="required" /></span>
+												Style3
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style4">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style4" aria-invalid="false" required="required" /></span>
+												Style4
+											</label>
+										</div>
+									</li>
+
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style5">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style5" aria-invalid="false" required="required" /></span>
+												Style5
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style6">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style6" aria-invalid="false" required="required" /></span>
+												Style6
+											</label>
+										</div>
+									</li>
+
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style7">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style7" aria-invalid="false" required="required" /></span>
+												Stylewith7
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label tag">
+											<label for="style8">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="style8" aria-invalid="false" required="required" /></span>
+												style8
+											</label>
+										</div>
+									</li>
+
+								</ul>
+							</fieldset>
+						</div>
 					</div>
 				</div>
 
@@ -754,6 +946,11 @@
 		
 		$(document).ready(function(){
 
+			checkAppliedRadioBtn();
+			checkDisabledRadioBtn();
+			checkAppliedChbox();
+			checkDisabledChbox();
+
 			// animation on main search box button
 			$('#btn_search').hover(
 				function () {
@@ -900,9 +1097,11 @@
 
 			$(filterDrawer).hide();
 
+			$('#category_filter .filter_body').addClass('drawer_open').show();
+
 			$(filter).click(function(){
 				var adjacentDrawer = $(this).parent().siblings('.filter_body');
-				$(adjacentDrawer).slideToggle();
+				$(adjacentDrawer).slideToggle().toggleClass("drawer_open");
 
 				var toggleArrow = $(this).children('.toggle');
 				$(toggleArrow).toggleClass("rotate");

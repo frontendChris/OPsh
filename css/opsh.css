@@ -593,6 +593,10 @@ body {
       float: left
   }
 
+  .drawer_open {
+    display: block;
+  }
+
     .sidebar .filter {
       border-bottom: 1px solid #ccc;
     }
@@ -633,14 +637,15 @@ body {
 
       .sidebar .filter .filter_body {
         padding-bottom: 20px;
+        margin-bottom: 0;
       }
 
-        .sidebar .filter .filter_body ul {}
+        .sidebar .filter .filter_body ul {margin: 0;}
 
           .sidebar .filter .filter_body ul li {
-            padding: 10px 0;
+            padding: 0;
             line-height: 14px;
-            margin: 5px 0;
+            margin: 0;
           }
 
             .sidebar .filter .filter_body ul li a {
@@ -700,16 +705,68 @@ body {
 
   .main_content {
      float: left;
-     margin-left: 20px;
+     padding-left: 20px;
   }
 
+  .sidebar .filter .filter_body ul.nested_list {
+    margin: 0 0 5px 10px;
+  }
+
+  .sidebar .filter .filter_body .unit_size_selector .radio_item {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .sidebar .filter .filter_body .size_selector .form_label,
+  .sidebar .filter .filter_body .size_selector .form_input {
+    width: 50%;
+    margin-top: 10px;
+  }
 
   /* filter */
 
-  .filter_item {
-    
+  #opsh_styles {}
+
+    #opsh_styles .filter_title {
+      padding: 15px 0;
+    }
+
+    #opsh_styles .form_row ul {
+      margin: 0;
+    }
+
+  /* top bar filter */
+
+  .top_bar {padding: 10px 0;}
+
+    .top_bar #shop_filter {
+      border-bottom: 0px;
+      color: #fff;
+    }
+
+      .top_bar #shop_filter .filter_title {
+        padding: 10px 0;
+      }
+
+  .top_bar .main_content {
+    width: 700px;
+    border-left: 1px solid #333;
+    box-sizing: border-box;
   }
 
+
+    .top_bar .main_content .shop_list + .shop_list {
+      border-top: 1px solid #333;
+    }
+
+    .top_bar .main_content .shop_list ul li {
+      width: 80px;
+      margin-right: 20px;
+    }
+    .top_bar .main_content .shop_list ul li a {
+      width: 80px;
+    }
 /* ==========================================================================
    Footer Classes
    ========================================================================== */
