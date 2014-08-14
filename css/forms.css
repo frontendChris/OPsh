@@ -11,7 +11,7 @@ input, select, textarea, button {
 	.form_container .form_row {
 		margin-bottom:10px;
 		display: block;
-		position:relative;
+		/*position:relative;*/
 	}
 
 		.form_container .form_row .form_label {}

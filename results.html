@@ -330,59 +330,62 @@
 			
 			<div class="sidebar">
 				<!-- category filter -->
- 				<div class="filter" id="category_filter">
-					<div class="filter_title">
-						<a href="javascript:void(0)">
-							<span>Category</span>
-							<span class="toggle"></span>
-						</a>
-					</div>
-					<div class="filter_body">
-						<ul>
-							<li>
-								<label for="dresses">
-									<input type="checkbox" id="dresses"/>
-									Dresses
-								</label>
-							</li>
-							<li>
-								<label for="tops">
-									<input type="checkbox" id="tops"/>
-									Tops
-								</label>
-							</li>
-							<li>
-								<label for="bottoms">
-									<input type="checkbox" id="bottoms"/>
-									Bottoms
-								</label>
-							</li>
-							<li>
-								<label for="out_wear">
-									<input type="checkbox" id="out_wear"/>
-									Out Wear
-								</label>
-							</li>
-							<li>
-								<label for="shoes">
-									<input type="checkbox" id="shoes"/>
-									Shoes
-								</label>
-							</li>
-							<li>
-								<label for="underwear">
-									<input type="checkbox" id="underwear"/>
-									Underwear
-								</label>
-							</li>
-							<li>
-								<label for="accessories">
-									<input type="checkbox" id="accessories"/>
-									Accessories
-								</label>
-							</li>
-						</ul>
-					</div>
+ 				<div class="filter form_container" id="category_filter">
+ 					<fieldset>
+	                    <legend>Check Boxes</legend>
+						<div class="filter_title">
+							<a href="javascript:void(0)">
+								<span>Category</span>
+								<span class="toggle"></span>
+							</a>
+						</div>
+						<div class="filter_body form_row">
+							<ul>
+								<li>
+									<label for="dresses">
+										<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dresses" aria-invalid="false" required="required" checked="checked" /></span>
+										Dresses
+									</label>
+								</li>
+								<li>
+									<label for="tops">
+										<input type="checkbox" id="tops"/>
+										Tops
+									</label>
+								</li>
+								<li>
+									<label for="bottoms">
+										<input type="checkbox" id="bottoms"/>
+										Bottoms
+									</label>
+								</li>
+								<li>
+									<label for="out_wear">
+										<input type="checkbox" id="out_wear"/>
+										Out Wear
+									</label>
+								</li>
+								<li>
+									<label for="shoes">
+										<input type="checkbox" id="shoes"/>
+										Shoes
+									</label>
+								</li>
+								<li>
+									<label for="underwear">
+										<input type="checkbox" id="underwear"/>
+										Underwear
+									</label>
+								</li>
+								<li>
+									<label for="accessories">
+										<input type="checkbox" id="accessories"/>
+										Accessories
+									</label>
+								</li>
+							</ul>
+						</div>
+					</fieldset>
 				</div>
 
 				<!-- color filter -->
