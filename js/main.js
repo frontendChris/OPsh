@@ -218,6 +218,7 @@ function showSearchMini() {
 	});	
 }
 
+// this is a comment yeah!!!!!!
 
 // ESCAPE KEY FUNCTIONS
 function escapeKeyFunc() {
