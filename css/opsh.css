@@ -37,7 +37,6 @@ body {
    		background: #fff url(../imgs/icon_user.png) 100% 15px  no-repeat \9;
    		background: #fff url(../imgs/icon_user_x2.png) 100% 15px / 30px 20px no-repeat;
    		padding-right: 40px !important;
-   		border-right: 1px solid #ccc;
     }
 
     .categories {
@@ -49,7 +48,6 @@ body {
     .cart {
    		background: #fff url(../imgs/icon_bag.png) 50% 15px  no-repeat \9;
    		background: #fff url(../imgs/icon_bag_x2.png) 50% 15px / 20px 20px no-repeat;
-   		border-right: 1px solid #ccc;
    		text-indent: -9999em;
    		width: 30px;
     }
@@ -57,7 +55,6 @@ body {
     .wishlist {
    		background: #fff url(../imgs/icon_fav.png) 50% 15px no-repeat \9;
    		background: #fff url(../imgs/icon_fav_x2.png) 50% 15px / 20px 20px no-repeat;
-   		border-right: 1px solid #ccc;
    		text-indent: -9999em;
    		width: 30px;
     }
@@ -244,26 +241,27 @@ body {
     }
 
     .mega_drop_overlay {
-    	position: fixed;
 		top: 50px;
-		left: 0;
-		right: 0;
-		bottom: 0;
 		z-index: 30;
+		display:block;
 		background-color:rgba(0,0,0,0.8);
-		display: block;
+		position:fixed;
+		left:0px;
+		right:0px;
+		bottom:0px;
     }
     
     .mega_drop {
-    	overflow: auto;
-    	position: relative;
-		  top: 0;
-		  left: 0;
-		  right: 0;
-		  background-color: #000;
-		  display: block;
-		  height:auto;
-		  box-sizing:border-box;
+		background-color: #000000;
+   		box-sizing: border-box;	
+		color: #ffffff;
+		display: block;
+		height: auto;
+		left: 0;
+		overflow: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
     }
 
    		.mega_drop .page_container_inner {
