@@ -27,6 +27,7 @@ body {
     	left: 0;
     	right: 0;
     	z-index: 50;
+      border-bottom: 1px solid #ccc;
     }
 
     .brand h1 {
@@ -590,7 +591,12 @@ body {
 
   .sidebar {
       width: 220px;
-      float: left
+      float: left;
+      padding-right:20px;
+  }
+
+  .main .sidebar {
+    margin-top: -20px;
   }
 
   .drawer_open {
@@ -706,6 +712,7 @@ body {
   .main_content {
      float: left;
      padding-left: 20px;
+     width: 680px;
   }
 
   .sidebar .filter .filter_body ul.nested_list {
@@ -738,7 +745,11 @@ body {
 
   /* top bar filter */
 
-  .top_bar {padding: 10px 0;}
+  .top_bar {
+    padding: 10px 0;
+    overflow: hidden;
+    cursor: pointer;
+  }
 
     .top_bar #shop_filter {
       border-bottom: 0px;
@@ -749,24 +760,204 @@ body {
         padding: 10px 0;
       }
 
+        .top_bar #shop_filter .filter_title .shop_filter_toggle {
+          background: url(../imgs/shop_filter_toggle_closed.png) center center no-repeat;
+          /*background: url(../imgs/shop_filter_toggle_closed_x2.png)center center / 19px 19px no-repeat;*/
+          display: block;
+          width: 19px;
+          height: 19px;
+          position: absolute;
+          right: 0;
+          top: 8px;
+        }
+
+        .top_bar #shop_filter .filter_title .shop_filter_toggle.shop_filter_open {
+          background: url(../imgs/shop_filter_toggle_open.png) center center no-repeat;
+        }
+
+      .top_bar #shop_filter .filter_body {
+        margin-top: 20px;
+      }
+
   .top_bar .main_content {
     width: 700px;
     border-left: 1px solid #333;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
+    .top_bar .main_content .filter_list {
+      padding: 0;
+    }
+
+      .top_bar .main_content .filter_list .shop_filter_remove {
+        background: url(../imgs/shop_filter_delete.png) center center no-repeat;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 0;
+        right: -5px;
+      }
 
     .top_bar .main_content .shop_list + .shop_list {
       border-top: 1px solid #333;
+      margin-top: 20px;
     }
 
     .top_bar .main_content .shop_list ul li {
       width: 80px;
-      margin-right: 20px;
+      margin: 5px 20px 0 0;
+      position: relative;
     }
+
     .top_bar .main_content .shop_list ul li a {
       width: 80px;
     }
+
+  /* filter list */
+
+  .filter_list_container {
+    margin-right: 150px;
+    position: relative;
+  }
+
+    .filter_list_container .sorts {
+      position: absolute;
+      right: -150px;
+      top: 0;
+    }
+    .filter_list_container .form_input {
+      width: 80px;
+      float: left;
+    }
+
+  ul.filter_list {
+    margin: 0 0 20px 0;
+  }
+
+    ul.filter_list li {
+      display: inline-block;
+      padding: 2px 24px 2px 5px;
+      margin: 2px 1px 2px 0;
+      line-height: 20px;
+      position: relative;
+      background-color: #ccc;
+    }
+
+      ul.filter_list li a {
+        background: url(../imgs/filter_delete.png) center center no-repeat;
+        position: absolute;
+        text-indent: -9999em;
+        display: block;
+        width: 20px;
+        height: 20px;
+        right: 2px;
+        top: 2px;
+      }
+
+      ul.filter_list li.clear {
+        background: transparent;
+      }
+
+        ul.filter_list li.clear a {
+          display: block;
+          background: none;
+          text-indent: 0;
+          text-decoration: none;
+          position: relative;
+        }
+
+  /* controls */
+
+  .controls {
+    margin-bottom: 20px;
+  }
+  .controls .pagination ul,
+  .controls .pagination span {
+    float: left;
+  }
+
+    .controls .pagination ul li {
+      display: inline-block;
+      margin: 0;
+    } 
+
+      .controls .pagination ul li a {
+        text-decoration: none;
+        color: #666;
+      }
+
+      .controls .pagination ul li.selected a {
+        text-decoration: underline;
+        font-weight: 700;
+        color: #000;
+      }
+
+    /* product */
+
+    .results_grid {
+      margin: 0 -20px;
+    }
+
+      .results_grid ul {margin: 0;}
+
+        .results_grid ul li.product_comp {
+          float: left;
+          margin: 20px;
+        }
+
+        .results_grid ul li.product_comp.standard {
+          width: 140px;
+        }
+
+          .results_grid ul li.product_comp .product_comp_inner {}
+
+          .results_grid ul li.product_comp a {text-decoration: none;}
+
+            .results_grid ul li.product_comp.standard a .product_comp_img {
+              width: 140px;
+              height: 210px;
+              background-color: #ccc;
+              margin-bottom: 10px;
+              position: relative;
+            }
+
+              .results_grid ul li.product_comp a .product_comp_img img {width: 100%;}
+
+              .results_grid ul li.product_comp a .product_comp_img .product_shop {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 35px;
+                background: url(../imgs/prod_details_overlay.png);
+                text-align: center;
+              }
+
+                .results_grid ul li.product_comp a .product_comp_img .product_shop img {
+                  width: 76px;
+                  position: absolute;
+                  top: 50%;
+                  margin-top: -13px;
+                  left: 50%;
+                  margin-left: -38px;
+                }
+
+              .results_grid ul li.product_comp a .product_comp_img .add_to_basket {}
+
+
+            .results_grid ul li.product_comp a .product_comp_details {}
+
+              .results_grid ul li.product_comp a .product_comp_details .product_name {
+                line-height: 1.6em;
+                margin-bottom: 5px;
+              }
+
+              .results_grid ul li.product_comp a .product_comp_details .product_amount {font-weight: 700;}
+
+              .results_grid ul li.product_comp a .product_comp_details .wishlist_icon {}
+
+
 /* ==========================================================================
    Footer Classes
    ========================================================================== */

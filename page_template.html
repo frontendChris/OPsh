@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/adapt.css">
 	<link rel="stylesheet" type="text/css" href="css/superfish.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.ui.dialog.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/opsh.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -207,9 +207,93 @@
 
 	<!-- body content -->
 	<div class="main page_container_outer">
-        <div class="page_container_inner">
-        	place content here
-        </div>
+		<div class="page_container_inner">
+			Place content here	
+		</div>
+	</div> 
+
+	
+	<!-- footer -->
+	<div class="footer_upper page_container_outer">
+		
+		<div class="page_container_inner clearfix">
+			<div class="left">
+				<ul class="social_links">
+					<li class="social_icon facebook">
+						<a href="#">Facebook</a>
+					</li>
+					<li class="social_icon twitter">
+						<a href="#">Twitter</a>
+					</li>
+					<li class="social_icon instagram">
+						<a href="#">Instagram</a>
+					</li>
+					<li class="social_icon pinterest">
+						<a href="#">Pinterest</a>
+					</li>
+					<li class="social_icon blog">
+						<a href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="right">
+				<ul class="footer_list">
+					<li>
+						<a href="#">About Us</a>
+					</li>
+					<li>
+						<a href="#">FAQ's</a>
+					</li>
+					<li>
+						<a href="#">Carriers at OPSH</a>
+					</li>
+					<li>
+						<a href="#">Become a Retailer</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+					<li>
+						<a href="#">Press</a>
+					</li>
+					<li class="currency">
+						<span>Currency:
+							<select>
+								<option selected="selected">€ eur</option>
+								<option>£ gbp</option>
+							</select>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+
+	<div class="footer_lower page_container_outer">
+		
+		<div class="page_container_inner clearfix">
+			<ul class="footer_list clearfix">
+				<li><a href="#">Store Directory</a></li>
+				<li><a href="#">Brands</a></li>
+				<li><a href="#">Deliveries &amp; Returns</a></li>
+				<li><a href="#">Track Your Order</a></li>
+				<li><a href="#">Gift Cards</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms &amp; Conditions</a></li>
+				<li><a href="#">Accessibility</a></li>
+				<li class="last"><a href="#">Security</a></li>
+			</ul>
+			<div class="left">
+				<img src="imgs/creditcards.png" alt="All major credit cards accepted" />
+			</div>
+			<div class="right">
+				<p>&copy; 2014 McGinn Sisters Ltd. All Rights Reserved. 
+				Site desinged by <a href="http://www.frontend.com">Frontend</a> &amp; built by <a href="#">Eirtight.</a></p>
+			</div>
+		</div>
+	
 	</div>
 	
 	<!-- footer -->
@@ -427,6 +511,38 @@
 			dropdownContainers();
 			megaDropDown();
 			escapeKeyFunc();
+
+			/////// sidebar 
+
+			// show/hide the filter drawers
+			var filterDrawer = $('.main .filter_body');
+			var filter = $('.main .filter_title a');
+
+			$(filterDrawer).hide();
+
+			$('#category_filter .filter_body').addClass('drawer_open').show();
+
+			$(filter).click(function(){
+				var adjacentDrawer = $(this).parent().siblings('.filter_body');
+				$(adjacentDrawer).slideToggle().toggleClass("drawer_open");
+
+				var toggleArrow = $(this).children('.toggle');
+				$(toggleArrow).toggleClass("rotate");
+				
+			});
+
+			$('.range_slider').slider({
+				range: true,
+      			min: 0,
+     			max: 500,
+      			values: [ 0, 500 ],
+      			slide: function( event, ui ) {
+        			$( ".range_amount_min input" ).val( "€" + ui.values[ 0 ]);
+        			$( '.range_amount_max input' ).val( "€" + ui.values[ 1 ] )
+      			}
+      		});
+      		$( '.range_amount_min input' ).val( '€' + $( '.range_slider' ).slider( 'values', 0 ));
+      		$( '.range_amount_max input' ).val('€' + $( '.range_slider' ).slider( 'values', 1 ));
 		});
 
 		// Run the script on resize

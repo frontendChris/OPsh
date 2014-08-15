@@ -236,3 +236,38 @@ function escapeKeyFunc() {
 		}  
 	});
 }
+
+
+// SHOP FILTER FUNCTION
+
+var shopFilter = function() {
+	var topBar = $('.top_bar');
+	var topBarFilterList = $('.top_bar .main_content');
+	var shopFilterToggle = $('.shop_filter_toggle');
+	var initHeight1 = $(topBar).height();
+	var initHeight2 = $(topBar).height();
+
+	$(topBar).css('height', 35);
+	$(topBarFilterList).css('height', 35);
+
+	$(topBar).click(function(){
+		if ($(topBar).height() == initHeight1) {
+			$(topBar).animate({
+				height: 35,
+			});
+			$(topBarFilterList).animate({
+				height: 35,
+			});
+			$(shopFilterToggle).removeClass('shop_filter_open');
+
+		} else {
+			$(topBar).animate({
+				height: initHeight1,
+			});
+			$(topBarFilterList).animate({
+				height: initHeight2,
+			});
+			$(shopFilterToggle).addClass('shop_filter_open');
+		}
+	});
+};
