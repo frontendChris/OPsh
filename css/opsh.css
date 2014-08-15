@@ -85,6 +85,8 @@ body {
 			border: 1px solid #ccc;
 			width: 150px;
 			box-sizing: border-box;
+			border-radius:0px;
+			-webkit-appearance:none;
     	}
 
     	.nav .nav_search button {
@@ -377,6 +379,8 @@ body {
     			border: 0;
     			width: 400px;
     			box-sizing: border-box;
+				border-radius:0px;
+				-webkit-appearance:none;
     		}
 
     		.hero .main_search button {

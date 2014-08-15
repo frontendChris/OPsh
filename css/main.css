@@ -125,12 +125,12 @@
     .brand a {
    		display: block;
    		height: 50px;
-
+		width:102px;
     }
 
     .brand a img {
-   		height: 100%;
-
+   		width: 100%;
+		vertical-align:top;
     }
 
 
