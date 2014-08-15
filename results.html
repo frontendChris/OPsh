@@ -747,7 +747,7 @@
 
 				<!-- results grid -->
 				<div class="results_grid clearfix">
-					<ul>
+					<ul class="product_list">
 						
 
 						<li class="product_comp standard">
@@ -1437,8 +1437,8 @@
 
 			$(top).click(function(){
 				var topHeight = $(top).height();
-				var onComplete = function() {
-					alert('test')
+				var setHeight = function() {
+					$(top).css('height', 200);
 				}
 				
 				if (topHeight != 35) {
@@ -1450,9 +1450,9 @@
 				} else {
 					$(top).animate({
 						height: initHeight,
-						overflow: 'visible'}, {
+						overflow: 'visible',
 						duration: 500,
-						complete: onComplete()
+						//complete: setHeight()
 					});
 				};
 				
