@@ -242,45 +242,34 @@ function escapeKeyFunc() {
 
 // SHOP FILTER FUNCTION
 
-/*var shopFilter = function() {
-	var topBar = $('.top_bar');
-	var topBarFilterList = $('.top_bar .main_content');
+var shopFilter = function() {
+	var top = $('.top_bar .page_container_inner');
 	var shopFilterToggle = $('.shop_filter_toggle');
-	var initHeight1 = $(topBar).height();
-	var initHeight2 = $(topBar).height();
+	var filterTitle = $('.top_bar .filter_title');
+	var filterList = $('.top_bar .filter_list');
 
-	$(topBar).css('height', 35);
-	$(topBarFilterList).css('height', 35);
+	$(top).addClass('filter_closed');
 
-	$(topBar).click(function(){
-		if ($(topBar).height() == initHeight1) {
-			$(topBar).animate({
-				height: 35,
-				minHeight: 35
-			});
-			$(topBarFilterList).animate({
-				height: 35,
-				minHeight: 35
-			});
-			$(shopFilterToggle).removeClass('shop_filter_open');
+	$(filterList).click(function(){
+		showList();	
+	});
+	$(shopFilterToggle).click(function(){
+		showList();	
+	})
+	$(filterTitle).click(function(){
+		showList();	
+	})
 
+	var showList = function () {
+		if ($(top).height() != 35) {
+			$(top).switchClass( "filter_open", "filter_closed", 500, "easeInOutQuad" );
+			$(shopFilterToggle).removeClass('shop_filter_open');	
 		} else {
-			$(topBar).animate({
-				minHeight: initHeight1,
-				height: ''
-			})
-			$(topBarFilterList).animate({
-				minHeight: initHeight2,
-				height: ''
-			});
+			$(top).switchClass( "filter_closed", "filter_open", 500, "easeInOutQuad" );
 			$(shopFilterToggle).addClass('shop_filter_open');
 		}
-	});
-
-	$('.no_bubble').click(function(e){
-		e.stopPropagation();
-	})
-};*/
+	}
+}
 
 
 // PRODUCT HOVER

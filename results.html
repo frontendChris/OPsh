@@ -216,7 +216,7 @@
 							<!-- shops filter -->
 							<div class="filter_title">
 								<span>Shops</span>
-								<span class="shop_filter_toggle"></span>
+								<button class="shop_filter_toggle"></button>
 							</div>
 							<div class="filter_body form_row">
 								<div class="form_fieldset"> 
@@ -1365,7 +1365,7 @@
 			dropdownContainers();
 			megaDropDown();
 			escapeKeyFunc();
-			//shopFilter();
+			shopFilter();
 
 			checkAppliedRadioBtn();
 			checkDisabledRadioBtn();
@@ -1419,46 +1419,51 @@
 	</script>
 
 	<script type="text/javascript">
-		$(document).ready(function(){
-			var radioContainer = $('.top_bar .filter_body');
-			var radioTitle = $('.top_bar .filter_title');
-			var subShopList = $('.top_bar .sub_filter_list');
-			var filterList = $('.top_bar .filter_list');
 
-			var top = $('.top_bar .page_container_inner');
-			console.log(top)
+			var shopFilter = function() {
+				var top = $('.top_bar .page_container_inner');
+				var shopFilterToggle = $('.shop_filter_toggle');
+				var filterTitle = $('.top_bar .filter_title');
+				var filterList = $('.top_bar .filter_list');
 
-			var initHeight = $(top).height();
+				$(top).addClass('filter_closed');
 
-			$(top).css({
-				'height': 35,
-				'overflow': 'hidden'
-			});
+				$(filterList).click(function(){
+					showList();	
+				});
+				$(shopFilterToggle).click(function(){
+					showList();	
+				})
+				$(filterTitle).click(function(){
+					showList();	
+				})
 
-			$(top).click(function(){
-				var topHeight = $(top).height();
-				var setHeight = function() {
-					$(top).css('height', 200);
+				var showList = function () {
+					if ($(top).height() != 35) {
+						$(top).switchClass( "filter_open", "filter_closed", 500, "easeInOutQuad" );
+						$(shopFilterToggle).removeClass('shop_filter_open');	
+					} else {
+						$(top).switchClass( "filter_closed", "filter_open", 500, "easeInOutQuad" );
+						$(shopFilterToggle).addClass('shop_filter_open');
+					}
 				}
-				
-				if (topHeight != 35) {
-					$(top).animate({
-						height: 35,
-						overflow: 'hidden',
-						duration: 500
-					});
-				} else {
-					$(top).animate({
-						height: initHeight,
-						overflow: 'visible',
-						duration: 500,
-						//complete: setHeight()
-					});
-				};
-				
-			});
-		})
+			}
+
 	</script>
+
+	<style type="text/css">
+
+		.top_bar .page_container_inner.filter_open {
+			height: 100%;
+			overflow: visible;
+		}
+
+		.top_bar .page_container_inner.filter_closed {
+			height: 35px;
+			overflow: hidden;
+			display: block !important;
+		}
+	</style>
 
 	
 </body>

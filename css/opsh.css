@@ -776,6 +776,7 @@ body {
           height: 19px;
           position: absolute;
           right: 0;
+          border: 0;
           top: 8px;
         }
 
