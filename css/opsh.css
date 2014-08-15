@@ -35,7 +35,14 @@ body {
 
     .brand h1 {
     	margin: 0;
+      position: relative;
     }
+
+      .brand h1 a span {
+        display: block;
+        text-indent: -9999em;
+        position: absolute;
+      }
 
     .user {
    		background: #fff url(../imgs/icon_user.png) 100% 15px  no-repeat \9;
@@ -967,7 +974,9 @@ body {
                 position: relative;
               }
 
-              ul.product_list li.product_comp a .product_comp_img img {width: 100%;}
+              ul.product_list li.product_comp a .product_comp_img img {
+                width: 100%;
+              }
 
               ul.product_list li.product_comp a .product_comp_img .product_shop {
                 position: absolute;
