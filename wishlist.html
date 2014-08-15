@@ -17,8 +17,12 @@
 	<link rel="stylesheet" type="text/css" href="css/opsh.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-
-
+    
+    
+    <!-- Base stylesheet -->
+	<link rel="stylesheet" type="text/css" href="touchcarousel/touchcarousel.css" />
+	<link rel="stylesheet" type="text/css" href="touchcarousel/three-d-skin/three-d-skin.css" />
+    
 </head>
 <body class="layout_center">
 	<!-- navigation -->
@@ -209,10 +213,10 @@
 			<div class="follow_social_links right">
             	<ul>
                 	<li><span>Follow is on:</span></li>
-                	<li><a href="#social_pinterest" class="follow_social_icon pinterest">Follow us on Pinterest</a></li>
-                	<li><a href="#social_twitter" class="follow_social_icon twitter">Follow us on Twitter</a></li>
-                	<li><a href="#social_instagram" class="follow_social_icon instagram">Follow us on Instagram</a></li>
-                	<li><a href="#social_facebook" class="follow_social_icon facebook">Follow us on Facebook</a></li>
+                	<li><a href="#social_pinterest" class="follow_social_icon pinterest" title="Follow us on Pinterest">Follow us on Pinterest</a></li>
+                	<li><a href="#social_twitter" class="follow_social_icon twitter" title="Follow us on Twitter">Follow us on Twitter</a></li>
+                	<li><a href="#social_instagram" class="follow_social_icon instagram" title="Follow us on Instagram">Follow us on Instagram</a></li>
+                	<li><a href="#social_facebook" class="follow_social_icon facebook" title="Follow us on Facebook">Follow us on Facebook</a></li>
                 </ul>
             </div>
         </div>
@@ -221,7 +225,61 @@
 	<!-- body content -->
 	<div class="main page_container_outer">
         <div class="page_container_inner">
-        	place content here
+        	
+            <div id="wishlist_carousel" class="touchcarousel three-d">       
+                <ul class="touchcarousel-container">
+                    <li class="touchcarousel-item">
+                        <img src="touchcarousel/three-d-skin/1.jpg" width="60" height="60" />
+                        <div class="rblock">
+                            <h4>Touch Navigation</h4>
+                            <p>for iOS, Android, Blackberry</p>
+                        </div>
+                    </li>
+                    <li class="touchcarousel-item">
+                        <img src="touchcarousel/three-d-skin/1.jpg" width="60" height="60" />
+                        <div class="rblock">
+                            <h4>Physics-Based Navigation</h4>
+                            <p>free-scroll or paging</p>
+                        </div>
+                    </li>
+                    <li class="touchcarousel-item">
+                        <img src="touchcarousel/three-d-skin/1.jpg" width="60" height="60" />
+                        <div class="rblock">
+                            <h4>Four Skins</h4>
+                            <p>with orginized Photoshop files</p>
+                        </div>
+                    </li>	
+                    <li class="touchcarousel-item">
+                        <img src="touchcarousel/three-d-skin/1.jpg" width="60" height="60" />
+                        <div class="rblock">
+                            <h4>Physics-Based Navigation</h4>
+                            <p>free-scroll or paging</p>
+                        </div>
+                    </li>
+                    <li class="touchcarousel-item">
+                        <img src="touchcarousel/three-d-skin/1.jpg" width="60" height="60" />
+                        <div class="rblock">
+                            <h4>Four Skins</h4>
+                            <p>with orginized Photoshop files</p>
+                        </div>
+                    </li>	
+                    <li class="touchcarousel-item">
+                        <img src="touchcarousel/three-d-skin/1.jpg" width="60" height="60" />
+                        <div class="rblock">
+                            <h4>Physics-Based Navigation</h4>
+                            <p>free-scroll or paging</p>
+                        </div>
+                    </li>
+                    <li class="touchcarousel-item">
+                        <img src="touchcarousel/three-d-skin/1.jpg" width="60" height="60" />
+                        <div class="rblock">
+                            <h4>Four Skins</h4>
+                            <p>with orginized Photoshop files</p>
+                        </div>
+                    </li>			
+                </ul>
+            </div>
+            
         </div>
 	</div>
 	
@@ -448,6 +506,20 @@
 		});
 		
 	</script>
+    
+    <script type="text/javascript" src="touchcarousel/jquery.touchcarousel-1.2.min.js"></script> 
+            <script type="text/javascript">
+				$(document).ready(function() {
+					$("#wishlist_carousel").touchCarousel({			
+						itemsPerMove: 4,
+						pagingNav: false,
+						scrollbar: true,				
+						scrollToLast: false,
+						loopItems: false,	
+						snapToItems: false,		
+					});
+				});
+			</script>
 
 	
 </body>
