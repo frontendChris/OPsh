@@ -28,7 +28,9 @@ body {
     	left: 0;
     	right: 0;
     	z-index: 50;
-      border-bottom: 1px solid #ccc;
+      -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.4);
+      -moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.4);
+      box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.4);
     }
 
     .brand h1 {
@@ -934,6 +936,7 @@ body {
           float: left;
           margin: 20px;
           position: relative;
+          display: table;
         }
 
         ul.product_list li.product_comp.standard {
@@ -942,7 +945,10 @@ body {
 
           ul.product_list li.product_comp .product_comp_inner {}
 
-          ul.product_list li.product_comp a {text-decoration: none;}
+          ul.product_list li.product_comp a {
+              text-decoration: none;
+              display: block;
+            }
 
           ul.product_list li.product_comp a:hover {
           }
@@ -950,10 +956,16 @@ body {
             ul.product_list li.product_comp.standard a .product_comp_img {
               width: 140px;
               height: 210px;
-              background-color: #ccc;
               margin-bottom: 10px;
               position: relative;
+              display: table-row;
             }
+
+              ul.product_list li.product_comp.standard a .product_comp_img_inner {
+                display: table-cell;
+                vertical-align: middle;
+                position: relative;
+              }
 
               ul.product_list li.product_comp a .product_comp_img img {width: 100%;}
 
