@@ -145,65 +145,28 @@ function dropdownContainers() {
 		$(".dd_panel").hide();
 	});
 };
-
-
-// GET HEIGHT DIFFERENCE FOR MEGA DROPDOWN
-function get_height_diff() {
-	var viewportHeight = $(window).height();
-	var divHeight = ($('.mega_drop').height() + 50);
-	var height_diff = viewportHeight - divHeight;
-	
-	// Check to see if category container height is bigger than viewport
-	if (divHeight >= viewportHeight) {
-		
-		// If it's bigger than the viewport set the height to 100%, else reset it to initial height
-		if(viewportHeight < initialDivHeight) {
-			divHeight = '100%';
-		} else {
-			divHeight = initialDivHeight
-		}
-	} else {
-		divHeight = parseInt(divHeight) + 'px';
-	}
-	// Apply the Height to the container
-	$(".mega_drop").css('height',divHeight);
-	
-	// Get the Difference in height between viewport and category div container and add it as the bottom difference
-	if (height_diff >= 0) {
-		height_diff = parseInt(height_diff) + 'px';
-	} else {
-		height_diff = '0px';
-	}
-	$(".mega_drop").css('bottom',height_diff);
-}
 	
 
 // MEGA DROPDOWN
 function megaDropDown() {
-	$('.mega_drop_overlay').hide();
+	//$('.mega_drop_overlay').hide();
 	$('.mega_drop').hide();
 	
 	$('.categories').click(function(){
-		if ($('.mega_drop_overlay').is(':visible')) {
-			$('.mega_drop_overlay').fadeOut();
-			$('.mega_drop').hide("slide", { direction: "up" }, 500);
-			$('body').removeClass('modal_visible');
+		if ($('.mega_drop').is(':visible')) {
+			$('.mega_drop').slideUp();
 			$(this).removeClass('active');
 		} else {
-			$('.mega_drop_overlay').fadeIn(300);
-			$('.mega_drop').show("slide", { direction: "up" }, 500);
-			$('body').addClass('modal_visible');
+			$('.mega_drop').slideDown();
 			$(this).addClass('active');
 		}
 	});
 
 	$('.close_modal').click(function(){
-		$('.mega_drop_overlay').fadeOut();
-		$('.mega_drop').hide("slide", { direction: "up" }, 500);
-		$('body').removeClass('modal_visible');
+		$('.mega_drop').slideUp();
 		$('.categories').removeClass('active');
 	});
-};
+}
 
 
 // MINI TOP SEARCH
@@ -231,9 +194,7 @@ function escapeKeyFunc() {
 			$(".dd_panel").hide("slide", { direction: "up" }, 400);
 			$('.dd_link').removeClass('drop_active');
 			//hide the mega drop menu 
-			$('.mega_drop_overlay').fadeOut();
-			$('.mega_drop').hide("slide", { direction: "up" }, 500);
-			$('body').removeClass('modal_visible');
+			$('.mega_drop').slideUp();
 			$('.categories').removeClass('active');	
 		}  
 	});
@@ -269,6 +230,10 @@ var shopFilter = function() {
 			$(shopFilterToggle).addClass('shop_filter_open');
 		}
 	}
+
+	$('.no_bubble').click(function(e){
+		e.stopPropagation();
+	})
 }
 
 

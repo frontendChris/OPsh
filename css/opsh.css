@@ -28,10 +28,16 @@ body {
     	left: 0;
     	right: 0;
     	z-index: 50;
-      -webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.4);
-      -moz-box-shadow:    0px 1px 5px 0px rgba(50, 50, 50, 0.4);
-      box-shadow:         0px 1px 5px 0px rgba(50, 50, 50, 0.4);
     }
+
+      .nav:after {
+        content: '';
+        background-image: url(../imgs/shadow.png);
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+      }
 
     .brand h1 {
     	margin: 0;
@@ -42,6 +48,9 @@ body {
         display: block;
         text-indent: -9999em;
         position: absolute;
+        top: 0;
+        height: 1px;
+        width: 1px;
       }
 
     .user {
@@ -254,28 +263,17 @@ body {
       border-bottom: 1px solid #000;
     }
 
-    .mega_drop_overlay {
-		top: 50px;
-		z-index: 30;
-		display:block;
-		background-color:rgba(0,0,0,0.8);
-		position:fixed;
-		left:0px;
-		right:0px;
-		bottom:0px;
-    }
-    
     .mega_drop {
-		background-color: #000000;
+		  background-color: #000000;
    		box-sizing: border-box;	
-		color: #ffffff;
-		display: block;
-		height: auto;
-		left: 0;
-		overflow: auto;
-		position: absolute;
-		right: 0;
-		top: 0;
+		  color: #ffffff;
+		  display: block;
+		  height: auto;
+		  left: 0;
+		  position: relative;
+		  right: 0;
+		  top: 0px;
+      border-bottom: 1px solid #111;
     }
 
    		.mega_drop .page_container_inner {
@@ -814,11 +812,11 @@ body {
 
       .top_bar .main_content .filter_list .shop_filter_remove {
         background: url(../imgs/shop_filter_delete.png) center center no-repeat;
-        width: 12px;
-        height: 12px;
+        width: 20px;
+        height: 20px;
         position: absolute;
-        top: 0;
-        right: -8px;
+        top: -6px;
+        right: -12px;
       }
 
     .top_bar .main_content .shop_list + .shop_list {
