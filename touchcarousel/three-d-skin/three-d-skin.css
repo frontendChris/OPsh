@@ -32,7 +32,7 @@ screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
 	.touchcarousel.three-d .arrow-icon {
 		background-image: url('../../imgs/icon_sprite_arrows_x2.png');
-		background-size:30px 30px;
+		background-size:60px 60px;
 	}
 }
 
