@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.page_title {
+	color:#FFFFFF;
+	margin:0px;
+	line-height:25px;
+	font-size:1.65em; /* 20px */
+	padding:10px 0px;
+}
+
+
+.follow_social_links {}
+
+	.follow_social_links>ul {
+		float:right;
+		color:#FFFFFF;
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}
+	
+		.follow_social_links>ul>li {
+			float:left;
+		}
+		
+			.follow_social_links>ul>li>a {
+				color:#FFFFFF;
+				text-decoration:none;
+			}

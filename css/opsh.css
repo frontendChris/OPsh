@@ -6,6 +6,7 @@
 @import url("forms.css") all;
 @import url("responsive.css") all;
 
+@import url("wishlist.css") all;
 
 html {
   background-color: #000;
