@@ -1172,3 +1172,20 @@ body {
    			}
 
 
+.sub_title_container {
+	background:url(../imgs/icon_grey_dot.jpg) left center repeat-x;
+}
+
+	.sub_title_container h2, 
+	.sub_title_container h3 {
+		background-color:#FFFFFF;
+		margin:0px;
+		padding:5px 10px 5px 0px;
+		line-height:20px;
+		font-size:1.65em;
+	}
+	
+	.sub_title_container .title_actions {
+		background-color:#FFFFFF;
+		padding-left:10px;
+	}

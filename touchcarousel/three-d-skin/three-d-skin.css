@@ -16,16 +16,31 @@
 \******************************************************/
 .touchcarousel.three-d .arrow-icon {
 	top: 0;
-	background-image: url('sprite.png');
+	background-image: url('../../imgs/icon_sprite_arrows.png');
 	background-repeat: no-repeat;
-	width: 19px;
-	height: 20px;	
+	width: 30px;
+	height: 30px;	
 	margin-top: 0;
+	box-sizing:border-box;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.3), 
+screen and (min--moz-device-pixel-ratio: 1.3), 
+screen and (-o-min-device-pixel-ratio: 2 / 1), 
+screen and (min-device-pixel-ratio: 1.3), 
+screen and (min-resolution: 192dpi), 
+screen and (min-resolution: 2dppx) {
+	.touchcarousel.three-d .arrow-icon {
+		background-image: url('../../imgs/icon_sprite_arrows_x2.png');
+		background-size:30px 30px;
+	}
+}
+
+
 .touchcarousel.three-d .arrow-holder {
-	top: -23px;
-	width: 19px;
-	height: 20px;	
+	top: -30px;
+	width: 30px;
+	height: 30px;	
 	
 	-moz-opacity: 0.8;	
 	-webkit-opacity: 0.8;	
@@ -33,26 +48,30 @@
 }
 .touchcarousel.three-d .arrow-holder.left {
 	left: auto;
-	right: 26px;
+	right: 35px;
 }
 .touchcarousel.three-d .arrow-holder.right {	
-	right: 3px;
+	right: 0px;
 }
 
 .touchcarousel.three-d .arrow-icon.left {
 	left: 0;
-	background-position: -8px -14px;
+	background-position:0px 0px;
+	border:1px solid #000000;
 }
 .touchcarousel.three-d .arrow-icon.right {
 	right: 0;
-	background-position: -173px -14px;
+	background-position:0px -30px;
+	border:1px solid #000000;
 }
 
 .touchcarousel.three-d .arrow-holder.disabled .arrow-icon.left {
-	background-position: -43px -14px;
+	background-position:-30px 0px;
+	border:1px solid #B0B0B0;
 }
 .touchcarousel.three-d .arrow-holder.disabled .arrow-icon.right {
-	background-position: -138px -14px;
+	background-position:-30px -30px;
+	border:1px solid #B0B0B0;
 }
 .touchcarousel.three-d .arrow-holder:hover {
 	-moz-opacity: 1;	
