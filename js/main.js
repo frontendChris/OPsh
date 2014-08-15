@@ -242,7 +242,7 @@ function escapeKeyFunc() {
 
 // SHOP FILTER FUNCTION
 
-var shopFilter = function() {
+/*var shopFilter = function() {
 	var topBar = $('.top_bar');
 	var topBarFilterList = $('.top_bar .main_content');
 	var shopFilterToggle = $('.shop_filter_toggle');
@@ -256,18 +256,22 @@ var shopFilter = function() {
 		if ($(topBar).height() == initHeight1) {
 			$(topBar).animate({
 				height: 35,
+				minHeight: 35
 			});
 			$(topBarFilterList).animate({
 				height: 35,
+				minHeight: 35
 			});
 			$(shopFilterToggle).removeClass('shop_filter_open');
 
 		} else {
 			$(topBar).animate({
-				height: initHeight1,
-			});
+				minHeight: initHeight1,
+				height: ''
+			})
 			$(topBarFilterList).animate({
-				height: initHeight2,
+				minHeight: initHeight2,
+				height: ''
 			});
 			$(shopFilterToggle).addClass('shop_filter_open');
 		}
@@ -276,7 +280,7 @@ var shopFilter = function() {
 	$('.no_bubble').click(function(e){
 		e.stopPropagation();
 	})
-};
+};*/
 
 
 // PRODUCT HOVER

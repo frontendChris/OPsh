@@ -255,7 +255,7 @@
 							<ul>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/debenhams.png" alt="debenhams"></a>
 								<a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
@@ -263,7 +263,7 @@
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/next.png" alt="Next"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 							</ul>
 						</div>
-						<div class="shop_list">
+						<div class="shop_list sub_filter_list">
 							<ul>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/debenhams.png" alt="debenhams"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a></li>
@@ -278,6 +278,8 @@
 			</div>
 
 	</div> 
+
+
 
 	<div class="main page_container_outer">
 		<div class="page_container_inner clearfix">
@@ -1363,7 +1365,7 @@
 			dropdownContainers();
 			megaDropDown();
 			escapeKeyFunc();
-			shopFilter();
+			//shopFilter();
 
 			checkAppliedRadioBtn();
 			checkDisabledRadioBtn();
@@ -1414,6 +1416,48 @@
 			get_height_diff();
 		});
 		
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var radioContainer = $('.top_bar .filter_body');
+			var radioTitle = $('.top_bar .filter_title');
+			var subShopList = $('.top_bar .sub_filter_list');
+			var filterList = $('.top_bar .filter_list');
+
+			var top = $('.top_bar .page_container_inner');
+			console.log(top)
+
+			var initHeight = $(top).height();
+
+			$(top).css({
+				'height': 35,
+				'overflow': 'hidden'
+			});
+
+			$(top).click(function(){
+				var topHeight = $(top).height();
+				var onComplete = function() {
+					alert('test')
+				}
+				
+				if (topHeight != 35) {
+					$(top).animate({
+						height: 35,
+						overflow: 'hidden',
+						duration: 500
+					});
+				} else {
+					$(top).animate({
+						height: initHeight,
+						overflow: 'visible'}, {
+						duration: 500,
+						complete: onComplete()
+					});
+				};
+				
+			});
+		})
 	</script>
 
 	
