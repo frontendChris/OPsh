@@ -226,7 +226,7 @@
 												<div class="radio_item">
 										            <div class="radio_label">
 										            	<label for="all_shops">
-										                	<span class="radio_input"><input type="radio" name="shop_options" id="all_shops" aria-invalid="false" checked="checked" /></span>
+										                	<span class="radio_input"><input type="radio" name="shop_options" id="all_shops" aria-invalid="false" checked="checked"/></span>
 										                    All Shops
 										                </label>
 										            </div>
@@ -237,7 +237,7 @@
 												<div class="radio_item">
 										            <div class="radio_label">
 										            	<label for="my_opsh_shops">
-										                	<span class="radio_input"><input type="radio" name="shop_options" id="my_opsh_shops" aria-invalid="false" checked="checked" /></span>
+										                	<span class="radio_input"><input type="radio" name="shop_options" id="my_opsh_shops" aria-invalid="false" checked="checked"/></span>
 										                    My OPSH Shops
 										                </label>
 										            </div>
@@ -253,25 +253,25 @@
 					<div class="main_content">
 						<div class="shop_list filter_list">
 							<ul>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/debenhams.png" alt="debenhams"></a>
-								<a href="javascript:void(0)" class="shop_filter_remove"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/evans.png" alt="Evans"></a><a href="javascript:void(0)" class="shop_filter_remove"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/forever21.png" alt="Forever 21"></a><a href="javascript:void(0)" class="shop_filter_remove"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a><a href="javascript:void(0)" class="shop_filter_remove"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a><a href="javascript:void(0)" class="shop_filter_remove"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/missselfridges.png" alt="Miss Selfridges"></a><a href="javascript:void(0)" class="shop_filter_remove"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/next.png" alt="Next"></a><a href="javascript:void(0)" class="shop_filter_remove"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/debenhams.png" alt="debenhams"></a>
+								<a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/missselfridges.png" alt="Miss Selfridges"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/next.png" alt="Next"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 							</ul>
 						</div>
 						<div class="shop_list">
 							<ul>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/debenhams.png" alt="debenhams"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/evans.png" alt="Evans"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/forever21.png" alt="Forever 21"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/missselfridges.png" alt="Miss Selfridges"></a></li>
-								<li><a href="javascript:void(0)"><img src="imgs/logos/next.png" alt="Next"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/debenhams.png" alt="debenhams"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/missselfridges.png" alt="Miss Selfridges"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/next.png" alt="Next"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -467,13 +467,27 @@
 					<div class="filter_slider">
 						<div class="slider_container">
 							<div class="range_slider"></div>
+							<div class="range_amount range_amount_min">
+								<input type="text" readonly style="border:0;" />
+							</div>
+							<div class="range_amount range_amount_max">
+								<input type="text" readonly style="border:0;" />
+							</div>
 						</div>
-						<div class="range_amount range_amount_min">
-							<input type="text" readonly style="border:0;" />
-						</div>
-						<div class="range_amount range_amount_max">
-							<input type="text" readonly style="border:0;" />
-						</div>
+						
+						<div class="form_row inline clearfix">
+	                        <div class="form_label">
+	                            <label for="dress_sizes">Currency</label>
+	                        </div>
+	                        <div class="form_input">
+	                            <select class="custom" id="dress_sizes" name="dress_sizes">
+	                                <option value="">--</option>
+	                                <option value="0">€ Eur</option>
+	                                <option value="1">£ Gbp</option>
+	                                <option value="2">$ Dollar</option>
+	                            </select>
+	                        </div>
+	                    </div>
 					</div>
 				</div>
 
@@ -685,16 +699,21 @@
 						</li>
 					</ul>
 					<div class="sorts">
-						<div class="form_input">
-	                        <select class="custom" id="form_select_inline" name="form_select_inline" required="required">
-	                            <option value=""></option>
-	                            <option value="A">Best Buy</option>
-	                            <option value="B">Price</option>
-	                            <option value="C">Lovely</option>
-	                        </select>
+	               		<div class="form_row inline clearfix">
+	                        <div class="form_label">
+	                            <label for="dress_sizes">Sort</label>
+	                        </div>
+	                        <div class="form_input">
+	                            <select class="custom" id="dress_sizes" name="dress_sizes">
+	                                <option value="">--</option>
+	                                <option value="0">Best Buy</option>
+	                                <option value="1">Worst</option>
+	                                <option value="2">Greatness</option>
+	                            </select>
+	                        </div>
 	                    </div>
-	                </div>
-	                <div class="sorts">
+                    </div>
+	                <!--<div class="sorts">
 	                    <div class="form_input">
 	                        <select class="custom" id="form_select_inline" name="form_select_inline" required="required">
 	                            <option value="">Please Select an option</option>
@@ -704,7 +723,7 @@
 	                            <option value="D">D is for Dog</option>
 	                        </select>
 	                    </div>
-                    </div>
+                    </div>-->
 				</div>
 
 				<!-- results amount & pagination -->
@@ -737,7 +756,9 @@
 										<div class="product_shop">
 											<img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket">
+											<button>add to basket</button>
+										</div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -745,7 +766,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -760,7 +781,9 @@
 										<div class="product_shop">
 											<img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket">
+											<button>add to basket</button>									
+										</div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -768,7 +791,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -783,7 +806,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/forever21_black.png" alt="Forever21"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -791,7 +814,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -806,7 +829,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -814,7 +837,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -829,7 +852,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -837,7 +860,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -852,7 +875,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -860,7 +883,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -875,7 +898,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/forever21_black.png" alt="Forever21"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -883,7 +906,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -898,7 +921,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -906,99 +929,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
-										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<img src="imgs/home_imgs/product6.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
-										</div>
-										<div class="add_to_basket">add</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											€ <span>30</span>
-										</div>
-										<div class="wishlist_icon">
-											
-										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<img src="imgs/home_imgs/product5.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
-										</div>
-										<div class="add_to_basket">add</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											€ <span>30</span>
-										</div>
-										<div class="wishlist_icon">
-											
-										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<img src="imgs/home_imgs/product4.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/forever21_black.png" alt="Forever21"/>
-										</div>
-										<div class="add_to_basket">add</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											€ <span>30</span>
-										</div>
-										<div class="wishlist_icon">
-											
-										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<img src="imgs/home_imgs/product3.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
-										</div>
-										<div class="add_to_basket">add</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											€ <span>30</span>
-										</div>
-										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -1013,7 +944,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -1021,7 +952,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -1036,7 +967,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -1044,7 +975,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -1059,7 +990,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/forever21_black.png" alt="Forever21"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -1067,7 +998,7 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -1082,7 +1013,7 @@
 										<div class="product_shop">
 											<img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
 										</div>
-										<div class="add_to_basket">add</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
 									</div>
 									<div class="product_comp_details">
 										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
@@ -1090,7 +1021,99 @@
 											€ <span>30</span>
 										</div>
 										<div class="wishlist_icon">
-											
+											<button>add to my wishlist</button>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+
+						<li class="product_comp standard">
+							<div class="product_comp_inner">
+								<a href="#">
+									<div class="product_comp_img">
+										<img src="imgs/home_imgs/product6.jpg" alt=""/>
+										<div class="product_shop">
+											<img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
+										</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
+									</div>
+									<div class="product_comp_details">
+										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
+										<div class="product_amount">
+											€ <span>30</span>
+										</div>
+										<div class="wishlist_icon">
+											<button>add to my wishlist</button>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+
+						<li class="product_comp standard">
+							<div class="product_comp_inner">
+								<a href="#">
+									<div class="product_comp_img">
+										<img src="imgs/home_imgs/product5.jpg" alt=""/>
+										<div class="product_shop">
+											<img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
+										</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
+									</div>
+									<div class="product_comp_details">
+										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
+										<div class="product_amount">
+											€ <span>30</span>
+										</div>
+										<div class="wishlist_icon">
+											<button>add to my wishlist</button>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+
+						<li class="product_comp standard">
+							<div class="product_comp_inner">
+								<a href="#">
+									<div class="product_comp_img">
+										<img src="imgs/home_imgs/product4.jpg" alt=""/>
+										<div class="product_shop">
+											<img src="imgs/logos/forever21_black.png" alt="Forever21"/>
+										</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
+									</div>
+									<div class="product_comp_details">
+										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
+										<div class="product_amount">
+											€ <span>30</span>
+										</div>
+										<div class="wishlist_icon">
+											<button>add to my wishlist</button>
+										</div>
+									</div>
+								</a>
+							</div>
+						</li>
+
+						<li class="product_comp standard">
+							<div class="product_comp_inner">
+								<a href="#">
+									<div class="product_comp_img">
+										<img src="imgs/home_imgs/product3.jpg" alt=""/>
+										<div class="product_shop">
+											<img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
+										</div>
+										<div class="add_to_basket"><button>add to basket</button></div>
+									</div>
+									<div class="product_comp_details">
+										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
+										<div class="product_amount">
+											€ <span>30</span>
+										</div>
+										<div class="wishlist_icon">
+											<button>add to my wishlist</button>
 										</div>
 									</div>
 								</a>
@@ -1347,7 +1370,7 @@
 			checkAppliedChbox();
 			checkDisabledChbox(); 
 
-			
+			productHover();
 
 			// show/hide the filter drawers
 			var filterDrawer = $('.main .filter_body');
@@ -1381,6 +1404,9 @@
       		});
       		$( '.range_amount_min input' ).val( '€' + $( '.range_slider' ).slider( 'values', 0 ));
       		$( '.range_amount_max input' ).val('€' + $( '.range_slider' ).slider( 'values', 1 ));
+
+      	 
+      		
 		});
 
 		// Run the script on resize

@@ -25,12 +25,14 @@ function checkAppliedRadioBtn() {
 	});
 	
 	// Toggle Class to Radio Button label checked
-	$(chboxChoice).change(function () {
+	$(chboxChoice).change(function (e) {
 		if ($(this).prop('checked')) {
 			$(chboxChoice).closest('.radio_label').children('label').removeClass('active');
 			$(this).closest('.radio_label').children('label').addClass('active');
 		} else {
 		}
+
+		e.stopPropagation();
 	});
 };
 
@@ -229,8 +231,8 @@ function escapeKeyFunc() {
 			$(".dd_panel").hide("slide", { direction: "up" }, 400);
 			$('.dd_link').removeClass('drop_active');
 			//hide the mega drop menu 
-			$(megaDropOverlay).fadeOut();
-			$(megaDropInner).hide("slide", { direction: "up" }, 500);
+			$('.mega_drop_overlay').fadeOut();
+			$('.mega_drop').hide("slide", { direction: "up" }, 500);
 			$('body').removeClass('modal_visible');
 			$('.categories').removeClass('active');	
 		}  
@@ -269,5 +271,24 @@ var shopFilter = function() {
 			});
 			$(shopFilterToggle).addClass('shop_filter_open');
 		}
+	});
+
+	$('.no_bubble').click(function(e){
+		e.stopPropagation();
+	})
+};
+
+
+// PRODUCT HOVER
+
+var productHover = function() {
+	var product = $('.product_comp a');
+
+	$(product).hover(function(){
+		$(this).children().children('.add_to_basket').addClass('hover');
+		$(this).children().children('.wishlist_icon').addClass('hover');
+	}, function () {
+		$(this).children().children('.add_to_basket').removeClass('hover');
+		$(this).children().children('.wishlist_icon').removeClass('hover');
 	});
 };
