@@ -823,6 +823,17 @@ body {
       width: 80px;
     }
 
+
+    .top_bar .page_container_inner.filter_open {
+      height: 100%;
+      overflow: visible;
+    }
+
+    .top_bar .page_container_inner.filter_closed {
+      height: 35px;
+      overflow: hidden;
+      display: block !important;
+    }
   /* filter list */
 
   .filter_list_container {
@@ -922,6 +933,7 @@ body {
         ul.product_list li.product_comp {
           float: left;
           margin: 20px;
+          position: relative;
         }
 
         ul.product_list li.product_comp.standard {
@@ -964,11 +976,11 @@ body {
                   margin-left: -38px;
                 }
 
-              ul.product_list li.product_comp a .product_comp_img .add_to_basket {
+              ul.product_list li.product_comp .add_to_basket {
                 position: absolute;
                 left: 0px;
                 right: 0;
-                bottom: 0px;
+                top: 175px;
                 height: 35px;
                 display: none;
                 transition: all 0.3s ease-in-out 0s;
@@ -978,13 +990,13 @@ body {
                 -ms-transition: all 0.3s ease-in-out 0s;
               }
               
-              ul.product_list li.product_comp a .product_comp_img .add_to_basket.hover,
-              ul.product_list li.product_comp a .product_comp_details .wishlist_icon.hover {
+              ul.product_list li.product_comp .add_to_basket.hover,
+              ul.product_list li.product_comp .wishlist_icon.hover {
                 display: block;
               }
 
 
-              ul.product_list li.product_comp a .product_comp_img .add_to_basket button {
+              ul.product_list li.product_comp .add_to_basket button {
                 background-color: #000;
                 padding: 6px 10px;
                 color: #ccc;
@@ -995,7 +1007,7 @@ body {
                 height: 35px;
               }
 
-              ul.product_list li.product_comp a .product_comp_img .add_to_basket button:hover {
+              ul.product_list li.product_comp .add_to_basket button:hover {
                 color: #fff;
                 background-color: #242424;
               }
@@ -1009,7 +1021,7 @@ body {
 
               ul.product_list li.product_comp a .product_comp_details .product_amount {font-weight: 700;}
 
-              ul.product_list li.product_comp a .product_comp_details .wishlist_icon {
+              ul.product_list li.product_comp .wishlist_icon {
                 width: 20px;
                 height: 20px;
                 position: absolute;
@@ -1023,7 +1035,7 @@ body {
                 -ms-transition: all 0.3s ease-in-out 0s;
               }
               
-              ul.product_list li.product_comp a .product_comp_details .wishlist_icon button {
+              ul.product_list li.product_comp .wishlist_icon button {
                 background: url(../imgs/icon_add_wishlist.png) center center no-repeat;
                 width: 20px;
                 height: 20px;
@@ -1032,7 +1044,7 @@ body {
                 border: 0
               }
 
-              ul.product_list li.product_comp a .product_comp_details .wishlist_icon button:hover {
+              ul.product_list li.product_comp .wishlist_icon button:hover {
                 background: url(../imgs/icon_add_wishlist_hover.png) center center no-repeat;
               }
 
@@ -1110,16 +1122,16 @@ body {
    					padding-right: 0;
    				}
    				
-   				.footer_upper ul.footer_list li.currency span{
+   				.footer_upper ul.footer_list li.currency > div{
    					display: block;
    					position: relative;
    					margin-right: 75px;
    				}
 
-   					.footer_upper ul.footer_list li.currency span select {
+   					.footer_upper ul.footer_list li.currency > div div.form_input {
    						position: absolute;
-   						right: -70px;
-   						top: -2px;
+   						right: -77px;
+   						top: -7px;
    						width: 65px;
    					}
 

@@ -33,3 +33,18 @@
 	text-transform: uppercase;
 	font-size: 11px;
 }
+
+
+.btn_outline {
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000;
+	font-weight: 700;
+	line-height:30px;
+	height:30px;
+	padding:0px 10px;
+	overflow:visible;
+	-webkit-appearance:none;
+	text-transform: uppercase;
+	font-size: 11px;
+}

@@ -275,7 +275,7 @@ var shopFilter = function() {
 // PRODUCT HOVER
 
 var productHover = function() {
-	var product = $('.product_comp a');
+	var product = $('.product_comp');
 
 	$(product).hover(function(){
 		$(this).children().children('.add_to_basket').addClass('hover');
