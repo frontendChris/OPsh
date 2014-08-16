@@ -235,7 +235,33 @@
                     </div>
                 </div>
                 <div id="wishlist_carousel" class="touchcarousel three-d">
-                    <ul class="touchcarousel-container product_list">
+                    <ul class="touchcarousel-container product_list" id="wishlist_container">
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product6.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>
+                            </div>
+                        </li>
                         <li class="product_comp standard touchcarousel-item">
                             <div class="product_comp_inner">
                                 <a href="#">
@@ -401,6 +427,62 @@
             <section id="outfits">
                 <div class="sub_title_container clearfix">
                     <h3 class="left">My Outfits</h3>
+                </div>
+                
+                <div class="outfit_container clearfix">
+                    <ul>
+                        <li>
+                            <div class="outfit_box">
+                            	<!-- Outfit Box Title -->
+                                <div class="outfit_title_container clearfix">
+                                    <h4 class="outfit_title left">Outfit 1 <span class="outfit_cost">- &euro;200</span></h4>
+                                    <div class="follow_social_links right">
+                                        <ul>
+                                            <li><a href="#social_pinterest" class="follow_social_icon pinterest" title="Share on Pinterest">Share on Pinterest</a></li>
+                                            <li><a href="#social_twitter" class="follow_social_icon twitter" title="Share on Twitter">Share on Twitter</a></li>
+                                            <li><a href="#social_instagram" class="follow_social_icon instagram" title="Share on Instagram">Share on Instagram</a></li>
+                                            <li><a href="#social_facebook" class="follow_social_icon facebook" title="Share on Facebook">Share on Facebook</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Outfit Box Items -->
+                                <div class="outfit_items_container active">
+                                	content
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="outfit_box">
+                            	<!-- Outfit Box Title -->
+                                <div class="outfit_title_container clearfix">
+                                    <h4 class="outfit_title left">Competition <span class="outfit_cost"></span></h4>
+                                    
+                                </div>
+                                
+                                <!-- Outfit Box Items -->
+                                <div class="outfit_items_container">
+                                	<input type="button" value="Add Items" class="btn_normal" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="outfit_box">
+                            	<!-- Outfit Box Title -->
+                                <div class="outfit_title_container clearfix">
+                                    <h4 class="outfit_title left">New Outfit<span class="outfit_cost"></span></h4>
+                                    
+                                </div>
+                                
+                                <!-- Outfit Box Items -->
+                                <div class="outfit_items_container">
+                                	<a href="javascript:void[0]" id="btn_add_outfit">
+                                		Add
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             
@@ -623,18 +705,6 @@
 			megaDropDown();
 			escapeKeyFunc();
 			productHover();
-			
-			var initialWishlistWidth = $('ul.product_list').width();
-			
-			$("#btn_change_view").click(function() {
-				
-				if ($('ul.product_list').width == 'auto') {
-					$('ul.product_list').css('width',initialWishlistWidth + 'px');
-				} else {
-					$('ul.product_list').css('width','940px');
-				}
-			});
-			
 		});
 
 		// Run the script on resize
@@ -657,6 +727,36 @@
         });
     </script>
 
+	<script type="text/javascript">
+		$(document).ready(function(){			
+			var wishlistWidth = $('#wishlist_container').width();
+			var wishlistContainer = $('.touchcarousel-wrapper').width();
+			
+			
+			$("#btn_change_view").click(function() {
+				
+				var currentWidth = $('#wishlist_container').width();
+				
+				if (currentWidth == wishlistContainer) {
+					// Do this if Grid View
+					$('#wishlist_container').css('width', wishlistWidth);
+					$('#wishlist_container').removeClass('grid_layout');
+					$('.scrollbar-holder').show();
+					$(this).prop('value','Grid VIew');
+					$(this).toggleClass('btn_list_view');
+					$(this).toggleClass('btn_grid_view');
+				} else {
+					// Do this if Carousel View
+					$('#wishlist_container').css('width', wishlistContainer);
+					$('#wishlist_container').addClass('grid_layout');
+					$('.scrollbar-holder').hide();
+					$(this).prop('value','Carousel VIew');
+					$(this).toggleClass('btn_list_view');
+					$(this).toggleClass('btn_grid_view');
+				}
+			});
+		});
+    </script>
 	
 </body>
 </html>
