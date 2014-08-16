@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.top_bar .return a {
+	color: #fff;
+	margin-top: 16px;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+.product_overview {
+	width: 820px;
+	margin:	auto;
+	margin-bottom: 40px;
+}
+
+
+	
+
+	.product_overview .product_images {
+		position: relative;
+		width: 340px;
+	}
+
+		
+		
+
+		.product_overview .product_images .side_images {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin-top: -20px;
+		}
+
+			.product_overview .product_images .side_images ul {
+				display: table;
+				margin: 0;
+				border-collapse:separate;
+				border-spacing: 0 20px;
+			}
+
+				.product_overview .product_images .side_images ul li {
+					display: table-row;
+				}
+
+					.product_overview .product_images .side_images ul li a {
+						width: 60px;
+						height: 90px;
+						display: block;
+						display: table-cell;
+						vertical-align: middle;
+
+						background-color: #ccc; /* remove */
+					}
+
+						.product_overview .product_images .side_images ul li a img {
+							width: 100%;
+							vertical-align: baseline;
+							margin-bottom: 10px;
+						}
+
+		
+
+		
+
+		.product_overview .product_images .main_image {
+			width: 260px;
+			height: 390px;
+			margin-left: 80px;
+
+			background-color: #ccc; /* remove */
+		}
+
+			.product_overview .product_images .main_image > ul {
+				display: table;
+				margin: 0;
+			}
+
+				.product_overview .product_images .main_image > ul > li {
+					display: table-row;
+				}
+
+					.product_overview .product_images .main_image > ul > li > div {
+						display: table-cell;
+						vertical-align: middle;
+					}
+
+						.product_overview .product_images .main_image > ul > li > div img {
+							width: 100%;
+							vertical-align: baseline;
+						}
+
+			
+
+			.product_overview .product_images .main_image .product_shop {}
+
+	
+
+	
+
+	.product_overview .product_info {
+		width: 440px;
+	}
+
+		
+		
+
+		.product_overview .product_info h2.product_title {}
+
+			.product_overview .product_info h2.product_title span.shop_brand {}
+
+			.product_overview .product_info h2.product_title span.product_name {}
+
+
+		
+
+		.product_overview .product_info p {}
+
+		
+		
+
+		.product_overview .product_info ul.product_styles {}
+
+			.product_overview .product_info ul.product_styles li {}
+
+				.product_overview .product_info ul.product_styles li a {}
+
+
+		
+
+		.product_overview .product_info div.actions {}
+
+			.product_overview .product_info div.actions button {}
+
+			.product_overview .product_info div.actions button.btn_transparent {}
+
+
+
+
+		.product_overview .product_info div.additional_info {}
+
+			.product_overview .product_info div.additional_info ul.benefits {}
+
+				.product_overview .product_info div.additional_info ul.benefits li {}
+
+
+			.product_overview .product_info div.additional_info ul.more_info_links {}
+
+				.product_overview .product_info div.additional_info ul.more_info_links li {}
+
+					.product_overview .product_info div.additional_info ul.more_info_links li a {}
+
+
+
+
+
+
+
+

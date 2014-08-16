@@ -7,6 +7,7 @@
 @import url("responsive.css") all;
 
 @import url("wishlist.css") all;
+@import url("product.css") all;
 
 html {
   background-color: #000;
@@ -125,6 +126,22 @@ body {
     }
 
    	/* nav drop panels */
+
+    .dd_link {
+      position: relative;
+    }
+
+      .dd_link .basket_qty {
+        position: absolute;
+        top: -13px;
+        right: 7px;
+        display: block;
+        z-index: 30;
+        text-indent: 0;
+        font-size: 9px;
+      }
+
+
    	.dd_panel {
    		position: absolute;
    		top: 50px;
@@ -939,6 +956,10 @@ body {
       margin: 0 -20px;
     }
 
+    .list_grid {
+      margin: 0 -10px;
+    }
+
       ul.product_list {margin: 0;}
 
         ul.product_list li.product_comp {
@@ -946,6 +967,10 @@ body {
           margin: 20px;
           position: relative;
           display: table;
+        }
+
+        .list_grid ul.product_list li.product_comp {
+          margin: 20px 10px;
         }
 
         ul.product_list li.product_comp.standard {
@@ -965,7 +990,6 @@ body {
             ul.product_list li.product_comp.standard a .product_comp_img {
               width: 140px;
               height: 210px;
-              margin-bottom: 10px;
               position: relative;
               display: table-row;
             }
@@ -1032,10 +1056,13 @@ body {
 
               ul.product_list li.product_comp .add_to_basket button:hover {
                 color: #fff;
-                background-color: #242424;
+                background-color: #242424;  
               }
 
-            ul.product_list li.product_comp a .product_comp_details {position: relative;}
+            ul.product_list li.product_comp a .product_comp_details {
+                position: relative;
+                margin-top: 10px;
+              }
 
               ul.product_list li.product_comp a .product_comp_details .product_name {
                 line-height: 1.6em;
@@ -1070,6 +1097,8 @@ body {
               ul.product_list li.product_comp .wishlist_icon button:hover {
                 background: url(../imgs/icon_add_wishlist_hover.png) center center no-repeat;
               }
+
+
 
 
 /* ==========================================================================
