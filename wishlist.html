@@ -734,20 +734,31 @@
                                 			<input type="button" value="Add Items" class="btn_normal btn_add_outfit_item btn_add_outfit_item_plus" />
                                         </li>
                                     </ul>
-                                    <div class="suggested_product">
-                                    	<ul id="slide_prod_1" class="slide_container">
-                                            <li>
-                                            	<div class="suggest_prod_container">
-                                                <img width="100" height="150" src="imgs/home_imgs/product1.jpg" alt="" />
-                                            	</div>
-                                            </li>
-                                            <li><img width="100" height="150" src="imgs/home_imgs/product2.jpg" alt="" /></li>
-                                            <li><img width="100" height="150" src="imgs/home_imgs/product3.jpg" alt="" /></li>
-                                            <li><img width="100" height="150" src="imgs/home_imgs/product4.jpg" alt="" /></li>
-                                            <li><img width="100" height="150" src="imgs/home_imgs/product5.jpg" alt="" /></li>
-                                        </ul>
-                                        
-                                        <a href="#" id="slide_prev">&laquo; prev</a> | <a href="#" id="slide_next">next &raquo;</a>
+                                    <div class="suggested_product_container">
+                                    	<div class="suggested_product">
+                                            <ul id="slide_prod_1" class="slide_container">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="suggest_prod_image"><img width="100" height="150" src="imgs/home_imgs/product1.jpg" alt="" /></div>
+                                                        <div class="suggest_prod_link">Tell me More</div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="suggest_prod_image"><img width="100" height="150" src="imgs/home_imgs/product2.jpg" alt="" /></div>
+                                                        <div class="suggest_prod_link">Tell me More</div>
+                                                    </a>
+                                                </li><li>
+                                                    <a href="#">
+                                                        <div class="suggest_prod_image"><img width="100" height="150" src="imgs/home_imgs/product3.jpg" alt="" /></div>
+                                                        <div class="suggest_prod_link">Tell me More</div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            
+                                            <a href="#" id="slide_prev">&laquo; Previous</a>
+                                            <a href="#" id="slide_next">Next &raquo;</a>
+                                        </div>
                                 
                                     </div>
                                 </div>
@@ -925,7 +936,7 @@
 			$(function() {						
                 $('#slide_prod_1').ulslide({
                     width: 100,
-                    height: 150,
+                    height: 240,
 					effect: {
 						type: 'carousel', // slide or fade
                         axis: 'y',        // x, y

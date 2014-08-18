@@ -975,6 +975,10 @@ body {
           position: relative;
           display: table;
         }
+		
+			ul.product_list li.product_add>input {
+				margin-top:100px;
+			}
 
         .list_grid ul.product_list li.product_comp {
           margin: 20px 10px;
@@ -1104,7 +1108,7 @@ body {
 				font-size: 0.95em;
 				line-height: 15px;
 				margin-bottom: 5px;
-				padding: 10px 0 0;
+				padding: 0px;
               }
 
               ul.product_list li.product_comp a .product_comp_details .product_amount {font-weight: 700; line-height:20px; /* to compensate for Wishlist Icon */}
