@@ -968,6 +968,13 @@ body {
           position: relative;
           display: table;
         }
+		
+		ul.product_list li.product_add {
+          float: left;
+          margin: 10px;
+          position: relative;
+          display: table;
+        }
 
         .list_grid ul.product_list li.product_comp {
           margin: 20px 10px;
@@ -975,6 +982,11 @@ body {
 
         ul.product_list li.product_comp.standard {
           width: 140px;
+        }
+		
+		 ul.product_list li.product_comp.small {
+          width: 100px;
+		  margin:10px;
         }
 
           ul.product_list li.product_comp .product_comp_inner {}
@@ -995,6 +1007,12 @@ body {
             }
 
               ul.product_list li.product_comp.standard a .product_comp_img_inner {
+                display: table-cell;
+                vertical-align: middle;
+                position: relative;
+              }
+			  
+			   ul.product_list li.product_comp.small a .product_comp_img_inner {
                 display: table-cell;
                 vertical-align: middle;
                 position: relative;
@@ -1036,6 +1054,20 @@ body {
                 -o-transition: all 0.3s ease-in-out 0s;
                 -ms-transition: all 0.3s ease-in-out 0s;
               }
+			  
+			   ul.product_list li.product_comp.small .add_to_basket {
+                position: absolute;
+                left: 0px;
+                right: 0;
+                top: 115px;
+                height: 35px;
+                display: none;
+                transition: all 0.3s ease-in-out 0s;
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                -o-transition: all 0.3s ease-in-out 0s;
+                -ms-transition: all 0.3s ease-in-out 0s;
+              }
               
               ul.product_list li.product_comp .add_to_basket.hover,
               ul.product_list li.product_comp .wishlist_icon.hover {
@@ -1065,11 +1097,17 @@ body {
               }
 
               ul.product_list li.product_comp a .product_comp_details .product_name {
-                line-height: 1.6em;
+                /*
+				line-height: 1.6em;
                 margin-bottom: 5px;
+				*/
+				font-size: 0.95em;
+				line-height: 15px;
+				margin-bottom: 5px;
+				padding: 10px 0 0;
               }
 
-              ul.product_list li.product_comp a .product_comp_details .product_amount {font-weight: 700;}
+              ul.product_list li.product_comp a .product_comp_details .product_amount {font-weight: 700; line-height:20px; /* to compensate for Wishlist Icon */}
 
               ul.product_list li.product_comp .wishlist_icon {
                 width: 20px;

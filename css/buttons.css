@@ -61,6 +61,21 @@
 	padding-right:30px;
 }
 
+.btn_add_new_outfit {
+	background:transparent url(../imgs/icon_new.png) center center no-repeat;
+	height:30px;
+	width: 30px;
+	text-indent:-999em;
+}
+
+.btn_add_outfit_item_plus {
+	height:30px;
+	width:30px;
+	text-indent:-999em;
+	background:#000000 url(../imgs/icon_white_add.png) center center no-repeat;
+}
+
+
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), 
 screen and (min--moz-device-pixel-ratio: 1.3), 
 screen and (-o-min-device-pixel-ratio: 2 / 1), 
@@ -73,5 +88,13 @@ screen and (min-resolution: 2dppx) {
 	
 	.btn_list_view {
 		background:#FFFFFF url(../imgs/icon_list_x2.png) right center / 21px 11px no-repeat;
+	}
+	
+	.btn_add_new_outfit {
+		background:transparent url(../imgs/icon_new_x2.png) center center / 30px 30px no-repeat;
+	}
+	
+	.btn_add_outfit_item_plus {
+		background:#000000 url(../imgs/icon_white_add_x2.png) center center / 14px 14px no-repeat;
 	}
 }

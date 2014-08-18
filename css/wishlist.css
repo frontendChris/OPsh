@@ -110,6 +110,10 @@ screen and (min-resolution: 2dppx) {
 						font-size:1.5em;
 					}
 					
+					.outfit_box.empty_box.new_box .outfit_title_container .outfit_title {
+						color:#999999;
+					}
+					
 						.outfit_box .outfit_title_container .outfit_title .outfit_cost {
 							font-weight:normal;
 						}
@@ -141,14 +145,98 @@ screen and (min-resolution: 2dppx) {
 								.outfit_box .outfit_title_container .follow_social_links>ul>li>a.instagram 	{background-position:-24px -48px;}
 								.outfit_box .outfit_title_container .follow_social_links>ul>li>a.facebook 	{background-position:-24px -72px;}
 				
+				.outfit_box .outfit_items_container {
+					position:relative;
+					box-sizing:border-box;
+				}
+				
 				.outfit_box .outfit_items_container.active {
 					border:1px solid #000000;
 					padding:10px;
 					text-align:left;
 				}
 				
-				.outfit_box .outfit_items_container {
+				.outfit_box.empty_box .outfit_items_container {
 					border:1px dashed #000000;
-					padding:10px;
+					padding:10px 10px;
 					text-align:center;
+					padding-top:60px;
+					box-sizing:border-box;
+					min-height:150px;
 				}
+				
+				.outfit_box.empty_box .outfit_items_container:hover {
+					border-style:solid;
+				}
+				
+				.outfit_box.empty_box.new_box .outfit_items_container {
+					border:1px dashed #999999;
+					padding:10px 10px;
+					text-align:center;
+					padding-top:60px;
+					box-sizing:border-box;
+					min-height:150px;
+				}
+				.outfit_box.empty_box.new_box .outfit_items_container:hover {
+					border-style:solid;
+				}
+				
+				
+				.comp_help_text {
+					line-height:15px;
+					width:140px;
+					margin:10px auto;
+				}
+				
+				ul.product_list.suggested_prod_allowed {
+					margin-right:146px; /* Should be 150px but less 2px for border */
+				}
+				
+				.suggested_product {
+					box-sizing:border-box;
+					border-left:1px solid #CCCCCC;
+					position:absolute;
+					right:0px;
+					top:20px;
+					bottom:20px;
+					width:140px;
+					padding-left:20px;
+				}
+				
+				
+/* Vertical Slider */
+/* Slider styles */
+.usl-loading {
+	opacity: 0.35;
+}
+
+/* Pager style */
+.slide_container {
+	list-style: none outside none;
+	overflow: hidden; 
+	width: 400px; 
+	height: 200px; 
+	padding: 0px;
+	margin: 0px;
+}
+#slide-pager {
+	clear:both;
+	list-style-type:none;
+	overflow:hidden;
+	margin:14px 0 16px;
+	padding:0;
+}
+#slide-pager li {
+	float: left;
+}
+#slide-pager li a{
+	margin:0 2px;
+	padding:0 7px;
+	border:1px solid #ccc;
+	display:inline-block;
+}
+#slide-pager li a.usl-current{
+	text-decoration: underline;
+	background-color: #e8e8e8;
+}
+
