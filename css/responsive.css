@@ -3,9 +3,5 @@
 
 
 @media (max-width:1023px) { 
-	.layout_center .page_container_inner {
-		width: auto; /* change size as required by project */
-		margin: auto;
-		padding:0px 10px;
-	}
+	
 }
