@@ -52,9 +52,10 @@
 							</div>
 							<div class="dd_panel_body">
 								<ul>
-									<li><a href="#">My Order History</a></li>
 									<li><a href="#">My OPSH Profile</a></li>
-									<li><a href="#">FAQs</a></li>
+									<li><a href="#">Account</a></li>
+									<li><a href="#">Payment Details</a></li>
+									<li><a href="#">Order History</a></li>
 								</ul>
 								<div class="user_img">
 									<img src="imgs/user_img.jpg" alt=""/>
@@ -133,7 +134,7 @@
 							</div>
 						</div>
 					</li>
-					<li>
+					<!--<li>
 						<a href="javascript:void(0)" id="wishlist" class="wishlist dd_link">
 							My Wishlist
 							<span class="basket_qty">2</span>
@@ -200,7 +201,7 @@
 								<button class="btn_transparent">View All</button>
 							</div>
 						</div>
-					</li>
+					</li>-->
 				</ul>
 			</div>
 		</div>
@@ -400,23 +401,35 @@
 				</div>
 				
 				<div class="right product_info">
-					<h2 class="prodcut_title">
+					<h2 class="product_title">
 						<span class="shop_brand">Urban Outfitters / April, May</span>
 						<span class="product_name">April, May Doodle Denim Shorts in White</span>
 					</h2>
 					<div class="product_price">
 						<span class="current_price">&euro; 150</span>
-						<span class="old_price">&euro; 180</span>
+						<span class="old_price"><del>&euro; 180</del></span>
 					</div>
 					
 					<p>These leftfield denim shorts by Parisian label April, May are cut from a high quality denim fabric. It’s furnished with a carefree doodle print and features raw-cut hem for an edgy finish, zip fly and a low-rise.</p>
 
 					<ul class="product_styles">
 						<li>
-							color select
+							<div class="form_input">
+								<select class="custom">
+									<option value="" selected>Color</option>
+									<option value="" >Red</option>
+									<option value="" >Blue</option>
+									<option value="" >Etc</option>
+								</select>
+							</div>
 						</li>
 						<li>
-							size select
+							<div class="form_input">
+								<select class="custom">
+									<option value="" >Size 1</option>
+									<option value="" >Size 2</option>
+								</select>
+							</div>
 						</li>
 						<li>
 							<a href="javascript:void(0)">Size Guide</a>
@@ -724,8 +737,9 @@
     
     
 
-	<!-- load jquery or fallback -->
-	<script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    
     <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.loadTemplate-1.4.4.min.js"></script>

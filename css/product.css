@@ -3,7 +3,7 @@
 
 .top_bar .return a {
 	color: #fff;
-	margin-top: 16px;
+	margin-top: 10px;
 	display: block;
 	text-decoration: none;
 	border-bottom: 1px solid #ccc;
@@ -32,35 +32,33 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			margin-top: -20px;
 		}
 
 			.product_overview .product_images .side_images ul {
-				display: table;
 				margin: 0;
-				border-collapse:separate;
-				border-spacing: 0 20px;
 			}
 
 				.product_overview .product_images .side_images ul li {
-					display: table-row;
+					display: table;
+					position: relative;
+					width: 60px;
+					height: 90px;
+					margin: 0 0 10px 0;
 				}
 
-					.product_overview .product_images .side_images ul li a {
-						width: 60px;
-						height: 90px;
-						display: block;
-						display: table-cell;
-						vertical-align: middle;
-
-						background-color: #ccc; /* remove */
+					.product_overview .product_images .side_images ul li .side_inner {
+						display: table-row;
+						position: relative;
 					}
 
-						.product_overview .product_images .side_images ul li a img {
-							width: 100%;
-							vertical-align: baseline;
-							margin-bottom: 10px;
+						.product_overview .product_images .side_images ul li a {
+							display: table-cell;
+							vertical-align: middle;
 						}
+
+							.product_overview .product_images .side_images ul li a img {
+								width: 100%;
+							}
 
 		
 
@@ -108,11 +106,33 @@
 		
 		
 
-		.product_overview .product_info h2.product_title {}
+		.product_overview .product_info h2.product_title {
+			margin: 0 0 20px 0;
+		}
 
-			.product_overview .product_info h2.product_title span.shop_brand {}
+			.product_overview .product_info h2.product_title span.shop_brand {
+				font-size: 14px;
+				display: block;
+				font-weight: 700;
+			}
 
 			.product_overview .product_info h2.product_title span.product_name {}
+
+
+
+		
+		.product_overview .product_info .product_price {
+		}
+
+			.product_overview .product_info .product_price span.current_price {
+				font-size: 24px;
+				margin-right: 10px;
+			}
+
+			.product_overview .product_info .product_price span.old_price {
+				font-size: 16px;
+				color: #666;
+			}
 
 
 		
@@ -122,18 +142,42 @@
 		
 		
 
-		.product_overview .product_info ul.product_styles {}
+		.product_overview .product_info ul.product_styles {
+			margin: 0 0 20px 0;
+		}
 
-			.product_overview .product_info ul.product_styles li {}
+			.product_overview .product_info ul.product_styles li {
+				width: 95px;
+				float: left;
+				margin-right: 10px;
+			}
 
-				.product_overview .product_info ul.product_styles li a {}
+			.product_overview .product_info ul.product_styles li.size_guide {
+				width: auto;
+			}
+
+				.product_overview .product_info ul.product_styles li .form_input {
+					position: relative;
+				}
+
+				.product_overview .product_info ul.product_styles li a {
+					margin-top: 5px;
+					text-decoration: none;
+					border-bottom: 1px solid;
+					display: block;
+				}
 
 
 		
 
 		.product_overview .product_info div.actions {}
 
-			.product_overview .product_info div.actions button {}
+			.product_overview .product_info div.actions button {
+				height: 32px;
+				line-height: 32px;
+				font-size: 14px;
+				width: 140px;
+			}
 
 			.product_overview .product_info div.actions button.btn_transparent {}
 
@@ -142,16 +186,30 @@
 
 		.product_overview .product_info div.additional_info {}
 
-			.product_overview .product_info div.additional_info ul.benefits {}
+			.product_overview .product_info div.additional_info ul.benefits {
+				margin: 20px 0 0 0;
+			}
 
-				.product_overview .product_info div.additional_info ul.benefits li {}
+				.product_overview .product_info div.additional_info ul.benefits li {
+					background: url(../imgs/tick.png) no-repeat center left;
+					padding-left: 17px;
+				}
 
 
-			.product_overview .product_info div.additional_info ul.more_info_links {}
+			.product_overview .product_info div.additional_info ul.more_info_links {
+				margin: 0;
+			}
 
-				.product_overview .product_info div.additional_info ul.more_info_links li {}
+				.product_overview .product_info div.additional_info ul.more_info_links li {
+					float: left;
+					margin-right: 10px;
+				}
 
-					.product_overview .product_info div.additional_info ul.more_info_links li a {}
+					.product_overview .product_info div.additional_info ul.more_info_links li a {
+						font-size: 11px;
+						border-bottom: 1px solid;
+						text-decoration: none;
+					}
 
 
 

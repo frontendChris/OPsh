@@ -222,7 +222,7 @@ var shopFilter = function() {
 	})
 
 	var showList = function () {
-		if ($(top).height() != 35) {
+		if ($(top).height() != 34) {
 			$(top).switchClass( "filter_open", "filter_closed", 500, "easeInOutQuad" );
 			$(shopFilterToggle).removeClass('shop_filter_open');	
 		} else {

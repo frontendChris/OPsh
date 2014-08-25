@@ -179,7 +179,7 @@ body {
    	#user_options.dd_panel {display: none;}
 
    		#user_options.dd_panel ul {
-   			margin: 25px 120px 0 0;
+   			margin: 0px 120px 0 0;
    		}
 
    			#user_options.dd_panel ul li {
@@ -860,10 +860,14 @@ body {
     }
 
     .top_bar .page_container_inner.filter_closed {
-      height: 35px;
+      height: 34px;
       overflow: hidden;
       display: block !important;
     }
+
+
+
+
   /* filter list */
 
   .filter_list_container {
