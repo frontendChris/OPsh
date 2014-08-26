@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#checkout {}
+
+#checkout .sub_title_container {
+	margin: 20px 0;
+	position: relative;
+}
+
+#checkout .form_container .half_contain {
+	width: 50%;
+	float: left;
+}
+
+
+	#checkout .form_container .half_contain .form_row {
+		padding: 0 25px 0 0;
+	}
+
+	#checkout .form_container .half_contain + .half_contain .form_row {
+		padding: 0 0 0 25px;
+	}
+
+
+/* shipping address styles */
+
+#shipping_address .sub_title_container h3 {
+	padding-right: 190px;
+}
+
+	#shipping_address .sub_title_container .chbox_item {
+		position: absolute;
+		left: 170px;
+		top: 2px;
+	}
+
+ #shipping_address .form_container {
+ 	height: 160px;
+ }
+
+/* car details styles */
+
+
+	#expiry {}
+
+		#expiry legend {
+			width: 30%;
+			position: relative;
+			float: left;
+			font-weight: normal;
+			text-transform: uppercase;
+			font-size: 11px;
+		}
+
+	
+	#cvv {}
+
+		#cvv .form_input {
+			position: relative;
+			width: 150px;
+		}
+
+			#cvv .form_input a {
+				position: absolute;
+				top: 10px;
+				right: -150px;
+				text-decoration: none;
+				border-bottom: 1px solid;
+			}
+
+
+	.cards {
+		padding: 0 50px;
+	}
+
+
+	#pay_now {
+		height: 1px;
+		background-color: #ccc;
+		position: relative;
+		margin-top: 40px;
+	}
+	
+		#pay_now input {
+			position: absolute;
+			top: -18px;
+			left: 50%;
+			margin-left: -70px;
+		}
+
+
+

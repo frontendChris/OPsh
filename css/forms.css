@@ -160,7 +160,8 @@ input {
 			
 			.form_container .form_row .form_fieldset .chbox_item .chbox_label {}
 			
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label label {
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label label,
+				.chbox_item .chbox_label label  {
 					position:relative;
 					display:block;
 					line-height:20px;
@@ -184,16 +185,25 @@ input {
 							z-index: -1;
 						}
 				
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label label 					{background-image:url(../imgs/icon_chbox_off.png);font-size: }
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label label:hover 				{background-image:url(../imgs/icon_chbox_hover.png);}
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.active 				{background-image:url(../imgs/icon_chbox_on.png);}
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.disabled			{background-image:url(../imgs/icon_chbox_disabled_off.png);}
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.active.disabled		{background-image:url(../imgs/icon_chbox_disabled_on.png);}
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.error				{background-image:url(../imgs/icon_chbox_error.png) !important; color:#CC5252;}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label label,
+				.chbox_item .chbox_label label 					{background-image:url(../imgs/icon_chbox_off.png);font-size: }
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label label:hover,
+				.chbox_item .chbox_label label:hover 			{background-image:url(../imgs/icon_chbox_hover.png);}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.active,
+				.chbox_item .chbox_label label.active 			{background-image:url(../imgs/icon_chbox_on.png);}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.disabled,
+				.chbox_item .chbox_label label.disabled			{background-image:url(../imgs/icon_chbox_disabled_off.png);}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.active.disabled,
+				.chbox_item .chbox_label label.active.disabled	{background-image:url(../imgs/icon_chbox_disabled_on.png);}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label label.error,
+				.chbox_item .chbox_label label.error			{background-image:url(../imgs/icon_chbox_error.png) !important; color:#CC5252;}
 
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label.tag label 				{background:#bebebe;padding: 2px 5px;}
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label.tag label:hover 			{background:#ccc;padding: 2px 5px;}
-				.form_container .form_row .form_fieldset .chbox_item .chbox_label.tag label.active 			{background:#5a5a5a;padding: 2px 5px;color: #fff;}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label.tag label,
+				.chbox_item .chbox_label.tag label 				{background:#bebebe;padding: 2px 5px;}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label.tag label:hover,
+				.chbox_item .chbox_label.tag label:hover 		{background:#ccc;padding: 2px 5px;}
+				.form_container .form_row .form_fieldset .chbox_item .chbox_label.tag label.active,
+				.chbox_item .chbox_label.tag label.active 		{background:#5a5a5a;padding: 2px 5px;color: #fff;}
 				
 				.form_row.inline fieldset .chbox_item {
 				}
