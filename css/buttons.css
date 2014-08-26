@@ -75,15 +75,7 @@
 	background:#000000 url(../imgs/icon_white_add.png) center center no-repeat;
 }
 
-.btn_large {
-	font-size: 14px;
-	width: 140px;
-	height: 36px;
-}
 
-.btn_large:hover {
-	background-color: pink;
-}
 
 
 
