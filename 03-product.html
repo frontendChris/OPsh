@@ -16,6 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/opsh.css">
 
+	<!-- Base stylesheet -->
+	<link rel="stylesheet" type="text/css" href="touchcarousel/touchcarousel.css" />
+	<link rel="stylesheet" type="text/css" href="touchcarousel/three-d-skin/three-d-skin.css" />
 
 
 </head>
@@ -471,183 +474,260 @@
 				</div>
 			</div>
 			
-			<!--<div class="sub_title_container clearfix">
-	            <h3 class="left">Looks great with</h3>
-	        </div>-->
-
-			<div class="sub_title_container clearfix">
-	            <h3 class="left">We think you might like</h3>
-	            <div class="title_actions right">
+			
+			<!-- Suggestion List -->
+            <section id="suggestion_list">
+                <div class="sub_title_container clearfix">
+                    <h3 class="left">We think you might also like</h3>
                 </div>
-			</div>
+                <div id="suggestion_carousel" class="touchcarousel three-d">
+                    <ul class="touchcarousel-container product_list" id="suggestion_container">
+                        
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product6.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
 
-			<div class="list_grid clearfix">
-					<ul class="product_list">
-						
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product5.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
 
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-										<img src="imgs/home_imgs/product6.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
-											</div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<button>add to basket</button>
-								</div>
-								<!--<div class="wishlist_icon">
-									<button>add to my wishlist</button>
-								</div>-->
-							</div>
-						</li>
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product4.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/forever21_black.png" alt="Forever21"/>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
 
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-										<img src="imgs/home_imgs/product5.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
-										</div>
-										</div>
-										</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<button>add to basket</button>
-								</div>
-								<!--<div class="wishlist_icon">
-									<button>add to my wishlist</button>
-								</div>-->
-							</div>
-						</li>
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product3.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
 
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-										<img src="imgs/home_imgs/product4.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/forever21_black.png" alt="Forever21"/>
-										</div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<button>add to basket</button>
-								</div>
-								<!--<div class="wishlist_icon">
-									<button>add to my wishlist</button>
-								</div>-->
-							</div>
-						</li>
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product5.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
 
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-										<img src="imgs/home_imgs/product3.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
-											</div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<button>add to basket</button>
-								</div>
-								<!--<div class="wishlist_icon">
-									<button>add to my wishlist</button>
-								</div>-->
-							</div>
-						</li>
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product1.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
+                        
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product6.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
 
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-										<img src="imgs/home_imgs/product5.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"/>
-											</div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<button>add to basket</button>
-								</div>
-								<!--<div class="wishlist_icon">
-									<button>add to my wishlist</button>
-								</div>-->
-							</div>
-						</li>
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product5.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
 
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-										<img src="imgs/home_imgs/product1.jpg" alt=""/>
-										<div class="product_shop">
-											<img src="imgs/logos/m+s_black.png" alt="Marsk and Spencers"/>
-										</div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<button>add to basket</button>
-								</div>
-								<!--<div class="wishlist_icon">
-									<button>add to my wishlist</button>
-								</div>-->
-							</div>
-						</li>
-					</ul>
-				</div>
+                        <li class="product_comp standard touchcarousel-item">
+                            <div class="product_comp_inner">
+                                <a href="#">
+                                    <div class="product_comp_img">
+                                        <div class="product_comp_img_inner">
+                                        <img src="imgs/home_imgs/product4.jpg" alt=""/>
+                                        <div class="product_shop">
+                                            <img src="imgs/logos/forever21_black.png" alt="Forever21"/>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="product_comp_details">
+                                        <div class="product_name">The Ragged Priest Checked Mini Skater </div>
+                                        <div class="product_amount">
+                                            &euro; <span>30</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="add_to_basket">
+                                    <button>add to basket</button>
+                                </div>
+                                <!--<div class="wishlist_icon">
+                                    <button>add to my wishlist</button>
+                                </div>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
 	</div>  
 
@@ -767,7 +847,7 @@
 
 			$(".zoom_img").elevateZoom({
 				zoomWindowWidth: 520,
-				zoomWindowHeight: 450,
+				zoomWindowHeight: 430,
 				zoomWindowFadeIn: 400,
 				zoomWindowFadeOut: 400,
 				borderSize: 0,
@@ -788,6 +868,48 @@
 
 		
 	</script>
+
+	 <script type="text/javascript" src="touchcarousel/jquery.touchcarousel-1.2.min.js"></script> 
+	<script type="text/javascript">
+        $(document).ready(function() {
+			
+			// Initiate the Carousel
+            $("#suggestion_carousel").touchCarousel({			
+                itemsPerMove: 4,
+                pagingNav: false,
+                scrollbar: true,				
+                scrollToLast: false,
+                loopItems: false,	
+                snapToItems: false,		
+            });
+			
+		});
+    </script>
+    
+    <script type="text/javascript" src="js/vendor/jquery.easing.js" ></script>
+    <script type="text/javascript" src="js/vendor/jquery.mousewheel.js" ></script>
+    <script type="text/javascript" src="js/vendor/jquery.ulslide.min.js" ></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+			// Initiate the vertical product Slider
+			$(function() {						
+                $('#slide_prod_1').ulslide({
+                    width: 100,
+                    height: 240,
+					effect: {
+						type: 'carousel', // slide or fade
+                        axis: 'y',        // x, y
+						showCount: 1
+					},
+                    nextButton: '#slide_next',
+                    prevButton: '#slide_prev',
+                    duration: 800,
+                    /*autoslide: 2000,
+					easing: 'easeOutBounce'*/
+                });
+            });
+		});
+    </script>
 
 	
 </body>

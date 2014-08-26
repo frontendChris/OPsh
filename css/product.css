@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url("vert_slider.css") all;
+
 .top_bar .return a {
 	color: #fff;
 	margin-top: 10px;
@@ -210,6 +212,28 @@
 						border-bottom: 1px solid;
 						text-decoration: none;
 					}
+
+
+
+
+/**
+* Carousel with image and text (horizontal)
+**/
+
+#suggestion_list .sub_title_container {
+	margin-right: 74px;
+}
+
+	#suggestion_carousel {
+		width: auto;
+		height: auto;
+	}
+		
+		#suggestion_carousel .touchcarousel-item {
+			margin:20px 8px;
+		}
+
+
 
 
 

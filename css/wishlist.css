@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url("vert_slider.css") all;
+
 .page_title {
 	color:#FFFFFF;
 	margin:0px;
@@ -194,61 +196,7 @@
 				}
 				
 				
-/* Vertical Slider */
-/* Slider styles */
-.usl-loading {
-	opacity: 0.35;
-}
 
-/* Pager style */
-.slide_container {
-	list-style: none outside none;
-	overflow: hidden; 
-	width: 400px; 
-	height: 200px; 
-	padding: 0px;
-	margin: 0px;
-}
-#slide-pager {
-	clear:both;
-	list-style-type:none;
-	overflow:hidden;
-	margin:14px 0 16px;
-	padding:0;
-}
-#slide-pager li {
-	float: left;
-}
-#slide-pager li a{
-	margin:0 2px;
-	padding:0 7px;
-	border:1px solid #ccc;
-	display:inline-block;
-}
-#slide-pager li a.usl-current{
-	text-decoration: underline;
-	background-color: #e8e8e8;
-}
-
-#slide_prev {
-	position:absolute;
-	top:0px;
-	background: transparent url(../imgs/slider_arrow_up.png) center center no-repeat;
-	height:20px;
-	left:0px;
-	right:0px;
-	text-indent:-999em;
-}
-
-#slide_next {
-	position:absolute;
-	bottom:0px;
-	background: transparent url(../imgs/slider_arrow_down.png) center center no-repeat;
-	height:20px;
-	left:0px;
-	right:0px;
-	text-indent:-999em;
-}
 
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), 
