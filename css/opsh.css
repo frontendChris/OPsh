@@ -10,6 +10,8 @@
 
 @import url("wishlist.css") all;
 @import url("product.css") all;
+@import url("profile.css") all;
+@import url("checkout.css") all;
 
 html {
   background-color: #000;
@@ -479,8 +481,7 @@ body {
    			.shop_list ul li {
    				display: inline-block;
    				width: 95px;
-   				height: 30px;
-   				margin-right: 36px;
+          padding: 5px;
    			}
 
    				.shop_list ul li a {
@@ -625,10 +626,6 @@ body {
       width: 220px;
       float: left;
       padding-right:20px;
-  }
-
-  #results .sidebar {
-    margin-top: -20px;
   }
 
   .drawer_open {
@@ -787,6 +784,7 @@ body {
     padding: 10px 0;
     overflow: hidden;
     cursor: pointer;
+    min-height: 34px;
   }
 
     .top_bar #shop_filter {
@@ -844,10 +842,14 @@ body {
     }
 
     .top_bar .main_content .shop_list ul li {
-      width: 80px;
-      margin: 5px 20px 0 0;
+      width: auto;
+      margin: 0px 15px 0 0;
       position: relative;
     }
+
+      .top_bar .main_content .shop_list ul li.selected {
+        border:  1px solid #fff
+      }
 
     .top_bar .main_content .shop_list ul li a {
       width: 80px;

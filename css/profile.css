@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+#profile {}
+
+	#profile .sub_title_container {
+		margin-bottom: 20px;
+	}
+
+
+	#profile h3 {
+		margin: 0;
+		font-size: 2.1em;
+		padding: 0 10px 0 0;
+		line-height: 1em;
+	}
+
+
+		#profile .sidebar .position_inline_select {
+			position: relative;
+		}
+
+			#profile .sidebar .position_inline_select .inline_select {
+				position: absolute;
+				width: 60px;
+			}
+
+			#profile .sidebar .position_inline_select .has_inline_select {
+				margin-left: 70px;
+			}
+
+				#profile .sidebar .position_inline_select .inline_select .custom {
+					height: 30px;
+					line-height: 30px;
+				}
+
+		#profile .sidebar .filter {
+			border: 0;
+		}
+
+			#profile .sidebar .filter .filter_body {
+				padding: 0;
+			}
+
+		#profile .sidebar .form_container {
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+		}
+
+
+			#profile .sidebar .form_container .form_input.bras {
+				margin-left: 110px;
+			}
+
+			#profile .sidebar .form_container input[type="submit"] {
+				margin-top: 10px;
+			}
+
+
+
+		#profile .main_content ul.shop_list {
+			background-color: #fff;
+			margin: 0 0 40px 0; 
+		}
+
+			#profile .main_content ul.shop_list li {
+				width: 80px;
+				float: left;
+				position: relative;
+				margin-right: 10px;
+				border: 1px solid #000;
+			}
+
+				#profile .main_content ul.shop_list li a {
+					display: block;
+					padding: 5px;
+				}
+
+					#profile .main_content ul.shop_list li a img {
+						width: 100%;
+					}
+
+		#profile .main_content ul.selected_list {
+			padding: 0 0 10px 0;
+			border-bottom: 1px dotted #ccc;
+			margin-bottom: 0;
+		}
+
+			#profile .main_content ul.selected_list li {
+				background-color: transparent;
+				border: none;
+			}
+
+			#profile .main_content ul.selected_list li a.shop_remove {
+				display: block;
+				width: 20px;
+				height: 20px;
+				background: url(../imgs/icon_remove_shop.png) no-repeat center center;
+				position: absolute;
+				top: -10px;
+				right: -10px;
+			}
+
+
+		#profile .main_content ul.tag_list {
+			margin: 0;
+		}
+
+			
