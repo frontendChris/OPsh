@@ -17,6 +17,10 @@
 	font-size: 11px;
 }
 
+.btn_normal:hover {
+	background-color:#e67f96;
+}
+
 
 .btn_transparent {
 	width:auto;
@@ -75,26 +79,14 @@
 	background:#000000 url(../imgs/icon_white_add.png) center center no-repeat;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 .btn_big {
 	height:40px;
 	line-height:40px;
 	padding:0px 20px;
 }
 
-=======
-.btn_large {
-	font-size: 14px;
-	width: 140px;
-	height: 36px;
-}
->>>>>>> FETCH_HEAD
 
-
-
->>>>>>> FETCH_HEAD
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), 
 screen and (min--moz-device-pixel-ratio: 1.3), 
