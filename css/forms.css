@@ -298,8 +298,8 @@ span.customSelect {
 	border:1px solid #ccc;
 	border-top:1px solid #bababa;
 	background-color:#FFFFFF;
-	line-height:26px;
-	height:26px;
+	line-height:30px;
+	height:30px;
 	cursor:pointer;
 	display:block !important; /* This is to override the Inline-block Style that is applied to the element inline - reason for this is so that the erorr can appear up against it*/
 }
