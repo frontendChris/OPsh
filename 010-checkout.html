@@ -373,7 +373,7 @@
 	            		<div class="left">
 	            			<div class="shipping_selector">
 	                            <div class="prod_input">
-	                                <select class="custom" id="prod_2_quantity" style="min-width:100px;">
+	                                <select class="custom" id="prod_2_quantity" style="min-width:130px;">
 	                                    <option value="standard">Standard Shipping</option>
 	                                    <option value="express">Express Delivery</option>
 	                                    <option value="courier">Courier</option>
@@ -489,7 +489,7 @@
 	            		<div class="left">
 	            			<div class="shipping_selector">
 	                            <div class="prod_input">
-	                                <select class="custom" id="prod_2_quantity" style="min-width:100px;">
+	                                <select class="custom" id="prod_2_quantity" style="min-width:130px;">
 	                                    <option value="standard">Standard Shipping</option>
 	                                    <option value="express">Express Delivery</option>
 	                                    <option value="courier">Courier</option>
@@ -505,7 +505,7 @@
             		</span>
             	</div>
                 
-                <div class="basket_contents">
+                <div class="basket_contents last">
                 	<ul class="basket_items">
                     	<li class="clearfix">
                         	<div class="basket_prod_image"><img src="imgs/home_imgs/product5.jpg" alt="Product Image" /></div>
@@ -553,6 +553,10 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+
+             <div class="all_basket_total">
+            	Your total <span>&euro;360.00</span>
             </div>
 
 			<section id="billing_address">
@@ -942,13 +946,23 @@
 				}
 			});
 
+			$('.basket_contents').hide();
 
 			var basketToggle = $('#checkout .basket_header .toggle a');
 
 			$(basketToggle).click(function(){
+
 				var parent = $(this).parent().parent().parent();
-				alert('test')
-				$(parent).chidlren('.basket_contents').hide();
+
+				if ($(parent).children('.basket_contents').is(':visible')) {
+					$(parent).children('.basket_contents').slideUp();
+					$(this).removeClass('basket_open')
+				} else {
+					$(parent).children('.basket_contents').slideDown();
+					$(this).addClass('basket_open')
+				}
+				
+				
 			})
 		
 		});

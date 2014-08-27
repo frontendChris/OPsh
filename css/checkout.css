@@ -7,14 +7,11 @@
 /* shopping bag  */
 
 #checkout .shop_basket {
-	border: 1px solid #000;
-	border-top: 0;
-	border-bottom: 0;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
 }
 
 	#checkout .basket_header {
-		border-top: 1px solid #000;
-		border-bottom: 1px solid #000;
 		padding: 10px 60px 10px 10px;
 		position: relative;
 	}
@@ -58,17 +55,23 @@
 		display: block;
 		width: 20px;
 		height: 20px;
-		
 	}
 
-		#checkout .basket_header .toggle a.open {
+		#checkout .basket_header .toggle a.basket_open {
 			background: url(../imgs/shop_filter_toggle_open_black.png) no-repeat center center;
+			display: block;
+			width: 20px;
+			height: 20px;
 		}
 
 	#checkout ul.basket_items {
 		border: 0;
 	}
 
+
+#checkout .basket_contents {
+	border-top: 1px solid #ccc;
+}
 
 /* checkout styles */
 
