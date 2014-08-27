@@ -3,6 +3,77 @@
 
 #checkout {}
 
+
+/* shopping bag  */
+
+#checkout .shop_basket {
+	border: 1px solid #000;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+	#checkout .basket_header {
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		padding: 10px 60px 10px 10px;
+		position: relative;
+	}
+
+		#checkout .basket_header .shop_logo {
+			width: 100px;
+		} 
+
+			#checkout .basket_header .shop_logo img {
+				width: 100%;
+			} 
+
+
+	#checkout .basket_header .ship_total {
+		margin-top: 2px;
+	}
+
+		#checkout .basket_header .ship_total .shipping_fee {
+			border-right: 1px solid #ccc;
+			padding-right: 20px;
+			margin-right: 20px;
+			line-height: 30px;
+		}
+
+		#checkout .basket_header .ship_total .shop_total {
+			line-height: 30px;
+		}
+
+	#checkout .basket_header .toggle {
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		margin-top: -10px;
+	}
+	
+	#checkout .basket_header .toggle a {
+		background: url(../imgs/shop_filter_toggle_closed_black.png) no-repeat center center;
+		display: block;
+		width: 20px;
+		height: 20px;
+		
+	}
+
+		#checkout .basket_header .toggle a.open {
+			background: url(../imgs/shop_filter_toggle_open_black.png) no-repeat center center;
+		}
+
+	#checkout ul.basket_items {
+		border: 0;
+	}
+
+
+/* checkout styles */
+
+
+
 #checkout .sub_title_container {
 	margin: 20px 0;
 	position: relative;
@@ -36,7 +107,7 @@
 	}
 
  #shipping_address .form_container {
- 	height: 160px;
+ 	height: 100%;
  }
 
 /* car details styles */
