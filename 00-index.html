@@ -888,7 +888,6 @@
 
     		$(window).scroll(function () {
     			var y = $(this).scrollTop();
-    			console.log(y);
     			if (y > 220) {
 			        $('.nav_search').show("slide", { direction: "left" }, 300);
 			    } else {
@@ -897,29 +896,37 @@
     		});
 
 
-    		var dropHeight = $('.mega_drop').height();
-			var windowHeight = $(window).height();
+    		
 
 
 			function heightSet() {
+				var dropHeight = $('.mega_drop').height() + 50;
+				var windowHeight = $(window).height();
 				
 				if(dropHeight < windowHeight) {
 					$('.mega_drop .shopssssss').show();
 				} else {
 					$('.mega_drop .shopssssss').hide();
 				}
-
 				console.log(dropHeight, windowHeight)
 			}
 
 			heightSet();
 			
-			$(window).resize(function(){
-				var dropHeight = $('.mega_drop').height();
-				var windowHeight = $(window).height();
-
-				heightSet();
-			})
+			// Set a delay on the resize before getting function
+			var delay = (function(){
+				var timer = 0;
+			  	return function(callback, ms){
+					clearTimeout (timer);
+					timer = setTimeout(callback, ms);
+			  	};
+			})();
+			
+			$(window).resize(function() {
+				delay(function(){
+					heightSet();
+				}, 100);
+			});
     		
 		});
 	</script>
