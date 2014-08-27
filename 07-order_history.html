@@ -531,7 +531,8 @@
 			escapeKeyFunc();
 			setHeight();
 
-			var oddRows = $('table tbody tr').odd();
+			var oddRows = $('table tbody tr:odd');
+			console.log(oddRows);
 
 			$(oddRows).addClass('odd');
 		});
