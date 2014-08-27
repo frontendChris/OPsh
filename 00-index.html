@@ -309,7 +309,7 @@
 					</ul>
 				</div>
 
-				<div class="list_contain clearfix shopssssss">
+				<div class="list_contain clearfix shops_nav">
 					<div class="title"><h2>Shops</h2></div>
 					<ul class="shop_list">
                         <li><a href="javascript:void()"><img src="imgs/logos/debenhams.png" alt="debenhams"></a></li>
@@ -843,6 +843,7 @@
 			dropdownContainers();
 			megaDropDown();
 			escapeKeyFunc();
+			setHeight();
 
 			// animation on main search box button
 			$('#btn_search').hover(
@@ -898,35 +899,8 @@
 
     		
 
-
-			function heightSet() {
-				var dropHeight = $('.mega_drop').height() + 50;
-				var windowHeight = $(window).height();
-				
-				if(dropHeight < windowHeight) {
-					$('.mega_drop .shopssssss').show();
-				} else {
-					$('.mega_drop .shopssssss').hide();
-				}
-				console.log(dropHeight, windowHeight)
-			}
-
-			heightSet();
 			
-			// Set a delay on the resize before getting function
-			var delay = (function(){
-				var timer = 0;
-			  	return function(callback, ms){
-					clearTimeout (timer);
-					timer = setTimeout(callback, ms);
-			  	};
-			})();
 			
-			$(window).resize(function() {
-				delay(function(){
-					heightSet();
-				}, 100);
-			});
     		
 		});
 	</script>

@@ -145,14 +145,29 @@ function dropdownContainers() {
 		$(".dd_panel").hide();
 	});
 };
+
+var megaDrop = $('.mega_drop');
+var dropHeight = $(megaDrop).height() + 50;
+
+function setHeight() {
+	var windowHeight = $(window).height();
+
+	if (dropHeight < windowHeight) {
+		$('.shops_nav').show();
+	} else {
+		$('.shops_nav').hide();
+	}
+}
 	
 
 // MEGA DROPDOWN
 function megaDropDown() {
+	
 	//$('.mega_drop_overlay').hide();
 	$('.mega_drop').hide();
 	
 	$('.categories').click(function(){
+		setHeight();
 		if ($('.mega_drop').is(':visible')) {
 			$('.mega_drop').slideUp();
 			$(this).removeClass('active');
