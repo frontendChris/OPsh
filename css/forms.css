@@ -173,11 +173,13 @@ input {
 					cursor:pointer;
 				}
 				
-					.form_container .form_row .form_fieldset .chbox_item .chbox_label label .chbox_input {
+					.form_container .form_row .form_fieldset .chbox_item .chbox_label label .chbox_input,
+					.chbox_item .chbox_label label .chbox_input {
 						position:relative;
 					}
 					
-						.form_container .form_row .form_fieldset .chbox_item .chbox_label label .chbox_input input {
+						.form_container .form_row .form_fieldset .chbox_item .chbox_label label .chbox_input input,
+						.chbox_item .chbox_label label .chbox_input input {
 							position:absolute;
 							-moz-opacity: 0;
 							opacity:0;
