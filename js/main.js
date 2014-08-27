@@ -145,6 +145,24 @@ function dropdownContainers() {
 		$(".dd_panel").hide();
 	});
 };
+
+var megaDrop = $('.mega_drop');
+var dropHeight = $(megaDrop).height() + 50;
+
+
+function heightSet() {
+	var windowHeight = $(window).height();
+	if(dropHeight < windowHeight) {
+		$('.mega_drop .shops_nav').show();
+		$(megaDrop).css('height', 'auto');
+	} else {
+		$('.mega_drop .shops_nav').hide();
+		$(megaDrop).css('height', '420px');
+	}
+	console.log(dropHeight, windowHeight)
+}
+
+
 	
 
 // MEGA DROPDOWN
@@ -153,6 +171,7 @@ function megaDropDown() {
 	$('.mega_drop').hide();
 	
 	$('.categories').click(function(){
+		heightSet();
 		if ($('.mega_drop').is(':visible')) {
 			$('.mega_drop').slideUp();
 			$(this).removeClass('active');
@@ -160,6 +179,8 @@ function megaDropDown() {
 			$('.mega_drop').slideDown();
 			$(this).addClass('active');
 		}
+
+		
 	});
 
 	$('.close_modal').click(function(){

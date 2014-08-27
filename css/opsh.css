@@ -12,6 +12,7 @@
 @import url("product.css") all;
 @import url("profile.css") all;
 @import url("checkout.css") all;
+@import url("order_hist.css") all;
 
 html {
   background-color: #000;
@@ -467,6 +468,10 @@ body {
 
 
     /* shop list */
+
+    #shop_bar ul li {
+        margin-right: 20px;
+    }
    
     .shop_list {
     	background-color: #000;
@@ -509,7 +514,7 @@ body {
     	width: 20px;
     	height: 20px;
     	right: 0;
-    	top: 15px;
+    	top: 20px;
     }
 
     	.shop_list_toggle a {
