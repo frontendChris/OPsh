@@ -902,13 +902,16 @@
 			function heightSet() {
 				var dropHeight = $('.mega_drop').height() + 50;
 				var windowHeight = $(window).height();
+				var smallDropHeight = $('.mega_drop.shop_hidden').height() + 50;
 				
-				if(dropHeight < windowHeight) {
+				if ((windowHeight > dropHeight) && (smallDropHeight>windowHeight)){
 					$('.mega_drop .shopssssss').show();
+					$('.mega_drop').removeClass('shop_hidden');
 				} else {
 					$('.mega_drop .shopssssss').hide();
+					$('.mega_drop').addClass('shop_hidden');
 				}
-				console.log(dropHeight, windowHeight)
+				console.log("Drop Height: " + dropHeight, ", Window Height: " + windowHeight, ", Small Drop Height: " + smallDropHeight)
 			}
 
 			heightSet();
@@ -925,7 +928,7 @@
 			$(window).resize(function() {
 				delay(function(){
 					heightSet();
-				}, 100);
+				}, 500);
 			});
     		
 		});
