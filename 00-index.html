@@ -898,7 +898,26 @@
     		
 
 
+<<<<<<< HEAD
 			
+=======
+			function heightSet() {
+				var dropHeight = $('.mega_drop').height() + 50;
+				var windowHeight = $(window).height();
+				var smallDropHeight = $('.mega_drop.shop_hidden').height() + 50;
+				
+				if ((windowHeight > dropHeight) && (smallDropHeight>windowHeight)){
+					$('.mega_drop .shopssssss').show();
+					$('.mega_drop').removeClass('shop_hidden');
+				} else {
+					$('.mega_drop .shopssssss').hide();
+					$('.mega_drop').addClass('shop_hidden');
+				}
+				console.log("Drop Height: " + dropHeight, ", Window Height: " + windowHeight, ", Small Drop Height: " + smallDropHeight)
+			}
+
+			heightSet();
+>>>>>>> FETCH_HEAD
 			
 			// Set a delay on the resize before getting function
 			/*var delay = (function(){
@@ -912,8 +931,13 @@
 			$(window).resize(function() {
 				delay(function(){
 					heightSet();
+<<<<<<< HEAD
 				}, 100);
 			});*/
+=======
+				}, 500);
+			});
+>>>>>>> FETCH_HEAD
     		
 		});
 	</script>
