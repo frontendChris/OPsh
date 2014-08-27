@@ -12,6 +12,7 @@
 @import url("product.css") all;
 @import url("profile.css") all;
 @import url("checkout.css") all;
+@import url("order_hist.css") all;
 
 html {
   background-color: #000;
