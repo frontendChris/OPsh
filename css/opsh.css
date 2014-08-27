@@ -291,10 +291,11 @@ body {
 		  display: block;
 		  height: auto;
 		  left: 0;
-		  position: relative;
+		  position: absolute;
 		  right: 0;
-		  top: 0px;
+		  top: 50px;
       border-bottom: 1px solid #252525;
+      /*min-height: 420px;*/
     }
 
    		.mega_drop .page_container_inner {

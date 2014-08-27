@@ -309,7 +309,7 @@
 					</ul>
 				</div>
 
-				<div class="list_contain clearfix">
+				<div class="list_contain clearfix shopssssss">
 					<div class="title"><h2>Shops</h2></div>
 					<ul class="shop_list">
                         <li><a href="javascript:void()"><img src="imgs/logos/debenhams.png" alt="debenhams"></a></li>
@@ -897,6 +897,29 @@
     		});
 
 
+    		var dropHeight = $('.mega_drop').height();
+			var windowHeight = $(window).height();
+
+
+			function heightSet() {
+				
+				if(dropHeight < windowHeight) {
+					$('.mega_drop .shopssssss').show();
+				} else {
+					$('.mega_drop .shopssssss').hide();
+				}
+
+				console.log(dropHeight, windowHeight)
+			}
+
+			heightSet();
+			
+			$(window).resize(function(){
+				var dropHeight = $('.mega_drop').height();
+				var windowHeight = $(window).height();
+
+				heightSet();
+			})
     		
 		});
 	</script>
