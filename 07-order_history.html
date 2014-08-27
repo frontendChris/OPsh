@@ -411,9 +411,45 @@
 						<td>Complete</td>
 						<td><a href="#">View Order</a></td>
 					</tr>
+					<tr>
+						<td>9543910</td>
+						<td>6/19/2014</td>
+						<td>Complete</td>
+						<td><a href="#">View Order</a></td>
+					</tr>
+					<tr>
+						<td>9543123</td>
+						<td>13/19/2014</td>
+						<td>Complete</td>
+						<td><a href="#">View Order</a></td>
+					</tr>
+					<tr>
+						<td>9543345</td>
+						<td>14/19/2014</td>
+						<td>Complete</td>
+						<td><a href="#">View Order</a></td>
+					</tr>
+					<tr>
+						<td>9543678</td>
+						<td>6/19/2014</td>
+						<td>Complete</td>
+						<td><a href="#">View Order</a></td>
+					</tr>
+					<tr>
+						<td>9543911</td>
+						<td>15/19/2014</td>
+						<td>Complete</td>
+						<td><a href="#">View Order</a></td>
+					</tr>
+					<tr>
+						<td>9543123</td>
+						<td>16/19/2014</td>
+						<td>Complete</td>
+						<td><a href="#">View Order</a></td>
+					</tr>
 				</tbody>
 			</table>
-			<div>
+			<div id="view_more_link">
 				<a href="#">View more orders</a>
 			</div>
 		</div>
@@ -532,9 +568,23 @@
 			setHeight();
 
 			var oddRows = $('table tbody tr:odd');
-			console.log(oddRows);
+			//console.log(oddRows);
 
 			$(oddRows).addClass('odd');
+
+			$('table tbody tr:gt(2)').hide();
+
+			$('#view_more_link a').click(function(){
+				var text = $(this).text();
+				//console.log(text)
+				if($('table tbody tr:gt(2)').is(':visible')) {
+					$('table tbody tr:gt(2)').hide();
+					$(this).html('View more');
+				} else {
+					$('table tbody tr:gt(2)').show();
+					$(this).html('View less');
+				}
+			})
 		});
 
 
