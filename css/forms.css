@@ -399,12 +399,18 @@ screen and (min-resolution: 2dppx) {
 	.form_container .form_row .form_fieldset .radio_item>.radio_label label.error				{background-image:url(../imgs/icon_radiobtn_error_x2.png) !important; color:#CC5252;}
 	
 	/* Checkboxes */
-	.form_container .form_row .form_fieldset .chbox_item>.chbox_label label,.chbox_item .chbox_label label	 									{background-image:url(../imgs/icon_chbox_off_x2.png);}
-	.form_container .form_row .form_fieldset .chbox_item>.chbox_label label:hover, .chbox_item .chbox_label label:hover							{background-image:url(../imgs/icon_chbox_hover_x2.png);}
-	.form_container .form_row .form_fieldset .chbox_item>.chbox_label label.active, .chbox_item .chbox_label label.active						{background-image:url(../imgs/icon_chbox_on_x2.png);}
-	.form_container .form_row .form_fieldset .chbox_item>.chbox_label label.disabled, .chbox_item .chbox_label label.disabled					{background-image:url(../imgs/icon_chbox_disabled_off_x2.png);}
-	.form_container .form_row .form_fieldset .chbox_item>.chbox_label label.active.disabled, .chbox_item .chbox_label label.active.disabled		{background-image:url(../imgs/icon_chbox_disabled_on_x2.png);}
-	.form_container .form_row .form_fieldset .chbox_item>.chbox_label label.error, .chbox_item .chbox_label label.error							{background-image:url(../imgs/icon_chbox_error_x2.png) !important; color:#CC5252;}
+	.form_container .form_row .form_fieldset .chbox_item .chbox_label label,
+	.chbox_item .chbox_label label 					{background-image:url(../imgs/icon_chbox_off_x2.png);font-size: }
+	.form_container .form_row .form_fieldset .chbox_item .chbox_label label:hover,
+	.chbox_item .chbox_label label:hover 			{background-image:url(../imgs/icon_chbox_hover_x2.png);}
+	.form_container .form_row .form_fieldset .chbox_item .chbox_label label.active,
+	.chbox_item .chbox_label label.active 			{background-image:url(../imgs/icon_chbox_on_x2.png);}
+	.form_container .form_row .form_fieldset .chbox_item .chbox_label label.disabled,
+	.chbox_item .chbox_label label.disabled			{background-image:url(../imgs/icon_chbox_disabled_off_x2.png);}
+	.form_container .form_row .form_fieldset .chbox_item .chbox_label label.active.disabled,
+	.chbox_item .chbox_label label.active.disabled	{background-image:url(../imgs/icon_chbox_disabled_on_x2.png);}
+	.form_container .form_row .form_fieldset .chbox_item .chbox_label label.error,
+	.chbox_item .chbox_label label.error			{background-image:url(../imgs/icon_chbox_error_x2.png) !important; color:#CC5252;}
 	
 	/* Search Input */
 	input.searchbox {
