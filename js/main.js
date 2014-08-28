@@ -71,6 +71,19 @@ function checkAppliedChbox() {
 	});
 	
 	// Toggle Class to checkbox label checked
+	/*$(chboxChoice).change(function () {
+		if ($(this).prop('checked')) {
+			$(this).closest('.chbox_label').children('label').addClass('active');
+		} else {
+			$(this).closest('.chbox_label').children('label').removeClass('active');
+		}
+	});*/
+	checkboxChange();
+};
+
+function checkboxChange() {
+	var chboxChoice = $('input[type="checkbox"]');
+	// Toggle Class to checkbox label checked
 	$(chboxChoice).change(function () {
 		if ($(this).prop('checked')) {
 			$(this).closest('.chbox_label').children('label').addClass('active');
@@ -78,7 +91,7 @@ function checkAppliedChbox() {
 			$(this).closest('.chbox_label').children('label').removeClass('active');
 		}
 	});
-};
+}
 
 
 

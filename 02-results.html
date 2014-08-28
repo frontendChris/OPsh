@@ -447,7 +447,7 @@
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="dresses_all">
+																<label class="all_select" for="dresses_all">
 																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dresses_all" aria-invalid="false" required="required" /></span>
 																	All
 																</label>
@@ -500,7 +500,7 @@
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="tops_all">
+																<label class="all_select" for="tops_all">
 																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tops_all" aria-invalid="false" required="required" /></span>
 																	All
 																</label>
@@ -561,7 +561,7 @@
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="bottoms_all">
+																<label class="all_select" for="bottoms_all">
 																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bottoms_all" aria-invalid="false" required="required" /></span>
 																	All
 																</label>
@@ -622,7 +622,7 @@
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="outerwear_all">
+																<label class="all_select" for="outerwear_all">
 																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="outerwear_all" aria-invalid="false" required="required" /></span>
 																	All
 																</label>
@@ -667,7 +667,7 @@
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="shoes_all">
+																<label class="all_select" for="shoes_all">
 																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoes_all" aria-invalid="false" required="required" /></span>
 																	All
 																</label>
@@ -728,7 +728,7 @@
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="underwear_all">
+																<label class="all_select" for="underwear_all">
 																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="underwear_all" aria-invalid="false" required="required" /></span>
 																	All
 																</label>
@@ -790,7 +790,7 @@
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="accessories_all">
+																<label class="all_select" for="accessories_all">
 																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="accessories_all" aria-invalid="false" required="required" /></span>
 																	All
 																</label>
@@ -1941,10 +1941,21 @@
       	 	$('.cat_lists ul.nested_list').hide();
 
       	 	var toggle = $('.cat_lists .sub_cat_title a');
+      	 	//var isSelected = 
 
 			$(toggle).click(function(){
-      	 		if($(this).hasClass('active')) {
-      	 			$(this).parent().siblings('.nested_list').slideUp();
+
+				var lists = $(this).parent().siblings('.nested_list').children('li');
+      	 		var childBox = $(lists).children().children().children().children('input[type="checkbox"]');
+
+      	 		var isSelected = $(childBox).is(':checked');
+
+      	 		console.log(isSelected);
+				
+				if($(this).hasClass('active') && isSelected) {
+      	 			return false;
+      	 		} else if ($(this).hasClass('active')) {
+					$(this).parent().siblings('.nested_list').slideUp();
       	 			$(this).removeClass('active');
       	 			$(this).children('.toggle').removeClass('rotate');
       	 		} else {
@@ -1954,6 +1965,27 @@
       	 		}
       	 		
       	 	})
+
+      	 	var allSelect = $('.all_select').children().children('input[type="checkbox"]');
+
+      	 	$(allSelect).change(function() {
+			    var parents = $(this).parent().parent().parent().parent().siblings('li');
+			    var checkboxes = $(parents).children().children().children().children('input[type="checkbox"]');
+			    var parentToggle = $(parents).parent().siblings('.sub_cat_title').children('a');
+			    //console.log(checkboxes);
+			    
+			    if($(this).prop('checked')) {
+			   		checkboxes.prop('checked', true);
+			   		$(checkboxes).closest('.chbox_label').children('label').addClass('active');
+			   		$(parentToggle).addClass('isSelected');
+			    } else {
+			    	checkboxes.prop('checked', false);
+			    	$(checkboxes).closest('.chbox_label').children('label').removeClass('active');
+			    	$(parentToggle).removeClass('isSelected');
+			    }
+
+			});
+
       		
 		});
 		

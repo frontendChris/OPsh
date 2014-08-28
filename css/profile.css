@@ -70,12 +70,16 @@
 				float: left;
 				position: relative;
 				margin: 0 10px 10px 0;
-				border: 1px solid #000;
 			}
 
 				#profile .main_content ul.shop_list li a {
 					display: block;
 					padding: 5px;
+					border: 1px solid transparent;
+				}
+
+				#profile .main_content ul.shop_list li a.selected {
+					border: 1px solid #000;
 				}
 
 					#profile .main_content ul.shop_list li a img {
