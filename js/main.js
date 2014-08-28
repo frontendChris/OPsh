@@ -110,16 +110,21 @@ function dropdownContainers() {
 	$(document).on('click touchstart', function () {
 		$(".dd_panel").hide("slide", { direction: "up" }, 400);
 		$('.dd_link').removeClass('drop_active');
+		$('.mega_drop').hide("slide", { direction: "up" }, 400);
+		$('a.categories.active').removeClass('active');
 	});
 	
 	// Stop the event for closing option panels when you click on the panel or a hyperlink to open a panel
-	$(".dd_panel, .dd_link").on('click touchstart', function (e) {
+	$(".dd_panel, .dd_link, .mega_drop, a.categories").on('click touchstart', function (e) {
 		e.stopPropagation();
 	});
 	
 	// Show and Hide the Options Panels
 	$('.dd_link').click(function() {
 		var selected_panel = ('#') + $(this).attr('id') + ('_options');
+		
+		$('.mega_drop').hide("slide", { direction: "up" }, 400);
+		$('a.categories.active').removeClass('active');
 		
 		if($(selected_panel).css('display') == 'none'){
 			// Remove Existing Active Styling and Apply to current Item
@@ -175,6 +180,10 @@ function megaDropDown() {
 			$('.mega_drop').slideDown();
 			$(this).addClass('active');
 		}
+		
+		// Hide the user panels if they are already open
+		$(".dd_panel").hide("slide", { direction: "up" }, 400);
+		$('.dd_link').removeClass('drop_active');
 	});
 
 	$('.close_modal').click(function(){
