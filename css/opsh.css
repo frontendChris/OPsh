@@ -1622,6 +1622,86 @@ ul.product_list.featured_list {
 	.all_basket_total span {
 		font-weight:700;
 	}			
+	
+	
+	
+	/* Pagination */
+	
+	.results_amount {
+		line-height:30px;
+		font-size:1.2em;
+	}
+	
+	#grid_pagination {
+		float:right;
+		display:block;
+	}
+	
+		#grid_pagination ul {
+			float:left;
+			display:block;
+		}
+			
+			#grid_pagination ul li {
+				float:left;
+				display:block;
+				margin-right:2px;
+			}
+			
+				#grid_pagination ul li a {
+					float:left;
+					display:block;
+					line-height:30px;
+					text-align:center;
+					background-color:#f3f3f3;
+					width:30px;
+					height:30px;
+					color:inherit;
+				}
+				
+				#grid_pagination ul li a:hover {
+					background-color:#e3e3e3;
+					text-decoration:none;
+				}
+				
+				#grid_pagination ul li a.pag_prev_btn {
+					width:30px;
+					height:30px;
+					text-indent:-999em;
+					background-image:url(../imgs/icon_pag_dark.png);
+					background-position:0px 0px;
+					background-repeat:no-repeat;
+					background-size:30px 60px;
+				}
+				
+				#grid_pagination ul li a.pag_next_btn {
+					width:30px;
+					height:30px;
+					text-indent:-999em;
+					background-image:url(../imgs/icon_pag_dark.png);
+					background-position:0px -30px;
+					background-repeat:no-repeat;
+					background-size:30px 60px;
+				}
+				
+				#grid_pagination ul li span.pag_current {
+					line-height:30px;
+					text-align:center;
+					float:left;
+					display:block;
+					width:30px;
+					height:30px;
+					background-color:#CCCCCC;
+				}
+				
+				#grid_pagination ul li span.pag_divider {
+					line-height:30px;
+					text-align:center;
+					float:left;
+					display:block;
+					width:30px;
+					height:30px;
+				}
 			
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), 
@@ -1716,5 +1796,14 @@ screen and (min-resolution: 2dppx) {
    ul.filter_list li.opsh_tag a {
       background: url(../imgs/shop_filter_delete_x2.png) center center / 6px 6px no-repeat;
     }
+	
+	
+	#grid_pagination ul li a.pag_prev_btn {
+		background-image:url(../imgs/icon_pag_dark_x2.png);
+	}
+	
+	#grid_pagination ul li a.pag_next_btn {
+		background-image:url(../imgs/icon_pag_dark_x2.png);
+	}
 }		
 			

@@ -1309,17 +1309,20 @@
 				<!-- results amount & pagination -->
 				<div class="controls clearfix">
 					<div class="left results_amount">
-						<span>results(400)</span>
+						<span>Search Results (400)</span>
 					</div>
 					<div class="right pagination">
-						<span>Page:</span>
-						<ul>
-							<li class="selected"><a href="javascript:void(0)">1</a></li>
-							<li><a href="javascript:void(0)">2</a></li>
-							<li><a href="javascript:void(0)">3</a></li>
-							<li><a href="javascript:void(0)">...</a></li>
-							<li><a href="javascript:void(0)">20</a></li>
-						</ul>
+                        <div id="grid_pagination">
+                        	<ul>
+                            	<li><a href="#pag_prev" class="pag_prev_btn">Previous Page</a></li>
+                            	<li><span class="pag_current" title="Current Results Page is 1">1</span></li>
+                            	<li><a href="#pag_2" title="View Results Page 2">2</a></li>
+                            	<li><a href="#pag_3" title="View Results Page 3">3</a></li>
+                            	<li><span class="pag_divider">...</span></li>
+                            	<li><a href="#pag_15" title="View Results Page 15">15</a></li>
+                            	<li><a href="#pag_next" class="pag_next_btn">Next Page</a></li>
+                            </ul>
+                        </div>
 					</div>
 				</div>
 
@@ -1761,6 +1764,25 @@
 						</li>
 					</ul>
 				</div>
+                
+                
+                <!-- results amount & pagination -->
+				<div class="controls clearfix" style="margin-top:20px; border-top:1px solid #CCCCCC; padding-top:20px;">
+					<div class="right pagination">
+                        <div id="grid_pagination">
+                        	<ul>
+                            	<li><a href="#pag_prev" class="pag_prev_btn">Previous Page</a></li>
+                            	<li><span class="pag_current" title="Current Results Page is 1">1</span></li>
+                            	<li><a href="#pag_2" title="View Results Page 2">2</a></li>
+                            	<li><a href="#pag_3" title="View Results Page 3">3</a></li>
+                            	<li><span class="pag_divider">...</span></li>
+                            	<li><a href="#pag_15" title="View Results Page 15">15</a></li>
+                            	<li><a href="#pag_next" class="pag_next_btn">Next Page</a></li>
+                            </ul>
+                        </div>
+					</div>
+				</div>
+                
 			</div>
 		</div>
 	</div>
