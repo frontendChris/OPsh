@@ -11,6 +11,8 @@
 	margin-bottom: 10px;
 	zoom: 1;
 	height: 100%;
+	position: relative;
+	overflow: hidden\9;
 }
 
 	#checkout .basket_header {
@@ -74,6 +76,7 @@
 #checkout .basket_contents {
 	border-top: 1px solid #ccc;
 	height: 100%;
+	position: relative;
 }
 
 /* checkout styles */
