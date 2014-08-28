@@ -400,17 +400,14 @@
 									<a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/missselfridges.png" alt="Miss Selfridges"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/next.png" alt="Next"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
+								
 							</ul>
 						</div>
 						<div class="shop_list sub_filter_list">
 							<ul>
 								<li class="selected"><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/debenhams.png" alt="debenhams"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a></li>
+								<li class="selected"><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a></li>
+								<li class="selected"><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a></li>
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/missselfridges.png" alt="Miss Selfridges"></a></li>
@@ -432,30 +429,27 @@
  				<div class="filter form_container" id="category_filter">
  					
 							<div class="filter_title">
-								<a href="javascript:void(0)">
-									<span>Category</span>
-									<span class="toggle"></span>
-								</a>
+								<span>Category</span>
 							</div>
 							<div class="filter_body form_row">
 								<div class="form_fieldset"> 
 	 								<fieldset>
 		                    			<legend class="hidden_label">Categories</legend>
-											<ul>
+											<ul class="cat_lists">
 												<li class="chbox_item">
-													<div class="chbox_label">
-														<label for="dresses">
-															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dresses" aria-invalid="false" required="required" /></span>
-															Dresses
-														</label>
+													<div class="sub_cat_title clearfix">
+														<a href="#">
+															<span>Dresses</span>
+															<span class="toggle"></span>
+														</a>
 													</div>
 													
 													<ul class="nested_list">
 														<li>
 															<div class="chbox_label">
-																<label for="day">
-																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="day" aria-invalid="false" required="required" /></span>
-																	Day
+																<label for="dresses_all">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dresses_all" aria-invalid="false" required="required" /></span>
+																	All
 																</label>
 															</div>
 														</li>
@@ -475,57 +469,385 @@
 																</label>
 															</div>
 														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="party">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="party" aria-invalid="false" required="required" /></span>
+																	Party
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="day">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="day" aria-invalid="false" required="required" /></span>
+																	Day
+																</label>
+															</div>
+														</li>
 													</ul>
 
 												</li>
+
 												<li class="chbox_item">
-													<div class="chbox_label">
-														<label for="tops">
-															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tops" aria-invalid="false" required="required" /></span>
-															Tops
-														</label>
+													<div class="sub_cat_title clearfix">
+														<a href="#">
+															<span>Tops</span>
+															<span class="toggle"></span>
+														</a>
 													</div>
+													
+													<ul class="nested_list">
+														<li>
+															<div class="chbox_label">
+																<label for="tops_all">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tops_all" aria-invalid="false" required="required" /></span>
+																	All
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="shirt">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shirt" aria-invalid="false" required="required" /></span>
+																	Shirt
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="t-shirts">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="t-shirts" aria-invalid="false" required="required" /></span>
+																	T-Shirts
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="sweats">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="sweats" aria-invalid="false" required="required" /></span>
+																	Sweats
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="jumpers">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="jumpers" aria-invalid="false" required="required" /></span>
+																	Jumpers
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="knitwear">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="knitwear" aria-invalid="false" required="required" /></span>
+																	Knitwear
+																</label>
+															</div>
+														</li>
+													</ul>
+
 												</li>
+
 												<li class="chbox_item">
-													<div class="chbox_label">
-														<label for="bottoms">
-															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bottoms" aria-invalid="false" required="required" /></span>
-															Bottoms
-														</label>
+													<div class="sub_cat_title clearfix">
+														<a href="#">
+															<span>Bottoms</span>
+															<span class="toggle"></span>
+														</a>
 													</div>
+													
+													<ul class="nested_list">
+														<li>
+															<div class="chbox_label">
+																<label for="bottoms_all">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bottoms_all" aria-invalid="false" required="required" /></span>
+																	All
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="trousers">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="trousers" aria-invalid="false" required="required" /></span>
+																	Trousers
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="jeans">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="jeans" aria-invalid="false" required="required" /></span>
+																	Jeans
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="shorts">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shorts" aria-invalid="false" required="required" /></span>
+																	Shorts
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="shirts">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shirts" aria-invalid="false" required="required" /></span>
+																	Shirts
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="1_piece">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="1_piece" aria-invalid="false" required="required" /></span>
+																	1 Piece
+																</label>
+															</div>
+														</li>
+													</ul>
+
 												</li>
+
 												<li class="chbox_item">
-													<div class="chbox_label">
-														<label for="out_wear">
-															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="out_wear" aria-invalid="false" required="required" /></span>
-															Out Wear
-														</label>
+													<div class="sub_cat_title clearfix">
+														<a href="#">
+															<span>Outerwear</span>
+															<span class="toggle"></span>
+														</a>
 													</div>
+													
+													<ul class="nested_list">
+														<li>
+															<div class="chbox_label">
+																<label for="outerwear_all">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="outerwear_all" aria-invalid="false" required="required" /></span>
+																	All
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="coats">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="coats" aria-invalid="false" required="required" /></span>
+																	Coats
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="jackets">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="jackets" aria-invalid="false" required="required" /></span>
+																	Jackets
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="blazer">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="blazer" aria-invalid="false" required="required" /></span>
+																	Blazer
+																</label>
+															</div>
+														</li>
+													</ul>
+
 												</li>
+
 												<li class="chbox_item">
-													<div class="chbox_label">
-														<label for="shoes">
-															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoes" aria-invalid="false" required="required" /></span>
-															Shoes
-														</label>
+													<div class="sub_cat_title clearfix">
+														<a href="#">
+															<span>Shoes</span>
+															<span class="toggle"></span>
+														</a>
 													</div>
+													
+													<ul class="nested_list">
+														<li>
+															<div class="chbox_label">
+																<label for="shoes_all">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoes_all" aria-invalid="false" required="required" /></span>
+																	All
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="sandals">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="sandals" aria-invalid="false" required="required" /></span>
+																	Sandals
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="heels">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="heels" aria-invalid="false" required="required" /></span>
+																	Heels
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="flats">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="flats" aria-invalid="false" required="required" /></span>
+																	Flats
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="boots">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="boots" aria-invalid="false" required="required" /></span>
+																	Boots
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="sports">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="sports" aria-invalid="false" required="required" /></span>
+																	Sports
+																</label>
+															</div>
+														</li>
+													</ul>
+
 												</li>
+
 												<li class="chbox_item">
-													<div class="chbox_label">
-														<label for="underwear">
-															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="underwear" aria-invalid="false" required="required" /></span>
-															Underwear
-														</label>
+													<div class="sub_cat_title clearfix">
+														<a href="#">
+															<span>Underwear</span>
+															<span class="toggle"></span>
+														</a>
 													</div>
+													
+													<ul class="nested_list">
+														<li>
+															<div class="chbox_label">
+																<label for="underwear_all">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="underwear_all" aria-invalid="false" required="required" /></span>
+																	All
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="lingerie">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="lingerie" aria-invalid="false" required="required" /></span>
+																	Lingerie
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="pajamas">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="pajamas" aria-invalid="false" required="required" /></span>
+																	Pajamas
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="Socks">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Socks" aria-invalid="false" required="required" /></span>
+																	Socks
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="Tights">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Tights" aria-invalid="false" required="required" /></span>
+																	Tights
+																</label>
+															</div>
+														</li>
+
+														<li>
+															<div class="chbox_label">
+																<label for="swimwear">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="swimwear" aria-invalid="false" required="required" /></span>
+																	Swimwear
+																</label>
+															</div>
+														</li>
+													</ul>
+
 												</li>
+
 												<li class="chbox_item">
-													<div class="chbox_label">
-														<label for="accessories">
-															<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="accessories" aria-invalid="false" required="required" /></span>
-															Accessories
-														</label>
+													<div class="sub_cat_title clearfix">
+														<a href="#">
+															<span>Accessories</span>
+															<span class="toggle"></span>
+														</a>
 													</div>
+													
+													<ul class="nested_list">
+														<li>
+															<div class="chbox_label">
+																<label for="accessories_all">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="accessories_all" aria-invalid="false" required="required" /></span>
+																	All
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="bags">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bags" aria-invalid="false" required="required" /></span>
+																	Bags
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="Scarves">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Scarves" aria-invalid="false" required="required" /></span>
+																	Scarves
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="Headwear">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Headwear" aria-invalid="false" required="required" /></span>
+																	Headwear
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="Jewellery">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Jewellery" aria-invalid="false" required="required" /></span>
+																	Jewellery
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="Glasses">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Glasses" aria-invalid="false" required="required" /></span>
+																	Glasses
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="chbox_label">
+																<label for="Belts">
+																	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Belts" aria-invalid="false" required="required" /></span>
+																	Belts
+																</label>
+															</div>
+														</li>
+													</ul>
+
 												</li>
+												
 											</ul>
 								</fieldset>
 							</div>
@@ -541,10 +863,10 @@
 						</a>
 					</div>
 					<div class="filter_body form_row">
-						<div class="form_fieldset"> 
+						<div class="form_fieldset clearfix"> 
 							<fieldset>
                 			<legend class="hidden_label">Colors</legend>
-								<ul>
+								<ul class="half_list">
 									<li class="chbox_item">
 										<div class="chbox_label">
 											<label for="red">
@@ -579,6 +901,35 @@
 									</li>
 									<li class="chbox_item">
 										<div class="chbox_label">
+											<label for="blue">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="blue" aria-invalid="false" required="required" /></span>
+												Blue
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="brown">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="brown" aria-invalid="false" required="required" /></span>
+												Brown
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="maroon">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="maroon" aria-invalid="false" required="required" /></span>
+												Maroon
+											</label>
+										</div>
+									</li>
+								</ul>
+								
+
+
+								<ul class="half_list">
+									<li class="chbox_item">
+										<div class="chbox_label">
 											<label for="magenta">
 												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="magenta" aria-invalid="false" required="required" /></span>
 												Magenta
@@ -598,6 +949,39 @@
 											<label for="pink">
 												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="pink" aria-invalid="false" required="required" /></span>
 												Pink
+											</label>
+										</div>
+									</li>
+
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="aquamarine">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="aquamarine" aria-invalid="false" required="required" /></span>
+												Aquamarine
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="Tiger Pattern">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Tiger Pattern" aria-invalid="false" required="required" /></span>
+												Tiger Pattern
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="Grey">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="Grey" aria-invalid="false" required="required" /></span>
+												Grey
+											</label>
+										</div>
+									</li>
+									<li class="chbox_item">
+										<div class="chbox_label">
+											<label for="black">
+												<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="black" aria-invalid="false" required="required" /></span>
+												Black
 											</label>
 										</div>
 									</li>
@@ -739,17 +1123,6 @@
 							                                    <option value="1">Size 1</option>
 							                                    <option value="2">Size 2</option>
 							                                    <option value="3">Size 3</option>
-							                                </select>
-							                            </div>
-							                            <div class="form_label hidden_label">
-							                                <label for="bra_sizes_letter">Bra Size Letter</label>
-							                            </div>
-							                            <div class="form_input bras">
-							                                <select class="custom" id="bra_sizes_letter" name="dress_sizes">
-							                                    <option value="">A</option>
-							                                    <option value="0">B</option>
-							                                    <option value="1">C</option>
-							                                    <option value="2">D</option>
 							                                </select>
 							                            </div>
 							                        </div>
@@ -1543,7 +1916,22 @@
       		$( '.range_amount_min input' ).val( '€' + $( '.range_slider' ).slider( 'values', 0 ));
       		$( '.range_amount_max input' ).val('€' + $( '.range_slider' ).slider( 'values', 1 ));
 
-      	 
+      	 	$('.cat_lists ul.nested_list').hide();
+
+      	 	var toggle = $('.cat_lists .sub_cat_title a');
+
+			$(toggle).click(function(){
+      	 		if($(this).hasClass('active')) {
+      	 			$(this).parent().siblings('.nested_list').slideUp();
+      	 			$(this).removeClass('active');
+      	 			$(this).children('.toggle').removeClass('rotate');
+      	 		} else {
+      	 			$(this).parent().siblings('.nested_list').slideDown();
+      	 			$(this).children('.toggle').addClass('rotate');
+      	 			$(this).addClass('active');
+      	 		}
+      	 		
+      	 	})
       		
 		});
 		

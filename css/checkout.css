@@ -42,26 +42,26 @@
 
 	#checkout .basket_header .toggle {
 		display: block;
-		width: 20px;
-		height: 20px;
+		width: 40px;
+		height: 40px;
 		position: absolute;
-		right: 20px;
+		right: 10px;
 		top: 50%;
-		margin-top: -10px;
+		margin-top: -20px;
 	}
 	
 	#checkout .basket_header .toggle a {
 		background: url(../imgs/shop_filter_toggle_closed_black.png) no-repeat center center;
 		display: block;
-		width: 20px;
-		height: 20px;
+		width: 40px;
+		height: 40px;
 	}
 
 		#checkout .basket_header .toggle a.basket_open {
 			background: url(../imgs/shop_filter_toggle_open_black.png) no-repeat center center;
 			display: block;
-			width: 20px;
-			height: 20px;
+			width: 40px;
+			height: 40px;
 		}
 
 	#checkout ul.basket_items {

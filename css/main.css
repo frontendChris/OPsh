@@ -44,7 +44,7 @@
     }
 
     .right {
-   		float: right
+   		float: right !important;
     }
 
     .clearfix {

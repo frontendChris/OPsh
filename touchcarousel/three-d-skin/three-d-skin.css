@@ -56,21 +56,21 @@ screen and (min-resolution: 2dppx) {
 
 .touchcarousel.three-d .arrow-icon.left {
 	left: 0;
-	background-position:0px 0px;
+	background-position:0px -1px;
 	border:1px solid #000000;
 }
 .touchcarousel.three-d .arrow-icon.right {
 	right: 0;
-	background-position:0px -30px;
+	background-position:0px -31px;
 	border:1px solid #000000;
 }
 
 .touchcarousel.three-d .arrow-holder.disabled .arrow-icon.left {
-	background-position:-30px 0px;
+	background-position:-30px -1px;
 	border:1px solid #B0B0B0;
 }
 .touchcarousel.three-d .arrow-holder.disabled .arrow-icon.right {
-	background-position:-30px -30px;
+	background-position:-30px -31px;
 	border:1px solid #B0B0B0;
 }
 .touchcarousel.three-d .arrow-holder:hover {
