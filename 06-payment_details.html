@@ -57,9 +57,6 @@
 									<li><a href="#">Payment Details</a></li>
 									<li><a href="#">Order History</a></li>
 								</ul>
-								<div class="user_img">
-									<img src="imgs/user_img.jpg" alt=""/>
-								</div>
 							</div>
 							<div class="dd_panel_foot">
 								<button class="btn_normal">Logout</button>
@@ -73,7 +70,7 @@
 						</a>
 						<div id="cart_options" class="basket dd_panel">
 							<div class="dd_panel_title clearfix">
-								<span class="left title">My Shopping Bag</span>
+								<span class="left title">My Shopping Basket</span>
 								<span class="right">
 									<span>2 items / </span>
 									<span class="cost">Total: €70</span>
@@ -130,7 +127,7 @@
 								</ul>
 							</div>
 							<div class="dd_panel_foot">
-								<button class="btn_normal">Checkout</button>
+								<button class="btn_normal">Go to Basket</button>
 							</div>
 						</div>
 					</li>
@@ -345,9 +342,163 @@
 
 
 	<!-- body content -->
-	<div class="main page_container_outer">
+	<div class="top_bar page_container_outer">
 		<div class="page_container_inner">
-			Place content here	
+			<h2 class="page_title left">Payment Details</h2>
+			<div class="follow_social_links right">
+            	<ul>
+                	<li><span>Follow is on:</span></li>
+                	<li><a href="#social_pinterest" class="follow_social_icon pinterest" title="Follow us on Pinterest">Follow us on Pinterest</a></li>
+                	<li><a href="#social_twitter" class="follow_social_icon twitter" title="Follow us on Twitter">Follow us on Twitter</a></li>
+                	<li><a href="#social_instagram" class="follow_social_icon instagram" title="Follow us on Instagram">Follow us on Instagram</a></li>
+                	<li><a href="#social_facebook" class="follow_social_icon facebook" title="Follow us on Facebook">Follow us on Facebook</a></li>
+                </ul>
+            </div>
+		</div>
+	</div>
+
+	<div class="main page_container_outer" id="payment_details">
+		<div class="page_container_inner">
+			
+			<section class="billing_addr">
+				<div class="sub_title_container clearfix">
+					<h3 class="left">Billing Address</h3>
+					<button class="btn_normal">Add New</button>
+				</div>
+				<ul>
+					<li class="default clearfix">
+						<ul class="inner_list">
+							<li class="name">Sam Smith</li>
+							<li class="mail">sam@samtheman.com</li>
+							<li class="phone">+3538606983634</li>
+						</ul>
+						<ul class="inner_list">
+							<li class="addr">
+								<span class="addr_l1">6 Phili Street</span>,
+								<span class="addr_l2">Gormanstown</span>,
+								<span class="addr_l3">Fenocksville</span>
+							</li>
+							<li class="city">Dublin</li>
+							<li class="postcode">Dublin 50</li>
+							<li class="country">Ireland</li>
+						</ul>
+						<div class="addr_footer">
+							<ul>
+								<li class="default_marker">
+									This is the default billing address
+								</li>
+								<li>
+									<button class="btn_normal">Edit</button>
+								</li>
+								<li>
+									<a href="#">Delete</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="clearfix">
+						<ul class="inner_list">
+							<li class="name">John Smith</li>
+							<li class="mail">john@yahoo.com</li>
+							<li class="phone">+3538606981234</li>
+						</ul>
+						<ul class="inner_list">
+							<li class="addr">
+								<span class="addr_l1">Ticknock</span>,
+								<span class="addr_l2">Knocktick</span>,
+								<span class="addr_l3">Fenocksville</span>
+							</li>
+							<li class="city">Dublin</li>
+							<li class="postcode">Dublin 51</li>
+							<li class="country">Ireland</li>
+						</ul>
+						<div class="addr_footer">
+							<ul>
+								<li class="default_marker">
+									<a href="#">Make this the default billing address</a>
+								</li>
+								<li>
+									<button class="btn_normal">Edit</button>
+								</li>
+								<li>
+									<a href="#">Delete</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section class="shipping_addr">
+				<div class="sub_title_container clearfix">
+					<h3 class="left">Shipping Address</h3>
+					<button class="btn_normal">Add New</button>
+				</div>
+				<ul>
+					<li class="default clearfix">
+						<ul class="inner_list">
+							<li class="name">Sam Smith</li>
+							<li class="mail">sam@samtheman.com</li>
+							<li class="phone">+3538606983634</li>
+						</ul>
+						<ul class="inner_list">
+							<li class="addr">
+								<span class="addr_l1">6 Phili Street</span>,
+								<span class="addr_l2">Gormanstown</span>,
+								<span class="addr_l3">Fenocksville</span>
+							</li>
+							<li class="city">Dublin</li>
+							<li class="postcode">Dublin 50</li>
+							<li class="country">Ireland</li>
+						</ul>
+						<div class="addr_footer">
+							<ul>
+								<li class="default_marker">
+									This is the default shipping address
+								</li>
+								<li>
+									<button class="btn_normal">Edit</button>
+								</li>
+								<li>
+									<a href="#">Delete</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="clearfix">
+						<ul class="inner_list">
+							<li class="name">John Smith</li>
+							<li class="mail">john@yahoo.com</li>
+							<li class="phone">+3538606981234</li>
+						</ul>
+						<ul class="inner_list">
+							<li class="addr">
+								<span class="addr_l1">Ticknock</span>,
+								<span class="addr_l2">Knocktick</span>.
+								<span class="addr_l3">Fenocksville</span>
+							</li>
+							<li class="city">Dublin</li>
+							<li class="postcode">Dublin 51</li>
+							<li class="country">Ireland</li>
+						</ul>
+						<div class="addr_footer">
+							<ul>
+								<li class="default_marker">
+									<a href="#">Make this the default shipping address</a>
+								</li>
+								<li>
+									<button class="btn_normal">Edit</button>
+								</li>
+								<li>
+									<a href="#">Delete</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</section>
+		
 		</div>
 	</div> 
 

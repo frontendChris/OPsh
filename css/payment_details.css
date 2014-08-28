@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#payment_details {}
+
+	
+
+	#payment_details section .sub_title_container {
+		margin-right: 80px;
+		margin-bottom: 20px;
+	}
+
+		#payment_details section .sub_title_container button {
+			position: absolute;
+			right: 0;
+		} 
+
+	#payment_details section ul {
+		margin:0;
+		padding: 0;
+	}
+
+		#payment_details section ul li {
+			border: 1px solid #ccc;
+			margin: 0 0 20px 0;
+		}	
+
+			#payment_details section ul li.default {
+				border-color: #000;
+			}
+
+			#payment_details section ul li.empty {
+				text-align: center;
+			}
+
+				#payment_details section ul li.empty a {
+					text-decoration: none;
+					border-bottom: 1px solid;
+				}
+
+			#payment_details section ul li .addr_footer {
+				border-top: 1px solid #ccc;
+				float: left;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+
+			#payment_details section ul li.default .addr_footer {
+				border-top-color: #000;
+			}
+
+				#payment_details section ul li .addr_footer li {
+					border: 0;
+					float: right;
+					padding: 10px 10px 10px 0;
+					margin: 0;
+				}
+
+				#payment_details section ul li .addr_footer li a {
+					display: block;
+					margin-top: 8px;
+					text-decoration: none;
+					border-bottom: 1px solid;
+				}
+
+				#payment_details section ul li .addr_footer li.default_marker {
+					float: left;
+					line-height: 30px;
+					margin-left: 0;
+					padding: 10px;
+				}
+
+					#payment_details section ul li .addr_footer li.default_marker a {
+						margin-top: 8px;
+						line-height: 1em;
+					}
+
+
+		#payment_details section ul ul.inner_list {
+			width: 50%;
+			float: left;
+			padding: 20px 0;
+		}
+
+			#payment_details section ul ul.inner_list li {
+				border: 0;
+				margin: 0 0 10px 0;
+				padding: 0 20px;
+			}
+	
+		.actions .cancel {
+			margin-right: 10px;
+			text-decoration: none;
+			border-bottom: 1px solid;
+		}

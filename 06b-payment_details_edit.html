@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/adapt.css">
 	<link rel="stylesheet" type="text/css" href="css/superfish.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.ui.dialog.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/opsh.css">
 
 
@@ -23,21 +23,15 @@
 	<!-- navigation -->
 	<div class="page_container_outer nav">
 		
-		<div class="page_container_inner clearfix">
+		<div class="page_container_inner clearfix ">
 			
 			<div class="brand left">
-				<h1>
-					<a href="index.html">
-						<img src="imgs/brand_x2.png" alt="OPSH. One Account. All your shops." />
-					</a>
-				</h1>
+				<h1><a href="index.html"><img src="imgs/brand_x2.png" alt="OPSH. One Account. All your shops." /></a></h1>
 			</div>
 
 			<div class="nav_list left">
 				<ul>
-					<li>
-						<a href="javascript:void(0)" class="categories">Go Shopping</a>
-					</li>
+					<li><a href="javascript:void(0)" class="categories">Go Shopping</a></li>
 				</ul>
 			</div>
 
@@ -72,7 +66,7 @@
 					<li>
 						<a href="javascript:void(0)" id="cart" class="cart dd_link">
 							Shopping Cart
-							<span class="basket_qty">2</span>
+							<span class="basket_qty">0</span>
 						</a>
 						<div id="cart_options" class="basket dd_panel">
 							<div class="dd_panel_title clearfix">
@@ -209,9 +203,10 @@
 			</div>
 		</div>
 	
-	<!--</div>-->
+	
 
-	<div class="mega_drop">
+
+		<div class="mega_drop">
 			<div class="page_container_inner">
 				<button class="close_modal">close</button>
 				<div class="list_contain clearfix">
@@ -343,398 +338,141 @@
 			</div>
 		</div>
 
+	
 	</div>
 
+	<!-- Title Bar content -->
+	<div class="top_bar page_container_outer">
+		<div class="page_container_inner clearfix">
+        	<h2 class="page_title left">Add New Billing Address</h2>
+			<div class="follow_social_links right">
+            	<ul>
+                	<li><span>Follow is on:</span></li>
+                	<li><a href="#social_pinterest" class="follow_social_icon pinterest" title="Follow us on Pinterest">Follow us on Pinterest</a></li>
+                	<li><a href="#social_twitter" class="follow_social_icon twitter" title="Follow us on Twitter">Follow us on Twitter</a></li>
+                	<li><a href="#social_instagram" class="follow_social_icon instagram" title="Follow us on Instagram">Follow us on Instagram</a></li>
+                	<li><a href="#social_facebook" class="follow_social_icon facebook" title="Follow us on Facebook">Follow us on Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
 
 	<!-- body content -->
 	<div class="main page_container_outer">
-
-		<div class="hero">
-			<div class="page_container_inner">
-				<div class="main_search">
-					<input type="search" placeholder="Search for dresses, shoes, etc." />
-					<button class="btn_normal" id="btn_search">
-						<span class="sh">SH</span>
-						<span class="op">OP</span>
-					</button>
-				</div>
-				<p class="tagline">One Account. All of your shops.</p>
-			</div>
+		<div class="page_container_inner">
+			<section id="account_details">
+            	<h3>Add New Billing Address</h3>
+            	<form action="#" style="width:60%;">
+                    <div class="form_container">
+                        
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter First Name" id="first_name" name="first_name" required="required" aria-invalid="false" value="Kim" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="last_name">Surname</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter Surname" id="last_name" name="last_name" required="required" aria-invalid="false" value="Jung" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_email">Email</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter Email" id="form_email" name="form_email" required="required" aria-invalid="false" value="kim.jung@gmail.com" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_phone">Contact Phone</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter Phone Number" id="form_phone" name="form_phone" required="required" aria-invalid="false" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_addr_l1">Address Line 1</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter Address Line 1" id="form_addr_l1" name="form_addr_l1" required="required" aria-invalid="false" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_addr_l2">Address Line 2</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter Address line 2" id="form_addr_l2" name="form_addr_l2" required="required" aria-invalid="false" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_addr_l3">Address Line 3</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter Address line 3" id="form_addr_l3" name="form_addr_l3" required="required" aria-invalid="false" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_city">City</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter city" id="form_city" name="form_city" required="required" aria-invalid="false" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_postal_code">Postal Code</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox" placeholder="Enter Postal Code" id="form_postal_code" name="form_postal_code" required="required" aria-invalid="false" />
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_country_select">Country</label>
+                            </div>
+                            <div class="form_input">
+                                <select class="custom" id="form_country_select" name="form_country_select" required="required">
+                                    <option value="">Ireland</option>
+                                    <option value="Mr">England</option>
+                                    <option value="Mrs" selected="selected">Ghana</option>
+                                    <option value="Ms">USA</option>
+                                    <option value="Miss">Czech Republic</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form_row clearfix actions">
+	                        <div class="form_row inline left">
+	                            <div class="chbox_item">
+	                                <div class="chbox_label">
+	                                	<label for="checkbox_1">
+	                                    	<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="checkbox_1" aria-invalid="false" required="required" checked="checked" /></span>
+	                                        Make this my default billing address
+	                                    </label>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline right">
+	                           	<a href="#" class="cancel">Cancel</a>
+	                            <input type="submit" value="Save" class="btn_normal"/>
+	                        </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
 		</div>
-	
 	</div> 
 
-	<div class="page_container_outer shop_list" id="shop_bar">
-		<div class="page_container_inner">
-			<ul class="top_list">
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/debenhams.png" alt="debenhams">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/evans.png" alt="Evans">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/forever21.png" alt="Forever 21">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/housefraser.png" alt="House of Fraser">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/next.png" alt="Next">
-					</a>
-				</li>
-			</ul>
-			<ul class="all_shops">
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/debenhams.png" alt="debenhams">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/evans.png" alt="Evans">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/forever21.png" alt="Forever 21">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/housefraser.png" alt="House of Fraser">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/next.png" alt="Next">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/debenhams.png" alt="debenhams">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/evans.png" alt="Evans">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/forever21.png" alt="Forever 21">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/housefraser.png" alt="House of Fraser">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/next.png" alt="Next">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/debenhams.png" alt="debenhams">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/evans.png" alt="Evans">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/forever21.png" alt="Forever 21">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/housefraser.png" alt="House of Fraser">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/next.png" alt="Next">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/debenhams.png" alt="debenhams">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/evans.png" alt="Evans">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/forever21.png" alt="Forever 21">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/housefraser.png" alt="House of Fraser">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/m+s.png" alt="Marks and Spencers">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/missselfridges.png" alt="Miss Selfridges">
-					</a>
-				</li>
-				<li>
-					<a href="javascript:void(0)">
-						<img src="imgs/logos/next.png" alt="Next">
-					</a>
-				</li>
-			</ul>
-			<span class="shop_list_toggle">
-				<a href="javascript:void(0)"></a>
-			</span>
-		</div>
-	</div>
-
-	<div class="main page_container_outer">
-		<div class="page_container_inner">
-			<div class="home_grid clearfix">
-
-				<!-- row 1 --> 
-				<div class="w1 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/product5.jpg" alt=""/>
-						</a>
-						<div class="prod_details">
-							<div class="brand">
-								<img src="imgs/logos/missselfridges_black.png" alt=""/>
-							</div>
-							<div class="price">
-								<span>€</span>
-								<span>18</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="w1 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/product6.jpg" alt=""/>
-						</a>
-						<div class="prod_details">
-							<div class="brand">
-								<img src="imgs/logos/m+s_black.png" alt=""/>
-							</div>
-							<div class="price">
-								<span>€</span>
-								<span>8.45</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="w2 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/blog2.jpg" alt=""/>
-						</a>
-					</div>
-				</div>
-				
-				<!-- row 2 --> 
-				<div class="w1 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/product1.jpg" alt=""/>
-						</a>
-						<div class="prod_details">
-							<div class="brand">
-								<img src="imgs/logos/housefraser_black.png" alt=""/>
-							</div>
-							<div class="price">
-								<span>€</span>
-								<span>4</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="w2 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/blog1.jpg" alt=""/>
-						</a>
-					</div>
-				</div>
-
-				<div class="w1 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/product2.jpg" alt=""/>
-						</a>
-						<div class="prod_details">
-							<div class="brand">
-								<img src="imgs/logos/forever21_black.png" alt=""/>
-							</div>
-							<div class="price">
-								<span>€</span>
-								<span>24</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				
-
-				<!-- row 3 --> 
-				
-				<div class="w1 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/product3.jpg" alt=""/>
-						</a>
-						<div class="prod_details">
-							<div class="brand">
-								<img src="imgs/logos/evans_black.png" alt=""/>
-							</div>
-							<div class="price">
-								<span>€</span>
-								<span>10.99</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="w1 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/product4.jpg" alt=""/>
-						</a>
-						<div class="prod_details">
-							<div class="brand">
-								<img src="imgs/logos/next_black.png" alt=""/>
-							</div>
-							<div class="price">
-								<span>€</span>
-								<span>8</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="w2 block">
-					<div class="inner_div">
-						<a href="#">
-							<img src="imgs/home_imgs/blog3.jpg" alt=""/>
-						</a>
-					</div>
-				</div>
-
-
-
-				<!-- row 4 --> 
-				<!--<div class="w1 block">
-					<div class="inner_div">
-						small
-					</div>
-				</div>
-
-				<div class="w2 block">
-					<div class="inner_div">
-						large
-					</div>
-				</div>
-
-				<div class="w1 block">
-					<div class="inner_div">
-						small
-					</div>
-				</div>-->
-
-				<!-- row 5 --> 
-				<!--<div class="w2 block">
-					<div class="inner_div">
-						large
-					</div>
-				</div>
-
-				<div class="w1 block">
-					<div class="inner_div">
-						small
-					</div>
-				</div>
-
-				<div class="w1 block">
-					<div class="inner_div">
-						small
-					</div>
-				</div>-->
-
-				
-			</div>
-			<div class="more_link">
-					<button class="btn_normal">More!</button>
-				</div>
-		</div>
-	</div>
 	
 	<!-- footer -->
 	<div class="footer_upper page_container_outer">
@@ -821,86 +559,36 @@
 	
 	</div>
 
+    
+    
+    
+    
+    
+
 	<!-- load jquery or fallback -->
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<!-- load other scripts -->
-	<script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.loadTemplate-1.4.4.min.js"></script>
 	<script type="text/javascript" src="js/vendor/jquery.customSelect.min.js"></script>
 	<script type="text/javascript" src="js/vendor/hoverIntent.js"></script>
 	<script type="text/javascript" src="js/vendor/superfish.js"></script>
 	<script type="text/javascript" src="js/vendor/respond.js"></script>
+    
 	<script type="text/javascript" src="js/main.js"></script>
 
 	<script type="text/javascript">
 		
 		$(document).ready(function(){
-
 			dropdownContainers();
 			megaDropDown();
 			escapeKeyFunc();
 			setHeight();
-
-			// animation on main search box button
-			$('#btn_search').hover(
-				function () {
-					$('.op').addClass('active');
-					$('.sh').addClass('active');
-				},
-				function () {
-					$('.op').removeClass('active');
-					$('.sh').removeClass('active');
-				}
-			);
-
-			// show/hide shop list
-			$('.shop_list_toggle a').click(function(e){
-				if ($('.all_shops').is(':visible')) {
-					$('.all_shops').slideUp();
-					$(this).removeClass('open');
-				} else {
-					$('.all_shops').slideDown();
-					$(this).addClass('open');
-				};
-				e.stopPropagation();
-			});
-
-			$('.shop_list').click(function(e){
-				e.stopPropagation();
-			})
-
-			$(document).click(function(){
-				if ($('.all_shops').is(':visible')) {
-					$('.all_shops').slideUp();
-					$('.shop_list_toggle a').removeClass('open');
-				}
-			});
-
-			
-			
-			
-
-			// show hide nav search when user scrolls past hero section
-			$('.nav_search').hide();
-
-    		$(window).scroll(function () {
-    			var y = $(this).scrollTop();
-    			if (y > 220) {
-			        $('.nav_search').show("slide", { direction: "left" }, 300);
-			    } else {
-			        $('.nav_search').hide("slide", { direction: "left" }, 300);
-			    }
-    		});
-
-
-    		
-
-			
-			
-    		
+			checkAppliedChbox();
+			checkDisabledChbox();
 		});
+
+		
 	</script>
 
 	

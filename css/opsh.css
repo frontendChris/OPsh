@@ -13,6 +13,7 @@
 @import url("profile.css") all;
 @import url("checkout.css") all;
 @import url("order_hist.css") all;
+@import url("payment_details.css") all;
 
 html {
   background-color: #000;
@@ -182,7 +183,7 @@ body {
    	#user_options.dd_panel {display: none;}
 
    		#user_options.dd_panel ul {
-   			margin: 0px 120px 0 0;
+   			margin: 0px;
    		}
 
    			#user_options.dd_panel ul li {
