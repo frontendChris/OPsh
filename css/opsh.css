@@ -961,6 +961,15 @@ body {
       background-color: #ccc;
     }
 
+      ul.filter_list li.opsh_tag {
+        background-color: #5a5a5a;
+        color: #fff;
+      }
+
+        ul.filter_list li.opsh_tag a {
+          background: url(../imgs/shop_filter_delete.png) center center no-repeat;
+        }
+
       ul.filter_list li a {
         background: url(../imgs/filter_delete.png) center center no-repeat;
         position: absolute;
@@ -1703,5 +1712,9 @@ screen and (min-resolution: 2dppx) {
   .sidebar .filter .filter_body .sub_cat_title > .toggle button.active {
        background: transparent url(../imgs/icon_cat_toggle_open_x2.png) center center / 9px 9px no-repeat;
   }
+
+   ul.filter_list li.opsh_tag a {
+      background: url(../imgs/shop_filter_delete_x2.png) center center / 6px 6px no-repeat;
+    }
 }		
 			
