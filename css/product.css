@@ -86,6 +86,7 @@
 					.product_overview .product_images .main_image > ul > li > div {
 						display: table-cell;
 						vertical-align: middle;
+						position: relative;
 					}
 
 						.product_overview .product_images .main_image > ul > li > div img {
@@ -95,7 +96,24 @@
 
 			
 
-			.product_overview .product_images .main_image .product_shop {}
+			.product_overview .product_images .main_image .product_shop {
+				background: url(../imgs/prod_details_overlay.png);
+				height: 40px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				position: absolute;
+			}
+
+				.product_overview .product_images .main_image .product_shop img {
+					height: 28px;
+					width: 80px;
+					position: absolute;
+					top: 50%;
+					margin-top: -14px;
+					left: 50%;
+					margin-left: -40px;
+				}
 
 	
 

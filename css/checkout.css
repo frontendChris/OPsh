@@ -9,6 +9,8 @@
 #checkout .shop_basket {
 	border: 1px solid #ccc;
 	margin-bottom: 10px;
+	zoom: 1;
+	height: 100%;
 }
 
 	#checkout .basket_header {
@@ -71,6 +73,7 @@
 
 #checkout .basket_contents {
 	border-top: 1px solid #ccc;
+	height: 100%;
 }
 
 /* checkout styles */

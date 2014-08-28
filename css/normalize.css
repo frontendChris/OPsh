@@ -10,8 +10,9 @@ body {
     font-family: sans-serif;
 }
 
-section {
+.section {
     margin-bottom: 40px;
+    zoom : 1;
 }
 
 /* ==========================================================================
