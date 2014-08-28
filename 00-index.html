@@ -43,7 +43,7 @@
 				</ul>
 			</div>
 
-			<div class="nav_search">
+			<div class="nav_search hide_load">
 				<input type="search" placeholder="Search" />
 				<button class="btn_normal">
 					<span class="sh">SH</span><span class="op">OP</span>
@@ -213,7 +213,7 @@
 	
 	<!--</div>-->
 
-	<div class="mega_drop">
+	<div class="mega_drop hide_load">
 			<div class="page_container_inner">
 				<button class="close_modal">close</button>
 				<div class="list_contain clearfix">
@@ -794,7 +794,7 @@ usemap="#shop_btn">
 			</div>-->
 
 			<!-- Suggestion List -->
-            <section id="suggestion_list">
+            <div class="section" id="suggestion_list">
                 <div class="sub_title_container clearfix">
                     <h3 class="left">New Products</h3>
                 </div>
@@ -1045,7 +1045,7 @@ usemap="#shop_btn">
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
 		</div>
 	</div>
 	
@@ -1155,6 +1155,7 @@ usemap="#shop_btn">
 			megaDropDown();
 			escapeKeyFunc();
 			setHeight();
+			productHover();
 
 			// animation on main search box button
 			$('#btn_search').hover(
@@ -1197,6 +1198,7 @@ usemap="#shop_btn">
 
 			// show hide nav search when user scrolls past hero section
 			$('.nav_search').hide();
+			$('.nav_search').removeClass('hide_load');
 
     		$(window).scroll(function () {
     			var y = $(this).scrollTop();

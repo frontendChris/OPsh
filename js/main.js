@@ -170,6 +170,7 @@ function megaDropDown() {
 	
 	//$('.mega_drop_overlay').hide();
 	$('.mega_drop').hide();
+	$('.mega_drop').removeClass('hide_load');
 	
 	$('.categories').click(function(){
 		setHeight();
