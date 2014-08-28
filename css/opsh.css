@@ -62,7 +62,7 @@ body {
       }
 
     .user {
-   		background: #fff url(../imgs/icon_user.png) right center no-repeat;
+   		background: #fff url(../imgs/icon_user.png) right 15px no-repeat;
    		padding-right: 40px !important;
     }
 
@@ -1632,7 +1632,7 @@ screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   
   .user {
-      background: #fff url(../imgs/icon_user_x2.png) right center / 30px 20px no-repeat !important;
+      background: #fff url(../imgs/icon_user_x2.png) right 15px / 30px 20px no-repeat !important;
     }
 
     .categories {
