@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OPSH - Shop Details</title>
+	<title>OPSH</title>
 	<meta name="format-detection" content="telephone=no">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
 
@@ -17,13 +17,18 @@
 	<link rel="stylesheet" type="text/css" href="css/opsh.css">
 
 
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.ui.dialog.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.ui.datepicker.css" />
+
+
 
 </head>
 <body class="layout_center">
 	<!-- navigation -->
 	<div class="page_container_outer nav">
 		
-		<div class="page_container_inner clearfix">
+		<div class="page_container_inner clearfix ">
 			
 			<div class="brand fr_left">
 				<h1><a href="index.html"><img src="imgs/brand_x2.png" alt="OPSH. One Account. All your shops." /></a></h1>
@@ -305,6 +310,7 @@
 					</a>
 				</div>
 
+				
 				<div class="list_contain clearfix shops_nav">
 					<div class="title"><h2>Shops</h2></div>
 					<ul class="shop_list">
@@ -340,12 +346,14 @@
 				</div>
 			</div>
 		</div>
-	</div>
+
 	
-    <!-- Title Bar content -->
+	</div>
+
+	<!-- Title Bar content -->
 	<div class="top_bar page_container_outer">
 		<div class="page_container_inner clearfix">
-        	<h2 class="page_title fr_left">Shop Details</h2>
+        	<h2 class="page_title fr_left">OPSH Vouchers</h2>
 			<div class="follow_social_links fr_right">
             	<ul>
                 	<li><span>Follow is on:</span></li>
@@ -358,180 +366,60 @@
         </div>
 	</div>
 
-
 	<!-- body content -->
 	<div class="main page_container_outer">
-		<div class="page_container_inner clearfix">
-        
-        	<div class="col_left">
-            	<!-- Shop Header --> 
-            	<div class="section" id="header">
-                    <h2><img src="imgs/logos/housefraser_black.png" /></h2>
-                    <div class="shop_image">
-                        <img src="imgs/resources/hof1.jpg" alt="House of Fraser Image" />
+		<div class="page_container_inner">
+			<div class="section" id="vouchers" style="width:60%;">
+				<h3>OPSH Vouchers</h3>
+            	<p>Opsh gift cards make perfect presents for the fashionista in your life - especially if you can’t decide which shop is their favourite. With Opsh gift cards, they’ll be able to shop across the whole site - what could be better?</p>
+            	<form action="#" >
+                    <div class="form_container">
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_title_select">How much would you like to give?</label>
+                            </div>
+                            <div class="form_input">
+                                <select class="custom" id="form_title_select" name="form_title_select" required="required">
+                                    <option value="">€10.00</option>
+                                    <option value="">€20.00</option>
+                                    <option value="">€50.00</option>
+                                    <option value="">€75.00</option>
+                                    <option value="">€100.00</option>
+                                    <option value="">€150.00</option>
+                                    <option value="">€200.00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="first_name">Who is it for?</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox error_active" placeholder="Enter Recipients Email Address" id="first_name" name="first_name" required="required" aria-invalid="false" />
+                                <div class="error_note">
+                                	This field is required
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_row inline clearfix">
+                            <div class="form_label">
+                                <label for="form_date">When should the voucher be sent?</label>
+                            </div>
+                            <div class="form_input">
+                                <input type="text" class="inputbox dateinput" placeholder="Select Date" id="form_date" name="form_date" required="required" aria-invalid="false" />
+                            </div>
+                        </div>
+                       
+                        <div class="form_row inline clearfix">
+                            <input type="submit" value="Add to Cart" class="btn_normal"/>
+                        </div>
                     </div>
-                    <div class="shop_desc">
-                        <p>Nam consectetur erat tortor, a condimentum sapien hendrerit ut. Suspendisse a est eget sapien consequat dapibus. Suspendisse accumsan eget urna vitae consequat. Pellentesque nulla dui, rhoncus ac eleifend et, faucibus quis est. Ut tincidunt dictum posuere. Quisque at neque mollis, pellentesque nulla ut, elementum mi. Nullam id lectus mollis, dapibus nisi in, convallis neque. </p>
-                    </div>
+                </form>
+                <div class="voucher_image">
+                	<span>
+                		<span>OPSH</span>Vouchers
+                	</span>
                 </div>
-                
-                <!-- Shop Cateogires -->
-                <div class="section clearfix"  id="shop_categories">
-                    <div class="sub_title_container clearfix">
-                        <h3 class="fr_left">Shop Categories</h3>
-                    </div>
-                    <ul class="shop_categories">
-                    	<li><a href="#dresses">Dresses</a></li>
-                    	<li><a href="#tops">Tops</a></li>
-                    	<li><a href="#bottoms">Bottoms</a></li>
-                    	<li><a href="#outerwear">Outerwear</a></li>
-                    	<li><a href="#shoes">Shoes</a></li>
-                    	<li><a href="#underwear">Underwear</a></li>
-                    	<li><a href="#accessories">Accessories</a></li>
-                    </ul>
-                    <br class="clear"/>
-                </div>
-                
-                <!-- Other Shops -->
-                <div class="section"  id="other_shops">
-                    <div class="sub_title_container clearfix">
-                        <h3 class="fr_left">Other Stores</h3>
-                    </div>
-                    <ul class="shop_list_inline">
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/debenhams_black.png" alt="debenhams"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/evans_black.png" alt="Evans"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/forever21_black.png" alt="Forever 21"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/housefraser_black.png" alt="House of Fraser"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/m+s_black.png" alt="Marks and Spencers"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/next_black.png" alt="Next"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/debenhams_black.png" alt="debenhams"></a></li>
-                        <li><a href="javascript:void(0)"><img src="imgs/logos/evans_black.png" alt="Evans"></a></li>
-                    </ul>
-                    <br class="clear"/>
-                </div>
-            </div>
-            
-            <div class="col_right">
-            	<!-- Featured Products -->
-                <div id="featured_products">
-                    <div class="sub_title_container clearfix" style="margin-top:25px;">
-                        <h3 class="fr_left">Featured Products</h3>
-                    </div>
-                    <ul class="product_list featured_list">
-						
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-                                            <img src="imgs/home_imgs/product6.jpg" alt=""/>
-                                            <div class="product_shop">
-                                                <img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
-											</div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<a class="add" href="javascript:void(0)">add to basket</a>
-								</div>
-								<div class="wishlist_icon">
-									<a>add to my wishlist</a>
-								</div>
-							</div>
-						</li>
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-                                            <img src="imgs/home_imgs/product5.jpg" alt=""/>
-                                            <div class="product_shop">
-                                                <img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
-                                            </div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<a class="add" href="javascript:void(0)">add to basket</a>
-								</div>
-								<div class="wishlist_icon">
-									<a>add to my wishlist</a>
-								</div>
-							</div>
-						</li>
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-                                            <img src="imgs/home_imgs/product4.jpg" alt=""/>
-                                            <div class="product_shop">
-                                                <img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
-                                            </div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<a class="add" href="javascript:void(0)">add to basket</a>
-								</div>
-								<div class="wishlist_icon">
-									<a>add to my wishlist</a>
-								</div>
-							</div>
-						</li>
-
-						<li class="product_comp standard">
-							<div class="product_comp_inner">
-								<a href="#">
-									<div class="product_comp_img">
-										<div class="product_comp_img_inner">
-                                            <img src="imgs/home_imgs/product3.jpg" alt=""/>
-                                            <div class="product_shop">
-                                                <img src="imgs/logos/housefraser_black.png" alt="House of Fraser"/>
-											</div>
-										</div>
-									</div>
-									<div class="product_comp_details">
-										<div class="product_name">The Ragged Priest Checked Mini Skater </div>
-										<div class="product_amount">
-											&euro; <span>30</span>
-										</div>
-									</div>
-								</a>
-								<div class="add_to_basket">
-									<a class="add" href="javascript:void(0)">add to basket</a>
-								</div>
-								<div class="wishlist_icon">
-									<a>add to my wishlist</a>
-								</div>
-							</div>
-						</li>
-                    </ul>
-                    
-                </div>
-                    <a class="btn_normal" href="javascript:void(0)">View all Shops Products</a>
             </div>
 		</div>
 	</div> 
@@ -641,13 +529,38 @@
 	<script type="text/javascript" src="js/main.js"></script>
 
 	<script type="text/javascript">
+		
 		$(document).ready(function(){
 			dropdownContainers();
 			megaDropDown();
 			escapeKeyFunc();
-			productHover();
 			setHeight();
+
+			// Initiate Datepicker
+            $('.dateinput').datepicker({
+                dateFormat: "dd/mm/yy",
+                defaultDate: 0,
+				numberOfMonths: 1,
+                /* Put this in if you want it to appear in a div in the center of the page
+				beforeShow: function() {
+                    $(this).datepicker("widget").wrap("<div class='datepickerBorder'></div>");
+                },
+                onClose: function() {
+                    $(this).datepicker("widget").unwrap();
+                }
+				*/
+            });
+            $( ".dateinput" ).datepicker( "setDate", "0" );
+			
+			// Detect if Browser is handheld and swap out date picker
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				$( "input.dateinput" ).each(function( index ) {
+					$(this).clone().attr('type','date').insertAfter(this).prev().remove();
+				});	
+			}
 		});
+
+		
 	</script>
 
 	

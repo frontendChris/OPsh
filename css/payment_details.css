@@ -10,7 +10,7 @@
 		margin-bottom: 20px;
 	}
 
-		#payment_details .section .sub_title_container button {
+		#payment_details .section .sub_title_container a {
 			position: absolute;
 			right: 0;
 		} 
@@ -59,9 +59,12 @@
 
 				#payment_details .section ul li .addr_footer li a {
 					display: block;
-					margin-top: 8px;
 					text-decoration: none;
 					border-bottom: 1px solid;
+				}
+
+				#payment_details .section ul li .addr_footer li a.btn_transparent {
+					border: 0;
 				}
 
 				#payment_details .section ul li .addr_footer li.default_marker {

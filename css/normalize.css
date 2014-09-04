@@ -1,3 +1,7 @@
+@import url("kendo.common.min.css") all;
+@import url("kendo.bootstrap.min.css") all;
+@import url("Site.css") all;
+
 html {
     font-size: 100%; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */

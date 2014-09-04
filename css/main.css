@@ -39,11 +39,11 @@
       clear: both;
     }
 
-    .left {
+    .fr_left {
    		float: left;
     }
 
-    .right {
+    .fr_right {
    		float: right !important;
     }
 
@@ -143,7 +143,7 @@
 	   		margin: 0;
 	   	}
 		
-		.nav_list.right>ul>li {
+		.nav_list.fr_right>ul>li {
           	border-right: 1px solid #ccc;
 		}
 
@@ -173,7 +173,7 @@
           background-color: white !important;
         }
 
-        .nav_list.right>ul>li #user.drop_active {
+        .nav_list.fr_right>ul>li #user.drop_active {
           	border-left: 1px solid #ccc;
         }
 

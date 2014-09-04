@@ -14,6 +14,7 @@
 @import url("checkout.css") all;
 @import url("order_hist.css") all;
 @import url("payment_details.css") all;
+@import url("vouchers.css") all;
 @import url("retina.css") all;
 
 html {
@@ -102,7 +103,7 @@ body {
   			-webkit-appearance:none;
     	}
 
-    	.nav .nav_search button {
+    	.nav .nav_search a.btn_normal {
     		height: 34px;
     		line-height: 34px;
     		background-color: transparent;
@@ -110,16 +111,17 @@ body {
     		position: absolute;
     		right: -71px;
     		top: 0;
+        text-align: center;
     	}
 
-    		.nav .nav_search button span {
+    		.nav .nav_search a.btn_normal span {
     			width: 34px;
     			height: 34px;
     			background-color: #000;
     			display: inline-block;
     		}
 
-    		.nav .nav_search button span.sh {
+    		.nav .nav_search a.btn_normal span.sh {
     			margin-right: 1px;
     		} 
 
@@ -212,22 +214,30 @@ body {
 
    	.basket.dd_panel {display: none;}
 
-   		.basket.dd_panel .dd_panel_body {}
+   		.basket.dd_panel .dd_panel_body {
+        height: 341px;
+        overflow: hidden;
+      }
 
    			.basket.dd_panel .dd_panel_body ul {
    				margin: 0;
    			} 
 
-   				.basket.dd_panel .dd_panel_body ul li {
-   					float: none;
+          .basket.dd_panel .dd_panel_body ul li {
+            float: none;
+          }
+
+   				.basket.dd_panel .dd_panel_body > ul > li {
    					padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
    				}
 
-   				.basket.dd_panel .dd_panel_body > ul > li + li {
+   				/*.basket.dd_panel .dd_panel_body > ul > li + li {
    					border-top: 1px solid #ccc;
    					padding-top: 20px;
    					padding-bottom: 0;
-   				}
+   				}*/
 
    				.basket.dd_panel .dd_panel_body ul li div.product {
    					position: relative;
@@ -247,6 +257,7 @@ body {
    					.basket.dd_panel .dd_panel_body ul li div.product .prod_details {
    						float: left;
    						margin-left: 20px;
+              width: 170px;
    					}
 
    						.basket.dd_panel .dd_panel_body ul li div.product .prod_details ul {}
@@ -300,7 +311,7 @@ body {
    		}
 
 
-    .mega_drop button.close_modal {
+    .mega_drop a.close_modal {
     	position: absolute;
     	top: 10px;
     	right: 10px;
@@ -310,6 +321,8 @@ body {
     	background: transparent url(../imgs/icon_close_modal.png) center right no-repeat;
     	display: block;
     	text-indent: -9999em;
+      z-index: 50;
+      cursor: pointer;
     }
 
     .mega_drop .title {
@@ -319,6 +332,7 @@ body {
 
     	.mega_drop .list_contain {
     		margin-bottom: 40px;
+        position: relative;
     	}
 
     	.mega_drop ul {
@@ -327,7 +341,7 @@ body {
 
     	.mega_drop .cat_list {
     		float: left;
-    		width: 134px;
+    		width: 120px;
     		font-size: 12px;
     	}
 
@@ -360,6 +374,38 @@ body {
    			.mega_drop ul.shop_list li img {
    				width: 100%;
    			} 
+
+
+    .mega_drop .vouchers {
+      border: 2px solid #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 90px;
+      height: 150px;
+      display: block;
+      text-decoration: none;
+    }
+
+      .mega_drop .vouchers span {
+        margin: auto;
+        font-size: 12px;
+        margin-top: 48px;
+        display: block;
+        color: #fff;
+        font-weight: bold;
+
+      }
+
+        .mega_drop .vouchers span > span {
+          font-size: 18px;
+          border-bottom:  2px solid #fff;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          width: 53px; 
+        }
 
 /* ==========================================================================
    Homepage Classes
@@ -400,7 +446,7 @@ body {
           outline: none !important;
     		}
 
-    		.hero .main_search button {
+    		.hero .main_search a {
     			height: 45px;
     			line-height: 45px;
     			background: transparent;
@@ -410,7 +456,7 @@ body {
           outline: none !important;
     		}
 
-    			.hero .main_search button span.sh {
+    			.hero .main_search a span.sh {
     				background-image: url(../imgs/sh.jpg);
     				background-repeat: no-repeat;
     				background-position: 0 0;
@@ -431,7 +477,7 @@ body {
 
     			
 
-    			.hero .main_search button span.op {
+    			.hero .main_search a span.op {
     				background-image: url(../imgs/op.jpg);
     				width: 45px;
     				height: 45px;
@@ -591,16 +637,16 @@ body {
    				margin-top: -14px;
    			}
 
-      .inner_div .prod_details .left {
+      .inner_div .prod_details .fr_left {
          padding: 25px 0 0 10px;
       }
-      .inner_div .prod_details .left a {
+      .inner_div .prod_details .fr_left a {
         display: block;
         text-decoration: none;
         border-bottom: 1px solid;
       }
 
-      .inner_div .prod_details .right {
+      .inner_div .prod_details .fr_right {
         padding: 16px 10px 0 0;
       }
 
@@ -837,8 +883,9 @@ body {
   .top_bar {
     padding: 10px 0;
     overflow: hidden;
-    cursor: pointer;
+    /*cursor: pointer;*/
     min-height: 34px;
+    background-color: #000;
   }
 
     .top_bar #shop_filter {
@@ -858,7 +905,9 @@ body {
           position: absolute;
           right: 0;
           border: 0;
-          top: 8px;
+          top: 5px;
+          padding: 3px 0;
+          cursor: pointer;
         }
 
         .top_bar #shop_filter .filter_title .shop_filter_toggle.shop_filter_open {
@@ -920,7 +969,9 @@ body {
       display: block !important;
     }
 
-
+    .top_bar h2 {
+      font-weight: 700;
+    }
 
 
   /* filter list */
@@ -1056,6 +1107,7 @@ body {
 
         ul.product_list li.product_comp.standard {
           width: 140px;
+          max-height: 280px;
         }
 		
 		 ul.product_list li.product_comp.small {
@@ -1068,6 +1120,8 @@ body {
           ul.product_list li.product_comp a {
               text-decoration: none;
               display: block;
+              min-height: 290px;
+              position: relative;
             }
 
           ul.product_list li.product_comp a:hover {
@@ -1084,6 +1138,9 @@ body {
                 display: table-cell;
                 vertical-align: middle;
                 position: relative;
+                width: 140px;
+                height: 210px;
+                text-align: center;
               }
 			  
 			   ul.product_list li.product_comp.small a .product_comp_img_inner {
@@ -1093,7 +1150,9 @@ body {
               }
 
               ul.product_list li.product_comp a .product_comp_img img {
-                width: 100%;
+                width: auto;
+                max-width: 100%;
+                max-height: 100%;
               }
 
               ul.product_list li.product_comp a .product_comp_img .product_shop {
@@ -1149,39 +1208,56 @@ body {
               }
 
 
-              ul.product_list li.product_comp .add_to_basket button {
+              ul.product_list li.product_comp .add_to_basket a.add {
                 background-color: #000;
-                padding: 6px 10px;
+                padding-top: 10px;
                 color: #ccc;
                 bottom: 40px;
                 border: 0;
                 font-weight: 300;
                 width: 100%;
-                height: 35px;
+                height: 25px;
+                min-height: 25px;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                font-weight: 700;
               }
 
-              ul.product_list li.product_comp .add_to_basket button:hover {
+              ul.product_list li.product_comp .add_to_basket a.add:hover {
                 color: #fff;
                 background-color: #242424;  
               }
 
             ul.product_list li.product_comp a .product_comp_details {
-                position: relative;
+                /*position: relative;*/
                 margin-top: 10px;
               }
 
               ul.product_list li.product_comp a .product_comp_details .product_name {
                 /*
-				line-height: 1.6em;
+        				line-height: 1.6em;
                 margin-bottom: 5px;
-				*/
-				font-size: 0.95em;
-				line-height: 15px;
-				margin-bottom: 5px;
-				padding: 0px;
+        				*/
+        				font-size: 0.95em;
+        				line-height: 15px;
+        				margin-bottom: 5px;
+        				padding: 0px;
               }
 
-              ul.product_list li.product_comp a .product_comp_details .product_amount {font-weight: 700; line-height:20px; /* to compensate for Wishlist Icon */}
+              ul.product_list li.product_comp a .product_comp_details .product_amount {
+                font-weight: 700; line-height:20px;/* to compensate for Wishlist Icon */
+                position: absolute;
+                bottom: 0;
+                left: 0;
+              }
+
+                ul.product_list li.product_comp a .product_comp_details .product_amount .old_price {
+                  font-weight: normal;
+                  color: #666;
+                  text-decoration: line-through;
+                  margin-left: 10px;
+                }
 
               ul.product_list li.product_comp .wishlist_icon {
                 width: 20px;
@@ -1291,7 +1367,7 @@ body {
    					display: block;
    					position: relative;
    					margin-right: 75px;
-					padding:5px 0px;
+					  padding:3px 0px;
    				}
 
    					.footer_upper ul.footer_list li.currency > div div.form_input {
@@ -1633,23 +1709,23 @@ ul.product_list.featured_list {
 		font-size:1.2em;
 	}
 	
-	#grid_pagination {
+	.grid_pagination {
 		float:right;
 		display:block;
 	}
 	
-		#grid_pagination ul {
+		.grid_pagination ul {
 			float:left;
 			display:block;
 		}
 			
-			#grid_pagination ul li {
+			.grid_pagination ul li {
 				float:left;
 				display:block;
 				margin-right:2px;
 			}
 			
-				#grid_pagination ul li a {
+				.grid_pagination ul li a {
 					float:left;
 					display:block;
 					line-height:30px;
@@ -1660,12 +1736,12 @@ ul.product_list.featured_list {
 					color:inherit;
 				}
 				
-				#grid_pagination ul li a:hover {
+				.grid_pagination ul li a:hover {
 					background-color:#e3e3e3;
 					text-decoration:none;
 				}
 				
-				#grid_pagination ul li a.pag_prev_btn {
+				.grid_pagination ul li a.pag_prev_btn {
 					width:30px;
 					height:30px;
 					text-indent:-999em;
@@ -1675,7 +1751,7 @@ ul.product_list.featured_list {
 					background-size:30px 60px;
 				}
 				
-				#grid_pagination ul li a.pag_next_btn {
+				.grid_pagination ul li a.pag_next_btn {
 					width:30px;
 					height:30px;
 					text-indent:-999em;
@@ -1685,7 +1761,7 @@ ul.product_list.featured_list {
 					background-size:30px 60px;
 				}
 				
-				#grid_pagination ul li span.pag_current {
+				.grid_pagination ul li span.pag_current {
 					line-height:30px;
 					text-align:center;
 					float:left;
@@ -1695,7 +1771,7 @@ ul.product_list.featured_list {
 					background-color:#CCCCCC;
 				}
 				
-				#grid_pagination ul li span.pag_divider {
+				.grid_pagination ul li span.pag_divider {
 					line-height:30px;
 					text-align:center;
 					float:left;
@@ -1708,6 +1784,40 @@ ul.product_list.featured_list {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }	
+
+.error_note {
+color: #FFFFFF;
+padding: 5px;
+clear: both;
+line-height: 20px;
+margin-top: 5px;
+background: #CC5252 url(../imgs/icon_alert.png) 7px 7px no-repeat;
+padding-left: 30px;
+}
+
+.error_active {
+  border: 1px solid #CC5252 !important;
+}
+
+/* size selector css */
+
+.sidebar .filter .filter_body ul li.size_selector {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  height: 227px;
+  overflow: auto;
+}
+
+div.selector_List_title {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0 10px 5px;
+  margin-bottom: 5px;
+}
+
+div.selector_list {
+  padding-left: 5px;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), 
 screen and (min--moz-device-pixel-ratio: 1.3), 

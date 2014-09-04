@@ -34,6 +34,8 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			height: 419px;
+			overflow: hidden;
 		}
 
 			.product_overview .product_images .side_images ul {

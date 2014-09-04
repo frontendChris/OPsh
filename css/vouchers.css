@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#vouchers {
+	min-height: 400px;
+	position: relative;
+}
+
+	#vouchers p {
+		margin-bottom: 20px;
+	}
+
+
+	.voucher_image {
+		border: 4px solid #000;
+		width: 250px;
+		height: 400px;
+		position: absolute;
+		top: 0;
+		right: -350px;
+		text-align: center;
+	}
+
+		.voucher_image span {
+			margin-top: 135px;
+			font-weight: bold;
+			font-size: 30px;
+			display: block;
+		}
+
+			.voucher_image span > span {
+				margin: auto;
+				font-size: 50px;
+				display: block;
+				border-bottom: 4px solid #000;
+				width: 142px;
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+			}
+
+
+		#vouchers .form_container .form_row .form_label label {
+			padding-right: 10px;
+		}

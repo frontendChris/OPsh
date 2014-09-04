@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.nav_list ul li a.btn_normal,
+a.btn_normal,
 .btn_normal {
-	width:auto;
 	background-color:#000;
 	color:#FFFFFF;
 	line-height:30px;
@@ -16,14 +17,22 @@
 	text-transform: uppercase;
 	font-size: 11px;
     transition: all 0.2s ease 0s;
+    display: inline-block;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
 }
 
+.nav_list ul li a.btn_normal:hover,
+a.btn_normal:hover,
 .btn_normal:hover {
 	background-color:#e67f96;
+	text-decoration: none;
 }
 
 
-.btn_transparent {
+a.btn_transparent,
+.btn_transparent  {
 	width:auto;
 	background-color:transparent;
 	color:#333;
@@ -38,9 +47,11 @@
 	text-transform: uppercase;
 	font-size: 11px;
 	border-radius:0px;
+	text-decoration: none;
 }
 
 
+a.btn_outline,
 .btn_outline {
 	background-color: #fff;
 	border: 1px solid #000;
@@ -82,12 +93,18 @@
 }
 
 
-.btn_big {
+a.btn_large,
+.btn_large {
 	height:40px;
 	line-height:40px;
 	padding:0px 20px;
     transition: all 0.2s ease 0s;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
 }
+
+
 
 
 
