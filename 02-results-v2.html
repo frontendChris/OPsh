@@ -352,7 +352,7 @@
 	<!-- body content -->
 	<div class="top_bar page_container_outer">
 		
-			<div class="page_container_inner clearfix">
+			<div class="page_container_inner clearfix filter_closed">
 					<div class="sidebar">
 						
 						<div class="filter form_container" id="shop_filter">
@@ -360,7 +360,7 @@
 							<!-- shops filter -->
 							<div class="filter_title">
 								<span>Shops</span>
-								<a class="shop_filter_toggle"></a>
+								<!--<a class="shop_filter_toggle"></a>-->
 							</div>
 							<div class="filter_body form_row">
 								<div class="form_fieldset"> 
@@ -394,8 +394,8 @@
 						</div>
 					</div>
 					
-					<div class="main_content">
-						<div class="shop_list filter_list">
+					<div class="main_content" id="shop_filter_v2">
+						<!--<div class="shop_list filter_list">
 							<ul>
 								<li>
 									<a href="javascript:void(0)" class="no_bubble">
@@ -405,16 +405,13 @@
 								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a><a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a></li>
 								
 							</ul>
-						</div>
+						</div>-->
 						<div class="shop_list sub_filter_list">
 							<ul>
-								<li class="selected"><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/debenhams.png" alt="debenhams"></a></li>
-								<li class="selected"><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/evans.png" alt="Evans"></a></li>
-								<li class="selected"><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/forever21.png" alt="Forever 21"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/housefraser.png" alt="House of Fraser"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/m+s.png" alt="Marks and Spencers"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/missselfridges.png" alt="Miss Selfridges"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/next.png" alt="Next"></a></li>
+								<li><a  class="selected" href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/house-of-fraser_white.png" alt="house-of-fraser"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/urban-outfitters-white.png" alt="Urban Outfitters"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/river-island-white.png" alt="River Island"></a></li>
+								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/new-look-white.png" alt="New Look"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -2225,7 +2222,7 @@
 			dropdownContainers();
 			megaDropDown();
 			escapeKeyFunc();
-			shopFilter();
+			//shopFilter();
 			setHeight();
 
 			checkAppliedRadioBtn();
@@ -2317,6 +2314,14 @@
 			    lines: 2,
 			    lineHeight: 25
 		    });
+
+		    $('.shop_list li a').click(function(){
+				if($(this).hasClass('selected')) {
+					$(this).removeClass('selected');
+				} else {
+					$(this).addClass('selected');
+				}
+			})
 		});
 		
 	</script>

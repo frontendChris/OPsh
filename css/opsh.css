@@ -15,7 +15,10 @@
 @import url("order_hist.css") all;
 @import url("payment_details.css") all;
 @import url("vouchers.css") all;
+@import url("shop_filter_v2.css") all;
 @import url("retina.css") all;
+
+@import url("login.css") all;
 
 html {
   background-color: #000;

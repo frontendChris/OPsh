@@ -363,85 +363,681 @@
 	<!-- body content -->
 	<div class="main page_container_outer">
 		<div class="page_container_inner">
-			<section id="account_details">
-            	<h3>Hi Kim, here are your account details?</h3>
-            	<form action="#" style="width:60%;">
-                    <div class="form_container">
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="form_title_select">Title</label>
-                            </div>
-                            <div class="form_input">
-                                <select class="custom" id="form_title_select" name="form_title_select" required="required">
-                                    <option value="">Title</option>
-                                    <option value="Mr">Mr</option>
-                                    <option value="Mrs" selected="selected">Mrs</option>
-                                    <option value="Ms">Ms</option>
-                                    <option value="Miss">Miss</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="first_name">First Name</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="text" class="inputbox" placeholder="Enter Name" id="first_name" name="first_name" required="required" aria-invalid="false" value="Kim" />
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="last_name">Surname</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="text" class="inputbox" placeholder="Enter Surname" id="last_name" name="last_name" required="required" aria-invalid="false" value="Jung" />
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="form_username">Username</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="text" class="inputbox" placeholder="Enter Username" id="form_username" name="form_username" required="required" aria-invalid="false" value="kim.jung" />
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="form_email">Email</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="text" class="inputbox" placeholder="Enter Email" id="form_email" name="form_email" required="required" aria-invalid="false" value="kim.jung@gmail.com" />
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="form_current_password">Current Password</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="password" class="inputbox" placeholder="Enter Email" id="form_current_password" name="form_current_password" required="required" aria-invalid="false" value="password" />
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="form_new_password">New Password</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="password" class="inputbox" placeholder="Enter New Password" id="form_new_password" name="form_new_password" required="required" aria-invalid="false" />
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <div class="form_label">
-                                <label for="form_confirm_password">Confirm Password</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="password" class="inputbox" placeholder="Enter Email" id="form_confirm_password" name="form_confirm_password" required="required" aria-invalid="false" />
-                            </div>
-                        </div>
-                        <div class="form_row inline clearfix">
-                            <input type="submit" value="Update" class="btn_normal"/>
-                        </div>
-                    </div>
-                </form>
+			<section id="account_details" class="clearfix">
+				
+				<div class="fr_left" style="width:680px;">
+	            	<h3>Hi Kim, here are your account details?</h3>
+	            	<form action="#">
+	                    <div class="form_container">
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="form_title_select">Title</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <select class="custom" id="form_title_select" name="form_title_select" required="required">
+	                                    <option value="">Title</option>
+	                                    <option value="Mr">Mr</option>
+	                                    <option value="Mrs" selected="selected">Mrs</option>
+	                                    <option value="Ms">Ms</option>
+	                                    <option value="Miss">Miss</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="first_name">First Name</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <input type="text" class="inputbox" placeholder="Enter Name" id="first_name" name="first_name" required="required" aria-invalid="false" value="Kim" />
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="last_name">Surname</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <input type="text" class="inputbox" placeholder="Enter Surname" id="last_name" name="last_name" required="required" aria-invalid="false" value="Jung" />
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="form_username">Username</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <input type="text" class="inputbox" placeholder="Enter Username" id="form_username" name="form_username" required="required" aria-invalid="false" value="kim.jung" />
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="form_email">Email</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <input type="text" class="inputbox" placeholder="Enter Email" id="form_email" name="form_email" required="required" aria-invalid="false" value="kim.jung@gmail.com" />
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="form_current_password">Current Password</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <input type="password" class="inputbox" placeholder="Enter Email" id="form_current_password" name="form_current_password" required="required" aria-invalid="false" value="password" />
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="form_new_password">New Password</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <input type="password" class="inputbox" placeholder="Enter New Password" id="form_new_password" name="form_new_password" required="required" aria-invalid="false" />
+	                            </div>
+	                        </div>
+	                        <div class="form_row inline clearfix">
+	                            <div class="form_label">
+	                                <label for="form_confirm_password">Confirm Password</label>
+	                            </div>
+	                            <div class="form_input">
+	                                <input type="password" class="inputbox" placeholder="Enter Email" id="form_confirm_password" name="form_confirm_password" required="required" aria-invalid="false" />
+	                            </div>
+	                        </div>
+	                        
+	                    </div>
+	               
+	                <div id="profile">
+	                	<div class="main_content">
+		                	<div class="sub_title_container clearfix">
+								<h3 class="fr_left">Prefered Shops</h3>
+							</div>
+							<div class="list_contain clearfix">
+								<ul class="shop_list">
+			                    	<li><a href="javascript:void(0)" class="selected"><img src="imgs/logos/debenhams_black.png" alt="debenhams"></a></li>
+			                        <li><a href="javascript:void(0)" class="selected"><img src="imgs/logos/evans_black.png" alt="Evans"></a>
+			                        </li>
+			                        <li><a href="javascript:void(0)" class="selected"><img src="imgs/logos/forever21_black.png" alt="Forever 21"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/housefraser_black.png" alt="House of Fraser"></a></li>
+			                        <li><a href="javascript:void(0)" class="selected"><img src="imgs/logos/m+s_black.png" alt="Marks and Spencers"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"></a></li>
+			                        <li><a href="javascript:void(0)" class="selected"><img src="imgs/logos/next_black.png" alt="Next"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/housefraser_black.png" alt="House of Fraser"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/m+s_black.png" alt="Marks and Spencers"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/next_black.png" alt="Next"></a></li>
+			                        <li><a href="javascript:void(0)" class="selected"><img src="imgs/logos/housefraser_black.png" alt="House of Fraser"></a></li>
+			                        <li><a href="javascript:void(0)" class="selected"><img src="imgs/logos/m+s_black.png" alt="Marks and Spencers"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/missselfridges_black.png" alt="Miss Selfridges"></a></li>
+			                        <li><a href="javascript:void(0)"><img src="imgs/logos/next_black.png" alt="Next"></a></li>
+			                    </ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="title sub_title_container clearfix">
+						<h3 class="fr_left">I am always interested in</h3>
+					</div>
+
+					<div class="list_contain clearfix">
+						
+						<!-- opsh styles filter -->
+		 				<div class="filter form_container">
+							<div class="form_row inline clearfix">
+								<div class="form_fieldset"> 
+									<fieldset class="inline_elements">
+		                			<legend class="hidden_label">OPSH Styles</legend>
+										<ul style="margin: 0; font-size: 12px;" class="tag_list">
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag1">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag1" aria-invalid="false" required="required" /></span>
+														Beach Wear
+													</label>
+												</div>
+											</li>
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag2">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag2" aria-invalid="false" required="required" /></span>
+														Work Wear
+													</label>
+												</div>
+											</li>
+
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag3">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag3" aria-invalid="false" required="required" /></span>
+														Underwear
+													</label>
+												</div>
+											</li>
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag4">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag4" aria-invalid="false" required="required" /></span>
+														No-Wear
+													</label>
+												</div>
+											</li>
+
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag5">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag5" aria-invalid="false" required="required" /></span>
+														Wolf-Wear
+													</label>
+												</div>
+											</li>
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag6">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag6" aria-invalid="false" required="required" /></span>
+														Wear is my mind
+													</label>
+												</div>
+											</li>
+
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag7">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag7" aria-invalid="false" required="required" /></span>
+														Shoes
+													</label>
+												</div>
+											</li>
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag8">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag8" aria-invalid="false" required="required" /></span>
+														Hats
+													</label>
+												</div>
+											</li>
+
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag9">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag9" aria-invalid="false" required="required" /></span>
+														Fire-Clothes
+													</label>
+												</div>
+											</li>
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag10">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag10" aria-invalid="false" required="required" /></span>
+														Bear Outfits
+													</label>
+												</div>
+											</li>
+
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag11">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag11" aria-invalid="false" required="required" /></span>
+														Snakeskin Gloves
+													</label>
+												</div>
+											</li>
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag12">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag12" aria-invalid="false" required="required" /></span>
+														Fake Moustaches
+													</label>
+												</div>
+											</li>
+
+											<li class="chbox_item">
+												<div class="chbox_label tag">
+													<label for="tag13">
+														<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="tag13" aria-invalid="false" required="required" /></span>
+														Wigs
+													</label>
+												</div>
+											</li>
+
+										</ul>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div style="width: 220px; float: right;">
+					
+
+					<div class="sidebar">
+						<div class="title sub_title_container clearfix">
+							<h3 class="fr_left">My OPSH Sizes</h3>
+						</div>
+						<div class="filter form_container" id="size_filter">
+							<div class="filter_body form_row">
+								<div class="form_fieldset"> 
+									<fieldset>
+		                			<legend class="hidden_label">Sizes</legend>
+										<ul>
+											<li class="unit_size_selector clearfix">
+												<div class="radio_item">
+			                                        <div class="radio_label">
+			                                        	<label for="uk_sizes">
+			                                            	<span class="radio_input"><input type="radio" name="radio_options" id="uk_sizes" aria-invalid="false" checked="checked" /></span>
+			                                                UK Sizes
+			                                            </label>
+			                                        </div>
+			                                    </div>
+			                                    <div class="radio_item">
+			                                        <div class="radio_label">
+			                                        	<label for="eu_sizes">
+			                                            	<span class="radio_input"><input type="radio" name="radio_options" id="eu_sizes" aria-invalid="false" /></span>
+			                                                EU Sizes
+			                                            </label>
+			                                        </div>
+			                                    </div>
+											</li>
+											
+											<li class="size_selector">
+						                            <div class="selector_List_title">
+						                                Dress Sizes
+						                            </div>
+						                           <div class="selector_list form_row">
+						                                <div class="form_fieldset clearfix"> 
+														<fieldset>
+							                				<legend class="hidden_label">Dress Sizes</legend>
+															<ul class="half_list">
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_six">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_six" aria-invalid="false" required="required" /></span>
+																			6
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_eight">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_eight" aria-invalid="false" required="required" /></span>
+																			8
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_ten">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_ten" aria-invalid="false" required="required" /></span>
+																			10
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_twelve">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="blue" aria-invalid="false" required="required" /></span>
+																			12
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_fourteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_fourteen" aria-invalid="false" required="required" /></span>
+																			14
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_sizteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_sizteen" aria-invalid="false" required="required" /></span>
+																			16
+																		</label>
+																	</div>
+																</li>
+																
+															</ul>
+															<ul class="half_list">
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_eighteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_eighteen" aria-invalid="false" required="required" /></span>
+																			18
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_twenty">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_twenty" aria-invalid="false" required="required" /></span>
+																			20
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_twentytwo">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_twentytwo" aria-invalid="false" required="required" /></span>
+																			22
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_twentyfour">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="dress_size_twentyfour" aria-invalid="false" required="required" /></span>
+																			24
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="dress_size_twentysix">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="size_twentysix" aria-invalid="false" required="required" /></span>
+																			26
+																		</label>
+																	</div>
+																</li>
+																
+															</ul>			
+														</fieldset>
+													</div>
+					                            </div>
+											</li>
+
+											<li class="size_selector">
+						                            <div class="selector_List_title">
+						                                Shoe Sizes
+						                            </div>
+						                           <div class="selector_list form_row">
+						                                <div class="form_fieldset clearfix"> 
+														<fieldset>
+							                				<legend class="hidden_label">Shoe Sizes</legend>
+															<ul class="half_list">
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_six">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_six" aria-invalid="false" required="required" /></span>
+																			6
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_eight">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_eight" aria-invalid="false" required="required" /></span>
+																			8
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_ten">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_ten" aria-invalid="false" required="required" /></span>
+																			10
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_twelve">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="blue" aria-invalid="false" required="required" /></span>
+																			12
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_fourteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_fourteen" aria-invalid="false" required="required" /></span>
+																			14
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_sizteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_sizteen" aria-invalid="false" required="required" /></span>
+																			16
+																		</label>
+																	</div>
+																</li>
+																
+															</ul>
+															<ul class="half_list">
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_eighteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_eighteen" aria-invalid="false" required="required" /></span>
+																			18
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_twenty">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_twenty" aria-invalid="false" required="required" /></span>
+																			20
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_twentytwo">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_twentytwo" aria-invalid="false" required="required" /></span>
+																			22
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_twentyfour">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_twentyfour" aria-invalid="false" required="required" /></span>
+																			24
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="shoe_size_twentysix">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="shoe_size_twentysix" aria-invalid="false" required="required" /></span>
+																			26
+																		</label>
+																	</div>
+																</li>
+																
+															</ul>			
+														</fieldset>
+													</div>
+					                            </div>
+											</li>
+
+											<li class="size_selector">
+						                            <div class="selector_List_title">
+						                                Bra Sizes
+						                            </div>
+						                           <div class="selector_list form_row">
+						                                <div class="form_fieldset clearfix"> 
+														<fieldset>
+							                				<legend class="hidden_label">Bra Sizes</legend>
+															<ul class="half_list">
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_six">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_six" aria-invalid="false" required="required" /></span>
+																			6
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_eight">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_eight" aria-invalid="false" required="required" /></span>
+																			8
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_ten">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_ten" aria-invalid="false" required="required" /></span>
+																			10
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twelve">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="blue" aria-invalid="false" required="required" /></span>
+																			12
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_fourteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_fourteen" aria-invalid="false" required="required" /></span>
+																			14
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_sizteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_sizteen" aria-invalid="false" required="required" /></span>
+																			16
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_ten">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_ten" aria-invalid="false" required="required" /></span>
+																			10
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twelve">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="blue" aria-invalid="false" required="required" /></span>
+																			12
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_fourteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_fourteen" aria-invalid="false" required="required" /></span>
+																			14
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_sizteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_sizteen" aria-invalid="false" required="required" /></span>
+																			16
+																		</label>
+																	</div>
+																</li>
+																
+															</ul>
+															<ul class="half_list">
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_eighteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_eighteen" aria-invalid="false" required="required" /></span>
+																			18
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twenty">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twenty" aria-invalid="false" required="required" /></span>
+																			20
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twentytwo">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twentytwo" aria-invalid="false" required="required" /></span>
+																			22
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twentyfour">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twentyfour" aria-invalid="false" required="required" /></span>
+																			24
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twentysix">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twentysix" aria-invalid="false" required="required" /></span>
+																			26
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_eighteen">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_eighteen" aria-invalid="false" required="required" /></span>
+																			18
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twenty">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twenty" aria-invalid="false" required="required" /></span>
+																			20
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twentytwo">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twentytwo" aria-invalid="false" required="required" /></span>
+																			22
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twentyfour">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twentyfour" aria-invalid="false" required="required" /></span>
+																			24
+																		</label>
+																	</div>
+																</li>
+																<li class="chbox_item">
+																	<div class="chbox_label">
+																		<label for="bra_size_twentysix">
+																			<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="bra_size_twentysix" aria-invalid="false" required="required" /></span>
+																			26
+																		</label>
+																	</div>
+																</li>
+															</ul>			
+														</fieldset>
+													</div>
+					                            </div>
+											</li>
+
+											
+										</ul>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="form_row inline clearfix">
+	                    <input type="submit" value="Update" class="btn_normal"/>
+	                </div>
+				</form>
             </section>
 		</div>
 	</div> 
@@ -557,6 +1153,16 @@
 			megaDropDown();
 			escapeKeyFunc();
 			setHeight();
+			checkAppliedChbox();
+			checkDisabledChbox();
+
+			$('.shop_list li a').click(function(){
+				if($(this).hasClass('selected')) {
+					$(this).removeClass('selected');
+				} else {
+					$(this).addClass('selected');
+				}
+			})
 		});
 
 		
