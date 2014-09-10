@@ -219,7 +219,7 @@ body {
 
    		.basket.dd_panel .dd_panel_body {
         height: 341px;
-        overflow: hidden;
+        overflow: auto;
       }
 
    			.basket.dd_panel .dd_panel_body ul {
@@ -260,7 +260,7 @@ body {
    					.basket.dd_panel .dd_panel_body ul li div.product .prod_details {
    						float: left;
    						margin-left: 20px;
-              width: 170px;
+              width: 135px;
    					}
 
    						.basket.dd_panel .dd_panel_body ul li div.product .prod_details ul {}
@@ -1820,6 +1820,14 @@ div.selector_List_title {
 
 div.selector_list {
   padding-left: 5px;
+}
+
+div.update_success {
+  color: rgb(85, 145, 85);
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid rgb(85, 145, 85);
+  margin-bottom: 20px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), 

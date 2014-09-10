@@ -35,7 +35,7 @@
 			top: 0;
 			left: 0;
 			height: 419px;
-			overflow: hidden;
+			overflow: auto;
 		}
 
 			.product_overview .product_images .side_images ul {
@@ -72,8 +72,6 @@
 			width: 260px;
 			height: 390px;
 			margin-left: 80px;
-
-			background-color: #ccc; /* remove */
 		}
 
 			.product_overview .product_images .main_image > ul {

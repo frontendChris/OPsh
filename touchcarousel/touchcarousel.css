@@ -163,14 +163,14 @@
 	left: 0px;
 	right: 0px;	
 	bottom: 0px;
-	height:10px;
+	height:1px;
 	overflow: hidden;
 	background-color: #F2F2F2;	
 }
 .touchcarousel .scrollbar {
 	position: absolute;
 	left:0;	
-	height:8px;
+	height:1px;
 	bottom: 0px;
 	border-radius:4px;
 	background-color: #C2C2C2;
