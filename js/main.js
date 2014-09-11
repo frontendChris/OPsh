@@ -117,6 +117,18 @@ $(function(){
 	$('select.custom').customSelect();
 });
 
+function styleLastItem() {
+	var lastBasketItem = $('#cart_options .dd_panel_body > ul > li').last();
+	$(lastBasketItem).addClass('basket_item_last');
+}
+
+function lastVoucher() {
+	var lastVoucher = $('.voucher_basket > ul > li').last();
+	$(lastVoucher).css('border-bottom', 0);
+}
+
+
+
 // CUSTOM DROPDOWN CONTAINERS
 function dropdownContainers() {
 	// If you click anywhere on the screen it closes any open options panels
@@ -162,6 +174,9 @@ function dropdownContainers() {
 		// Hide the panel when you click close
 		$(".dd_panel").hide();
 	});
+
+	styleLastItem();
+	lastVoucher();
 };
 
 var megaDrop = $('.mega_drop');

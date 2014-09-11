@@ -1,70 +1,78 @@
-@charset "UTF-8";
-/* CSS Document */
-
-.social_connect_btns {
+.social_connect_btns
+{
 	padding-top: 20px;
 	border-top: 1px solid #ccc;
 }
 
-	.social_connect_btns > div  + div{
-		margin-top: 5px;
-	}
+.social_connect_btns > div + div
+{
+	margin-top: 5px;
+}
 
-.nav_list ul li .forgotten_pass {
+.nav_list ul li .forgotten_pass
+{
 	display: inline;
 }
 
-	.nav_list ul li .forgotten_pass a {
-		display: inline;
-		font-size: 12px;
-	}
+.nav_list ul li .forgotten_pass a
+{
+	display: inline;
+	font-size: 12px;
+}
 
-	.nav_list ul li .forgotten_pass a:hover {
-		background-color: transparent;
-		text-decoration: underline;
-	}
+.nav_list ul li .forgotten_pass a:hover
+{
+	background-color: transparent;
+	text-decoration: underline;
+}
 
-	.nav_list ul li a.login_facebook,
-	.nav_list ul li a.login_twitter {
-		width: 100%;
-		padding: 0;
-		height: 34px;
-		line-height: 34px;
-	}
+.nav_list ul li a.login_facebook, .nav_list ul li a.login_twitter
+{
+	width: 100%;
+	padding: 0;
+	height: 34px;
+	line-height: 34px;
+}
 
-	.nav_list ul li a.login_facebook:hover {
-		background-color: #2E4572;
-	}
+.nav_list ul li a.login_facebook:hover
+{
+	background-color: #2E4572;
+}
 
-	.nav_list ul li a.login_twitter:hover {
-		background-color: #2A96BD;
-	} 
+.nav_list ul li a.login_twitter:hover
+{
+	background-color: #2A96BD;
+}
 
-	.nav_list ul li a.login_facebook span,
-	.nav_list ul li a.login_twitter span {
-		float: left;
-	}
+.nav_list ul li a.login_facebook span, .nav_list ul li a.login_twitter span
+{
+	float: left;
+}
 
-	.nav_list ul li a.login_facebook {
-		background-color: #3F5F9C; 
-	}
+.nav_list ul li a.login_facebook
+{
+	background-color: #3F5F9C;
+}
 
-	.nav_list ul li a.login_twitter {
-		background-color: #23B9EE;
-	}
+.nav_list ul li a.login_twitter
+{
+	background-color: #23B9EE;
+}
 
-	.nav_list ul li a.login_facebook span.icon {
-		background: url(../imgs/facebook_connect.png) center center  no-repeat;
-		width: 34px;
-		height: 34px;
-		display: block;
-		padding: 0 5px;
-	}
+.nav_list ul li a.login_facebook span.icon
+{
+	background: url(../images/facebook_connect.png) center center no-repeat;
+	width: 34px;
+	height: 34px;
+	display: block;
+	padding: 0 5px;
+}
 
-	.nav_list ul li a.login_twitter span.icon {
-		background: url(../imgs/twitter_connect.png) center center no-repeat;
-		width: 34px;
-		height: 34px;
-		display: block;
-		padding: 0 5px;
-	}
+.nav_list ul li a.login_twitter span.icon
+{
+	background: url(../images/twitter_connect.png) center center no-repeat;
+	width: 34px;
+	height: 34px;
+	display: block;
+	padding: 0 5px;
+}

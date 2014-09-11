@@ -1,21 +1,61 @@
-@charset "UTF-8";
-/* CSS Document */
+#shop_filter_v2
+{
+}
 
-#shop_filter_v2 {}
+#shop_filter_v2 .shop_list
+{
+	padding: 0;
+}
 
-	#shop_filter_v2 .shop_list {
-		padding: 0;
-	}
+#shop_filter_v2 .shop_list.sub_filter_list ul li
+{
+	padding: 0;
+	margin-right: 30px;
+}
 
-		#shop_filter_v2 .shop_list.sub_filter_list ul li {
-			padding: 0;
-		}
+#shop_filter_v2 .shop_list.sub_filter_list ul li a
+{
+	width: 95px;
+}
 
-			#shop_filter_v2 .shop_list.sub_filter_list ul li a {
-				padding: 3px;
-				border: 1px solid transparent;
-			}
-	 
-			#shop_filter_v2 .shop_list ul li a.selected {
-				border: 1px solid #fff;
-			}
+#shop_filter_v2 .shop_list.sub_filter_list ul li a img
+{
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+#shop_filter_v2 .shop_list.sub_filter_list ul li .shop_filter_remove
+{
+	background: url(../images/shop_filter_delete.png) center center no-repeat;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0px;
+	right: -15px;
+	display: none;
+}
+
+#shop_filter_v2 .shop_list.sub_filter_list ul li.activated .shop_filter_remove
+{
+	display: block;
+}
+
+#shop_filter_v2 .shop_list.sub_filter_list ul li.activated a img
+{
+	opacity: 1.0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#shop_filter_v2 .chbox_item
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #fff;
+}
+
+#shop_filter_v2 .chbox_item .chbox_label label
+{
+	background-position: 100% 7px;
+	padding: 5px 25px 5px 0px;
+}

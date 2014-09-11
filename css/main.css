@@ -1,207 +1,235 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
 
-    .layout_center {} /* include this class on the body tag to implement this layout */
+.layout_center
+{
+}
+/* include this class on the body tag to implement this layout */
 
-   		.layout_center .page_container_outer {
-   			width: 100%;
-   		}
+.layout_center .page_container_outer
+{
+	width: 100%;
+}
 
-	   		.layout_center .page_container_inner {
-	   			width: 940px; /* change size as required by project */
-	   			margin: auto;
-          position: relative;
-	   		}
+.layout_center .page_container_inner
+{
+	width: 940px; /* change size as required by project */
+	margin: auto;
+	position: relative;
+}
 
+.main
+{
+	background-color: #fff;
+}
 
+.main .page_container_inner
+{
+	padding: 20px 0;
+}
 
-	.main {
-	   	background-color: #fff;
-	}
+.footer
+{
+	background-color: #000;
+}
 
-		.main .page_container_inner {
-			padding: 20px 0;
-		}
-
-	.footer {
-    background-color: #000;
-
-	}
-
-		.footer .page_container_inner {
-			padding: 20px 0;
-			border-top: 1px solid #333;
-		}
+.footer .page_container_inner
+{
+	padding: 20px 0;
+	border-top: 1px solid #333;
+}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-    .clear {
-      clear: both;
-    }
+.clear
+{
+	clear: both;
+}
 
-    .fr_left {
-   		float: left;
-    }
+.fr_left
+{
+	float: left;
+}
 
-    .fr_right {
-   		float: right !important;
-    }
+.fr_right
+{
+	float: right !important;
+}
 
-    .clearfix {
-   		clear: both;
-    }
+.clearfix
+{
+	clear: both;
+}
 
-    .clearfix:after {
-	   content: " "; /* Older browser do not support empty content */
-	   visibility: hidden;
-	   display: block;
-	   height: 0;
-	   clear: both;
-	}
+.clearfix:after
+{
+	content: " "; /* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
 
-  img {vertical-align: bottom;}
+img
+{
+	vertical-align: bottom;
+}
 
 /* ==========================================================================
    Basic Html Elements
    ========================================================================== */
 
-    /* ======== Forms ======== */
+/* ======== Forms ======== */
 
-    /* ======== Buttons ======== */
+/* ======== Buttons ======== */
 
-    /* ======== Fonts ======== */
+/* ======== Fonts ======== */
 
-    /* ======== Lists ======== */
+/* ======== Lists ======== */
 
-    ul {
-    	margin-left: 10px;
-    }
+ul
+{
+	margin-left: 10px;
+}
 
-    	ul li {
-    		list-style: none;
-    		margin: 10px 0;
-    	}
+ul li
+{
+	list-style: none;
+	margin: 10px 0;
+}
 
-    		ul li a {
-    			color: #333;
-    		}
+ul li a
+{
+	color: #333;
+}
 
-    		ul li a:hover {
-    			text-decoration: underline;
-    		}
+ul li a:hover
+{
+	text-decoration: underline;
+}
 
-    ol {
-    	margin-left: 20px;
-    }
+ol
+{
+	margin-left: 20px;
+}
 
-    	ol li {
-    		margin: 10px 0;
-    	}
+ol li
+{
+	margin: 10px 0;
+}
 
-    		ol li a {
-    			color: #333;
-    			height: 45px;
-    		}
+ol li a
+{
+	color: #333;
+	height: 45px;
+}
 
-    		ol li a:hover {
-    			text-decoration: underline;
-    		}
+ol li a:hover
+{
+	text-decoration: underline;
+}
 
+/* ======== Tables ======== */
 
-    /* ======== Tables ======== */
-
-    /* ======== Images ======== */
+/* ======== Images ======== */
 
 /* ==========================================================================
    Html Components
    ========================================================================== */
 
-    /* ======== Navigation ======== */
+/* ======== Navigation ======== */
 
-    .nav {
-      background-color: #fff;
-    }
+.nav
+{
+	background-color: #fff;
+}
 
-    .brand a {
-   		display: block;
-   		height: 50px;
-		width:102px;
-    }
+.brand a
+{
+	display: block;
+	height: 50px;
+	width: 102px;
+}
 
-    .brand a img {
-   		width: 100%;
-		vertical-align:top;
-    }
+.brand a img
+{
+	width: 100%;
+	vertical-align: top;
+}
 
+.nav_list ul
+{
+}
 
-    .nav_list ul {
-    }
+.nav_list ul li
+{
+	list-style: none;
+	float: left;
+	margin: 0;
+}
 
-	   	.nav_list ul li {
-	   		list-style: none;
-	   		float: left; 
-	   		margin: 0;
-	   	}
-		
-		.nav_list.fr_right>ul>li {
-          	border-right: 1px solid #ccc;
-		}
+.nav_list.fr_right > ul > li
+{
+	border-right: 1px solid #ccc;
+}
 
-	   		.nav_list ul li a {
-	   			text-decoration: none;
-	   			padding: 0 10px;
-	   			display: block;
-	   			height: 50px;
-	   			line-height: 50px;
-				-o-transition:.2s;
-				-ms-transition:.2s;
-				-moz-transition:.2s;
-				-webkit-transition:.2s;
-				transition:.2s;
-	   		}
+.nav_list ul li a
+{
+	text-decoration: none;
+	padding: 0 10px;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
 
-	   			.nav_list ul li a:hover,
-          		.nav_list ul li a.dd_link:hover {
-	   				background-color: #efefef;
-	   			}
+.nav_list ul li a:hover, .nav_list ul li a.dd_link:hover
+{
+	background-color: #efefef;
+}
 
-        .nav_list ul li a.drop_active {
-          height: 51px;
-          position: relative;
-          bottom: 0px;
-          z-index: 50;
-          background-color: white !important;
-        }
+.nav_list ul li a.drop_active
+{
+	height: 51px;
+	position: relative;
+	bottom: 0px;
+	z-index: 50;
+	background-color: white !important;
+}
 
-        .nav_list.fr_right>ul>li #user.drop_active {
-          	border-left: 1px solid #ccc;
-        }
+.nav_list.fr_right > ul > li #user.drop_active
+{
+	border-left: 1px solid #ccc;
+}
 
-	/* ======== Hero ======== */
+/* ======== Hero ======== */
 
-	.hero {
-		color: #fff;
-    	background-color: #79c3ce;
-	}
-
-
+.hero
+{
+	color: #fff;
+	background-color: #79c3ce;
+}
 
 /* ==========================================================================
    Js Components
    ========================================================================== */
 
-   /* ======== Tabs ======== */
+/* ======== Tabs ======== */
 
-   /* ======== Modals ======== */
+/* ======== Modals ======== */
 
-   /* ======== Dropdowns ======== */
+/* ======== Dropdowns ======== */
 
-   /* ======== Mega Dropdowns ======== */
+/* ======== Mega Dropdowns ======== */
 
-   /* ======== Pop Over ======== */
+/* ======== Pop Over ======== */
 
-   /* ======== Tooltip ======== */
+/* ======== Tooltip ======== */
 
-   /* ======== Side Nav ======== */
+/* ======== Side Nav ======== */
 
-   /* ======== Errors ======== */
+/* ======== Errors ======== */

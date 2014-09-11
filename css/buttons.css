@@ -1,132 +1,132 @@
-@charset "UTF-8";
-/* CSS Document */
-
-.nav_list ul li a.btn_normal,
-a.btn_normal,
-.btn_normal {
-	background-color:#000;
-	color:#FFFFFF;
-	line-height:30px;
-	height:30px;
-	border:0px;
-	margin:0px;
-	padding:0px 10px;
-	overflow:visible;
-	border-radius:0px;
-	-webkit-appearance:none;
+.nav_list ul li a.btn_normal, a.btn_normal, .btn_normal
+{
+	background-color: #000;
+	color: #FFFFFF;
+	line-height: 30px;
+	height: 30px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px 10px;
+	overflow: visible;
+	border-radius: 0px;
+	-webkit-appearance: none;
 	text-transform: uppercase;
 	font-size: 11px;
-    transition: all 0.2s ease 0s;
-    display: inline-block;
-    font-weight: 700;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.nav_list ul li a.btn_normal:hover,
-a.btn_normal:hover,
-.btn_normal:hover {
-	background-color:#e67f96;
+	transition: all 0.2s ease 0s;
+	display: inline-block;
+	font-weight: 700;
+	cursor: pointer;
 	text-decoration: none;
 }
 
-
-a.btn_transparent,
-.btn_transparent  {
-	width:auto;
-	background-color:transparent;
-	color:#333;
-	line-height:30px;
-	height:30px;
-	border:0px;
-	margin:0px;
-	padding:0px 10px;
-	overflow:visible;
-	border-radius:0px;
-	-webkit-appearance:none;
-	text-transform: uppercase;
-	font-size: 11px;
-	border-radius:0px;
+.nav_list ul li a.btn_normal:hover, a.btn_normal:hover, .btn_normal:hover
+{
+	background-color: #e67f96;
 	text-decoration: none;
 }
 
+a.btn_transparent, .btn_transparent
+{
+	background-color: transparent;
+	color: #333;
+	line-height: 30px;
+	height: 30px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px 10px;
+	overflow: visible;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	transition: all 0.2s ease 0s;
+	display: inline-block;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+}
 
-a.btn_outline,
-.btn_outline {
+a.btn_transparent:hover, .btn_transparent:hover
+{
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a.btn_outline, .btn_outline
+{
 	background-color: #fff;
 	border: 1px solid #000;
 	color: #000;
 	font-weight: 700;
-	line-height:30px;
-	height:30px;
-	padding:0px 10px;
-	overflow:visible;
-	-webkit-appearance:none;
+	line-height: 30px;
+	height: 30px;
+	padding: 0px 10px;
+	overflow: visible;
+	-webkit-appearance: none;
 	text-transform: uppercase;
 	font-size: 11px;
-	border-radius:0px;
-    transition: all 0.2s ease 0s;
+	border-radius: 0px;
+	transition: all 0.2s ease 0s;
 }
 
-.btn_grid_view {
-	background:#FFFFFF url(../imgs/icon_grid.png) right center no-repeat;
-	padding-right:30px;
+.btn_grid_view
+{
+	background: #FFFFFF url(../images/icon_grid.png) right center no-repeat;
+	padding-right: 30px;
 }
 
-.btn_list_view {
-	background:#FFFFFF url(../imgs/icon_list.png) right center no-repeat;
-	padding-right:30px;
+.btn_list_view
+{
+	background: #FFFFFF url(../images/icon_list.png) right center no-repeat;
+	padding-right: 30px;
 }
 
-.btn_add_new_outfit {
-	background:transparent url(../imgs/icon_new.png) center center no-repeat;
-	height:30px;
+.btn_add_new_outfit
+{
+	background: transparent url(../images/icon_new.png) center center no-repeat;
+	height: 30px;
 	width: 30px;
-	text-indent:-999em;
+	text-indent: -999em;
 }
 
-.btn_add_outfit_item_plus {
-	height:30px;
-	width:30px;
-	text-indent:-999em;
-	background:#000000 url(../imgs/icon_white_add.png) center center no-repeat;
+.btn_add_outfit_item_plus
+{
+	height: 30px;
+	width: 30px;
+	text-indent: -999em;
+	background: #000000 url(../images/icon_white_add.png) center center no-repeat;
 }
 
-
-a.btn_large,
-.btn_large {
-	height:40px;
-	line-height:40px;
-	padding:0px 20px;
-    transition: all 0.2s ease 0s;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
+a.btn_large, .btn_large
+{
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 20px;
+	transition: all 0.2s ease 0s;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 14px;
 }
 
-
-
-
-
-@media screen and (-webkit-min-device-pixel-ratio: 1.3), 
-screen and (min--moz-device-pixel-ratio: 1.3), 
-screen and (-o-min-device-pixel-ratio: 2 / 1), 
-screen and (min-device-pixel-ratio: 1.3), 
-screen and (min-resolution: 192dpi), 
-screen and (min-resolution: 2dppx) {
-	.btn_grid_view {
-		background:#FFFFFF url(../imgs/icon_grid_x2.png) right center / 21px 11px no-repeat;
+@media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)
+{
+	.btn_grid_view
+	{
+		background: #FFFFFF url(../images/icon_grid_x2.png) right center / 21px 11px no-repeat;
 	}
-	
-	.btn_list_view {
-		background:#FFFFFF url(../imgs/icon_list_x2.png) right center / 21px 11px no-repeat;
+
+	.btn_list_view
+	{
+		background: #FFFFFF url(../images/icon_list_x2.png) right center / 21px 11px no-repeat;
 	}
-	
-	.btn_add_new_outfit {
-		background:transparent url(../imgs/icon_new_x2.png) center center / 30px 30px no-repeat;
+
+	.btn_add_new_outfit
+	{
+		background: transparent url(../images/icon_new_x2.png) center center / 30px 30px no-repeat;
 	}
-	
-	.btn_add_outfit_item_plus {
-		background:#000000 url(../imgs/icon_white_add_x2.png) center center / 14px 14px no-repeat;
+
+	.btn_add_outfit_item_plus
+	{
+		background: #000000 url(../images/icon_white_add_x2.png) center center / 14px 14px no-repeat;
 	}
 }

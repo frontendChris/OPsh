@@ -408,11 +408,38 @@
 						</div>-->
 						<div class="shop_list sub_filter_list">
 							<ul>
-								<li><a  class="selected" href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/house-of-fraser_white.png" alt="house-of-fraser"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/urban-outfitters-white.png" alt="Urban Outfitters"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/river-island-white.png" alt="River Island"></a></li>
-								<li><a href="javascript:void(0)" class="no_bubble"><img src="imgs/logos/new-look-white.png" alt="New Look"></a></li>
+								<li class="activated">
+									<a class="selected" href="javascript:void(0)" class="no_bubble">
+										<img src="imgs/logos/house-of-fraser_white.png" alt="house-of-fraser"></a>
+									<a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="no_bubble">
+										<img src="imgs/logos/urban-outfitters-white.png" alt="Urban Outfitters">
+									</a>
+									<a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="no_bubble">
+										<img src="imgs/logos/river-island-white.png" alt="River Island">
+									</a>
+									<a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a>
+								</li>
+								<li>
+									<a href="javascript:void(0)" class="no_bubble">
+										<img src="imgs/logos/new-look-white.png" alt="New Look">
+									</a>
+									<a href="javascript:void(0)" class="shop_filter_remove no_bubble"></a>
+								</li>
 							</ul>
+							<div class="chbox_item">
+								<div class="chbox_label">
+									<label for="my_shops">
+										My OPSH Shops
+										<span class="chbox_input"><input type="checkbox" name="checkbox_options" id="my_shops" aria-invalid="false" required="required" /></span>
+									</label>
+								</div>
+							</div>
 						</div>
 					</div>
 			</div>
@@ -2315,11 +2342,11 @@
 			    lineHeight: 25
 		    });
 
-		    $('.shop_list li a').click(function(){
-				if($(this).hasClass('selected')) {
-					$(this).removeClass('selected');
+		    $('.shop_list li').click(function(){
+				if($(this).hasClass('activated')) {
+					$(this).removeClass('activated');
 				} else {
-					$(this).addClass('selected');
+					$(this).addClass('activated');
 				}
 			})
 		});

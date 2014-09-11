@@ -1,7 +1,3 @@
-@import url("kendo.common.min.css") all;
-@import url("kendo.bootstrap.min.css") all;
-@import url("Site.css") all;
-
 html {
     font-size: 100%; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
@@ -16,7 +12,7 @@ body {
 
 .section {
     margin-bottom: 40px;
-    zoom : 1;
+    zoom: 1;
 }
 
 /* ==========================================================================
@@ -94,7 +90,6 @@ img {
     -ms-interpolation-mode: bicubic; /* 2 */
 }
 
-
 svg:not(:root) {
     overflow: hidden;
 }
@@ -114,9 +109,9 @@ fieldset {
 }
 
 legend {
-    border: 0; 
+    border: 0;
     padding: 0;
-    white-space: normal; 
+    white-space: normal;
     *margin-left: -7px; /* 3 */
 }
 

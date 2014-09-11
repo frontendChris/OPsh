@@ -1,54 +1,60 @@
-@charset "UTF-8";
-/* CSS Document */
+.standard_table
+{
+}
 
-#order_history {}
+.standard_table table
+{
+	width: 100%;
+}
 
-	
+.standard_table table thead
+{
+}
 
-	#order_history table {
-		width: 100%;
-	}
+.standard_table table thead tr
+{
+	border-bottom: 1px solid #ccc;
+}
 
-		#order_history table thead {}
+.standard_table table thead tr th
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 10px;
+}
 
-			#order_history table thead tr {
-				border-bottom: 1px solid #ccc;
-			}
+.standard_table table tbody
+{
+}
 
-				#order_history table thead tr th {
-					font-weight: bold;
-					text-transform: uppercase;
-					text-align: left;
-					padding: 10px ;
-				}
+.standard_table table tbody tr
+{
+}
 
+.standard_table table tbody tr td
+{
+	padding: 10px;
+	min-height: 50px;
+}
 
+.standard_table table tbody tr td a
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
 
-		#order_history table tbody {}
+.standard_table #view_more_link
+{
+	margin-top: 20px;
+	text-align: right;
+}
 
-				#order_history table tbody tr {}
+.standard_table #view_more_link a
+{
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
 
-				#order_history table tbody tr.odd {
-					background-color: #f3f0f0;
-				}
-
-					#order_history table tbody tr td {
-						padding: 15px;
-					}
-
-						#order_history table tbody tr td a {
-							font-weight: bold;
-							text-transform: uppercase;
-							text-decoration: none;
-							border-bottom: 1px solid;
-						}
-
-		#order_history #view_more_link {
-			margin-top: 20px;
-			text-align: right;
-		}
-
-			#order_history #view_more_link a {
-				text-decoration: none;
-				border-bottom: 1px solid;
-			}

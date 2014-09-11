@@ -362,6 +362,88 @@
 
 	<div class="main page_container_outer" id="checkout">
 		<div class="page_container_inner">
+
+			<div class="covered">
+		        <div>
+		            The entire shopping cart value is covered by vouchers
+		        </div>
+		        <div class="finalize">
+		            <a class="btn_normal" href="…">Finalize order</a>
+		        </div>
+		    </div>
+
+			<!-- Vocuhers -->
+            <div class="shop_basket">
+            	<div class="basket_header clearfix">
+            		<div class="voucher_drawer_title fr_left">
+            			OPSH Vouchers
+            		</div>
+            		<div class="ship_total fr_right">
+            			<div class="shop_total">Vouchers Total: <span>&euro;160.00</span></div>
+            		</div>
+            		<span class="toggle">
+            			<a href="javascript:void(0)"></a>
+            		</span>
+            	</div>
+
+               <div class="basket_contents voucher_basket">
+                	<ul class="basket_items">
+                    	<li class="clearfix">
+                        	<div class="basket_opsh_voucher">
+                        		<a href="@Url.Action("GetVouchers", "Products")" class="vouchers">
+                        			<span>
+	                        			<span>OPSH</span>
+	                        			Vouchers
+                        			</span>
+                        		</a>
+                        	</div>
+                            <div class="basket_prod_details">
+                            	<h3 class="basket_product_name">OPSH € 10.00 Voucher</h3>
+                                <div class="basket_product_price">&euro; 12</div>
+                                <div class="basket_attributes clearfix">
+                                	<ul>
+                                    	<li>
+                                    		<div style="margin-bottom: 5px;">Voucher code: 772E666BB2184F</div>
+                                        	<div>
+                                        		This voucher will be sent to john@fakeemail.com on Monday, 8th of September 2014
+                                        	</div>
+                                        </li>
+                                        <li class="prod_remove"><a class="btn_normal" href="javascript:void(0)">Remove</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="basket_opsh_voucher">
+                        		<a href="@Url.Action("GetVouchers", "Products")" class="vouchers">
+                        			<span>
+	                        			<span>OPSH</span>
+	                        			Vouchers
+                        			</span>
+                        		</a>
+                        	</div>
+                            <div class="basket_prod_details">
+                            	<h3 class="basket_product_name">OPSH € 20.00 Voucher</h3>
+                                <div class="basket_product_price">&euro; 22</div>
+                                <div class="basket_attributes clearfix">
+                                	<ul>
+                                    	<li>
+                                    		<div style="margin-bottom: 5px;">Voucher code: 772E666BB2184F</div>
+                                        	<div>
+                                        		This voucher will be sent to john@fakeemail.com on Monday, 8th of September 2014
+                                        	</div>
+                                        </li>
+                                        <li class="prod_remove"><a class="btn_normal" href="javascript:void(0)">Remove</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="basket_total clearfix">
+                        	Note: Vouchers cannot be redeemed against other vouchers
+                        </li>
+                    </ul>
+                </div>
+            </div>
 			
 			<!-- Basket 1 -->
             <div class="shop_basket">
@@ -555,8 +637,102 @@
                 </div>
             </div>
 
-             <div class="all_basket_total">
-            	Your total <span>&euro;360.00</span>
+            <div class="all_basket_total">
+            	<ul>
+            		<li>Products costs <span>&euro;360.00</span></li>
+            		<li>Shipping costs <span>&euro;20.00</span></li>
+            		<li class="total">Your total <span>&euro;380.00</span></li>
+            	</ul>
+            </div>
+
+            <div class="sub_title_container clearfix">
+				<h3 class="fr_left">Available Vouchers</h3>
+			</div>
+            <div class="standard_table">
+	            <table>
+					<thead>
+						<tr>
+							<th>Vocuher Code</th>
+							<th class="align_r">Voucher Value</th>
+							<th class="align_r">Used Value</th>
+							<th class="align_r">Available Value</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9543910</td>
+							<td class="align_r">&euro; 60.00</td>
+							<td class="align_r">&euro; 50.00</td>
+							<td class="align_r">&euro; 10.00</td>
+							<td class="align_r"><a class="btn_normal" href="#">Use</a></td>
+						</tr>
+						<tr>
+							<td>9543123</td>
+							<td class="align_r">&euro; 40.00</td>
+							<td class="align_r">&euro; 39.00</td>
+							<td class="align_r">&euro; 1.00</td>
+							<td class="align_r"><a class="btn_normal" href="#">Use</a></td>
+						</tr>
+						<tr>
+							<td>9543345</td>
+							<td class="align_r">&euro; 80.00</td>
+							<td class="align_r">&euro; 20.00</td>
+							<td class="align_r">&euro; 40.00</td>
+							<td class="align_r"><a class="btn_normal" href="#">Use</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="sub_title_container clearfix">
+				<h3 class="fr_left">Used Vouchers</h3>
+			</div>
+            <div class="standard_table">
+	            <table>
+					<thead>
+						<tr>
+							<th>Vocuher Code</th>
+							<th class="align_r">Voucher Value</th>
+							<th class="align_r">Used Value</th>
+							<th class="align_r">Available Value</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>9543910</td>
+							<td class="align_r">&euro; 60.00</td>
+							<td class="align_r">&euro; 50.00</td>
+							<td class="align_r">&euro; 10.00</td>
+							<td class="align_r"><a class="btn_normal" href="#">Remove</a></td>
+						</tr>
+						<tr>
+							<td>9543123</td>
+							<td class="align_r">&euro; 40.00</td>
+							<td class="align_r">&euro; 39.00</td>
+							<td class="align_r">&euro; 1.00</td>
+							<td class="align_r"><a class="btn_normal" href="#">Remove</a></td>
+						</tr>
+						<tr>
+							<td>9543345</td>
+							<td class="align_r">&euro; 80.00</td>
+							<td class="align_r">&euro; 20.00</td>
+							<td class="align_r">&euro; 40.00</td>
+							<td class="align_r"><a class="btn_normal" href="#">Remove</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="all_basket_total">
+            	<ul>
+            		<li>Voucher costs <span>&euro;360.00</span></li>
+            		<li>Products costs <span>&euro;360.00</span></li>
+            		<li>Shipping costs <span>&euro;20.00</span></li>
+            		<li>Used Vouchers <span>&euro;20.00</span></li>
+            		<li class="total">Your total <span>&euro;380.00</span></li>
+            	</ul>
             </div>
 
 			<div class="section" id="billing_address">
@@ -964,7 +1140,12 @@
 				}
 				
 				
-			})
+			});
+
+			var oddRows = $('table tbody tr:odd');
+			//console.log(oddRows);
+
+			$(oddRows).addClass('odd');
 		
 		});
 

@@ -364,6 +364,75 @@
 	<!-- body content -->
 	<div class="main page_container_outer">
 		<div class="page_container_inner">
+
+			<div class="back-shopping">
+                &lt; <a href="…">Continue Shopping</a>
+            </div>
+
+			<div class="shopping-cart-empty">
+                Your shopping cart is empty.
+            </div>
+
+            <!-- Vouchers -->
+            <div class="shop_basket">
+            	<div class="basket_header">
+            		OPSH Vouchers
+            	</div>
+                <div class="basket_contents voucher_basket">
+                	<ul class="basket_items">
+                    	<li class="clearfix">
+                        	<div class="basket_opsh_voucher">
+                        		<a href="@Url.Action("GetVouchers", "Products")" class="vouchers">
+                        			<span>
+	                        			<span>OPSH</span>
+	                        			Vouchers
+                        			</span>
+                        		</a>
+                        	</div>
+                            <div class="basket_prod_details">
+                            	<h3 class="basket_product_name">OPSH € 10.00 Voucher</h3>
+                                <div class="basket_product_price">&euro; 12</div>
+                                <div class="basket_attributes clearfix">
+                                	<ul>
+                                    	<li>
+                                    		<div style="margin-bottom: 5px;">Voucher code: 772E666BB2184F</div>
+                                        	<div>
+                                        		This voucher will be sent to john@fakeemail.com on Monday, 8th of September 2014
+                                        	</div>
+                                        </li>
+                                        <li class="prod_remove"><a class="btn_normal" href="javascript:void(0)">Remove</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<div class="basket_opsh_voucher">
+                        		<a href="@Url.Action("GetVouchers", "Products")" class="vouchers">
+                        			<span>
+	                        			<span>OPSH</span>
+	                        			Vouchers
+                        			</span>
+                        		</a>
+                        	</div>
+                            <div class="basket_prod_details">
+                            	<h3 class="basket_product_name">OPSH € 20.00 Voucher</h3>
+                                <div class="basket_product_price">&euro; 22</div>
+                                <div class="basket_attributes clearfix">
+                                	<ul>
+                                    	<li>
+                                    		<div style="margin-bottom: 5px;">Voucher code: 772E666BB2184F</div>
+                                        	<div>
+                                        		This voucher will be sent to john@fakeemail.com on Monday, 8th of September 2014
+                                        	</div>
+                                        </li>
+                                        <li class="prod_remove"><a class="btn_normal" href="javascript:void(0)">Remove</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 			
             <!-- Basket 1 -->
             <div class="shop_basket">
@@ -538,7 +607,11 @@
             
             
             <div class="all_basket_total">
-            	Your total <span>&euro;360.00</span>
+            	<ul>
+            		<li>Products costs <span>&euro;360.00</span></li>
+            		<li>Shipping costs <span>&euro;20.00</span></li>
+            		<li class="total">Your total <span>&euro;380.00</span></li>
+            	</ul>
             </div>
             
             <input type="button" class="btn_normal fr_right btn_big" value="Buy Now" />
